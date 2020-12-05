@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="#{layoutMB.template}">
+
+	<ui:define name="head-end">
+		<ui:param name="renderBreadCrumb" value="false" />
+	</ui:define>
+
+	<ui:define name="title">
+		<div class="row">
+			<div class="col-sm-6">
+				<p:commandLink>
+					<div class="card">
+						<div class="card-body">
+						<i class="fa fa-handshake-o" aria-hidden="true"></i>
+						
+							<h5 class="card-title">Cadastro de Novo Doador</h5>
+							<p class="card-text">Lorem ipsum ante litora at a eu proin
+								etiam velit, dui aptent lectus integer nostra litora urna eu
+								convallis, libero leo venenatis fermentum donec nullam diam
+								phasellus. congue netus semper interdum eu tempor curae aptent
+								ullamcorper nec, torquent iaculis nec pellentesque etiam
+								torquent euismod. lectus imperdiet phasellus adipiscing orci
+								senectus bibendum congue primis aenean.</p>
+						</div>
+					</div>
+				</p:commandLink>
+			</div>
+			<div class="col-sm-6">
+				<p:commandLink>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Cadastro de Usuario</h5>
+							<p class="card-text">Lorem ipsum ante litora at a eu proin
+								etiam velit, dui aptent lectus integer nostra litora urna eu
+								convallis, libero leo venenatis fermentum donec nullam diam
+								phasellus. congue netus semper interdum eu tempor curae aptent
+								ullamcorper nec, torquent iaculis nec pellentesque etiam
+								torquent euismod. lectus imperdiet phasellus adipiscing orci
+								senectus bibendum congue primis aenean.</p>
+
+						</div>
+					</div>
+				</p:commandLink>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<p:commandLink>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Relatórios</h5>
+							<p class="card-text">Lorem ipsum ante litora at a eu proin
+								etiam velit, dui aptent lectus integer nostra litora urna eu
+								convallis, libero leo venenatis fermentum donec nullam diam
+								phasellus. congue netus semper interdum eu tempor curae aptent
+								ullamcorper nec, torquent iaculis nec pellentesque etiam
+								torquent euismod. lectus imperdiet phasellus adipiscing orci
+								senectus bibendum congue primis aenean.</p>
+
+						</div>
+					</div>
+				</p:commandLink>
+			</div>
+			<div class="col-sm-6">
+				<p:commandLink>
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Check-in Banco de sengue</h5>
+							<p class="card-text">Lorem ipsum ante litora at a eu proin
+								etiam velit, dui aptent lectus integer nostra litora urna eu
+								convallis, libero leo venenatis fermentum donec nullam diam
+								phasellus. congue netus semper interdum eu tempor curae aptent
+								ullamcorper nec, torquent iaculis nec pellentesque etiam
+								torquent euismod. lectus imperdiet phasellus adipiscing orci
+								senectus bibendum congue primis aenean.</p>
+
+						</div>
+					</div>
+				</p:commandLink>
+			</div>
+		</div>
+
+	</ui:define>
+
+
+</ui:composition>

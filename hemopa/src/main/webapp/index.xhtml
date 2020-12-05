@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Projeto Básico - JakartaEE + Wildfly + Primefaces</title>
+</h:head>
+
+<h:body>
+
+	<h:form id="form">
+
+		<p:growl id="msg" />
+
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+
+			<h:outputText value="SELEÇÃO: " />
+			<p:inputSwitch value="#{selecaoAtivoInativo.selecao}">
+				<p:ajax listener="#{selecaoAtivoInativo.msgRetorno}"
+					update="msg" />
+			</p:inputSwitch>
+		</h:panelGrid>
+
+		<p:commandButton value="Verificar" icon="pi pi-check" update="display"
+			oncomplete="PF('dlg').show()" />
+
+		<p:dialog header="Seleção" modal="true" resizable="false"
+			showEffect="fade" widgetVar="dlg">
+			<h:panelGrid columns="1" id="display">
+				<h:outputText value="Selecionado: #{selecaoAtivoInativo.selecao}" />
+			</h:panelGrid>
+		</p:dialog>
+
+	</h:form>
+
+</h:body>
+</html>

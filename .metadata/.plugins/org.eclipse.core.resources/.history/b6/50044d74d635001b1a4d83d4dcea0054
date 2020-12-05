@@ -1,0 +1,22 @@
+package br.com.j.hemopa.digital.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name="contato")
+public class Contato implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "pessoa", nullable = false)
+	private Pessoa pessoa;
+
+}

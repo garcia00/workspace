@@ -1,0 +1,93 @@
+package br.com.j.hemopa.digital.bean;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.j.hemopa.digital.model.Pessoa;
+import br.com.j.hemopa.digital.model.Usuario;
+import br.com.j.hemopa.digital.service.CadastroUsuarioService;
+import br.com.j.hemopa.digital.util.FacesMessages;
+
+
+@Named
+@SessionScoped
+public class UsuariosMB implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	public static final String NAVEGACAO = "/user-form?faces-redirect=true";
+
+	private Usuario usuario;
+	
+	private String termoPesquisa;
+	
+	@Inject
+	private CadastroUsuarioService cadastroUsuarioService;
+	
+	private List<Usuario>Servidores;
+	
+	public String getNavegacao() {
+
+		return UsuariosMB.NAVEGACAO;
+
+	}
+	
+	public String prepararNovoUsuario() {
+		usuario = new Usuario();
+		return getNavegacao();
+	}
+
+	public List<Usuario> getServidores() {
+		return Servidores;
+	}
+
+	public void setServidores(List<Usuario> servidores) {
+		Servidores = servidores;
+	}
+	
+	public void salvar() {
+		
+		this.usuario = cadastroUsuarioService.salvar(usuario);
+		
+		if (jaHouvePesquisa()) {
+			pesquisar();
+		} else {
+			todasPessoas();
+		}
+		
+		FacesMessages.addInfoMessage("Usuario cadastrado.");
+		
+		this.usuario = new Usuario();
+
+	}
+	
+	public void todasUsuarios() {
+		listaUsuarios = usuario.todas();
+	}
+
+	private boolean jaHouvePesquisa() {
+		return termoPesquisa != null && !"".equals(termoPesquisa);
+	}
+
+	public List<Pessoa> getListaPessoas() {
+		return listaPessoas;
+	}
+
+	public String getTermoPesquisa() {
+		return termoPesquisa;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	
+
+}

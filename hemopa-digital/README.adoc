@@ -13,7 +13,7 @@ mvn clean package
 
 == Running
 
-Just deploy `hemopa-digital.war` generated in previous step into apache tomcat.
+Just deploy `hemopa-digital.war`.
 
 Sevidor on *wildflay 21 *
 

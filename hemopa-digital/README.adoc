@@ -1,4 +1,4 @@
-= AdminFaces Starter project
+= Hemopa Digital
 
 
 A simple project to get you started with https://github.com/adminfaces[AdminFaces^].
@@ -15,22 +15,6 @@ mvn clean package
 
 Just deploy `hemopa-digital.war` generated in previous step into apache tomcat.
 
-Tested on *Tomcat 8.5.3*
+Sevidor on *wildflay 21 *
 
-== Demo
-
-A live demo is available on Openshift here: http://adminfaces.github.io/admin-starter/
-
-== Screenshots
-
-.Login page
-image:starter1.png[]
-
-.Car list
-image:starter2.png[]
-
-.Car form
-image:starter3.png[]
-
-.Car form responsive
-image:starter4.png[]
+Banco de dados Posgress 9.3

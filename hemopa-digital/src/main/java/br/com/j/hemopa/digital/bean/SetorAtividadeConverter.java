@@ -11,7 +11,7 @@ import br.com.j.hemopa.digital.model.SetorAtividade;
 
 
 @FacesConverter(forClass = SetorAtividade.class)
-public class SetorAtividadeConverter implements Converter {
+public class SetorAtividadeConverter implements Converter<Object> {
     
     private List<SetorAtividade> listaSetorAtividades;
 

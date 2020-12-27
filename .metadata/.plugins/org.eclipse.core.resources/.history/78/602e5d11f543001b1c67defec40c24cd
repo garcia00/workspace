@@ -1,0 +1,29 @@
+package br.com.j.hemopa.digital.model;
+
+public enum DiasSemana {
+	
+	DOMINGO("Feminino"),
+	SEGUNDA("Masculino"),
+	TERCA("Terça"),
+	QUARTA("Quarta"),
+	QUINTA("Quinta"),
+	SEXTA("Sexta"),
+	SABADO("Sabado"),
+	DOMINGO("Domingo"),
+	
+	;
+	private String descricao;
+	
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	DiasSemana (String descricao){
+		this.descricao = descricao;
+	}
+	
+	public String getDescricao(){
+		return descricao;
+	}
+
+}

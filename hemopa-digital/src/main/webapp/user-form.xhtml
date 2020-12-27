@@ -53,13 +53,16 @@
 							<p:outputLabel value="Email" for="mail" />
 						</div>
 						<div class="ui-sm-12 ui-g-11">
-							<p:inputText id="mail" value="#{usuariosMB.usuario.email}" required="true" />
+							<p:inputText id="mail" value="#{usuariosMB.usuario.email}"
+								required="true">
+								<f:passThroughAttribute name="type" value="email" />
+							</p:inputText>
 							<span class="help-block"> <p:message for="mail" />
 							</span>
 						</div>
 					</div>
 					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-<!--  						<div class="ui-sm-12 ui-g-11">
+						<!--  						<div class="ui-sm-12 ui-g-11">
 							<p:outputLabel value="Confirme Senha" for="inptSenha2" />
 						</div>
 					<div class="ui-sm-12 ui-g-11">
@@ -69,7 +72,7 @@
 							</span>
 						</div>
 -->
-<!--						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<!--						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
  							<div class="ui-sm-12 ui-g-11">
 								<p:outputLabel value="Data do Cadastro" for="data" />
 							</div>
@@ -86,7 +89,7 @@
 
 				<div id="main-buttons" class="hidden-sm hidden-xs">
 					<p:commandButton value="Salvar"
-						actionListener="#{usuariosMB.salvar}" update="@this"
+						action="#{usuariosMB.salvar}" update="@this"
 						icon="fa fa-check" styleClass="btn-primary" process="@form" />
 					<p:spacer width="5" />
 					<p:commandButton value="Back" immediate="true"

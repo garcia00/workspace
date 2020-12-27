@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:adm="http://github.com/adminfaces"
+	template="#{layoutMB.template}">
+
+	<ui:define name="metadata">
+		<ui:param name="title" value="Lista de Doadores" />
+		<!-- Automatic create breadCrumb and page title when param 'title' is provided. -->
+		<style type="text/css">
+.ui-datatable .ui-datatable-header {
+	text-align: right !important;
+}
+</style>
+	</ui:define>
+
+
+	<ui:define name="body">
+		<h:form>
+			<p:focus context="@form" />
+			<div class="box box-primary">
+				<div class="box-header with-border">
+					<div id="main-buttons" class="hidden-sm hidden-xs">
+						<p:commandButton action="#{pessoasMB.prepararNovoPessoa}"
+							icon="fa fa-plus" value="Novo Doador" styleClass="btn-primary" />
+						<p:commandButton title="Exportar para o Excel" value="Download"
+							icon="fa fa-file-excel-o" ajax="false" styleClass="btn-success">
+							<p:dataExporter type="xls" target="tabelaPessoas"
+								fileName="doadores" />
+						</p:commandButton>
+					</div>
+					<div class="ui-sm-12 ui-g-11">
+						<p:outputLabel value="Pesquisa por CPF" for="cpf" />
+					</div>
+					<div class="ui-sm-6 ui-g-11">
+						<p:inputMask id="cpf" mask="999.999.999-99" maxlength="11"
+							value="" size="20" />
+						<span class="help-block"> <p:message for="cpf" />
+						</span>
+					</div>
+					<div class="ui-sm-6 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<p:commandButton icon="fa fa-search" styleClass="btn btn-primary"
+								value="Pesquisar" action="#{checkDoadorMB.pesquisar}"
+								update="@form">
+							</p:commandButton>
+						</div>
+					</div>
+				</div>
+
+				<div class="ui-g ui-fluid">
+					<div class="ui-sm-12 ui-g-12 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-12">
+							<p:dataTable value="#{pessoasMB.pessoas}" var="pessoas"
+								id="tabelaPessoas">
+								<p:column headerText="Id">
+									<h:outputText value="#{pessoas.id}" />
+								</p:column>
+								<p:column headerText="Nome">
+									<h:outputText value="#{pessoas.nome}" />
+								</p:column>
+								<p:column headerText="CPF">
+									<h:outputText value="#{pessoas.cpf}" />
+								</p:column>
+								<p:column headerText="Telefone">
+									<h:outputText value="#{pessoas.contato.numeroTelefone}" />
+								</p:column>
+								<p:column headerText="Email">
+									<h:outputText value="#{pessoas.contato.email}" />
+								</p:column>
+
+								<p:column headerText="Ação">
+									<p:commandButton icon="fa fa-trash" styleClass="btn-danger"
+										action="#{pessoasMB.remover(pessoas)}" process="@this"
+										update="@form">
+										<p:confirm header="Confirmation" message="Tem certesa disso?"
+											icon="ui-icon-danger" />
+									</p:commandButton>
+
+									<p:button outcome="/agendamento" icon="fa fa-calendar-check-o"
+										title="Agendar" styleClass="btn-success">
+										<f:param name="pessoas" value="#{pessoas.id}" />
+									</p:button>
+								</p:column>
+							</p:dataTable>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade"
+				styleClass="box-danger box-solid">
+				<p:commandButton value="Yes" type="button"
+					styleClass="btn-material btn-primary ui-confirmdialog-yes"
+					icon="fa fa-check" />
+				<p:commandButton value="No" type="button"
+					styleClass="btn-material btn-danger ui-confirmdialog-no"
+					icon="fa fa-close" />
+			</p:confirmDialog>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>

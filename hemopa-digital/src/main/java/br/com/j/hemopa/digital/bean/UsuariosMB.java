@@ -37,24 +37,27 @@ public class UsuariosMB implements Serializable {
 
 	public String salvar() {
 
-		new DAO<Usuario>(Usuario.class).atualiza(this.usuario);
+		new DAO<Usuario>(Usuario.class).adiciona(this.usuario);
 		
 		FacesMessages.addInfoMessage("Usuario cadastrado.");
 		
-		this.usuario = new Usuario();
+		usuario = new Usuario();
 
 		return "index?faces-redirect=true";
 
 	}
 	
-	public void carregar(Usuario usuario) {
+	public String carregar(Usuario usuario) {
 		
 		this.usuario = usuario;
+		return NAVEGACAO;
+		
 	}
 
 	public void remover(Usuario usuario) {
 		
 		new DAO<Usuario>(Usuario.class).remove(usuario);
+		FacesMessages.addInfoMessage("Usuario removido com sucesso!".concat(usuario.getNomeUsuario()));
 	}
 
 	public Usuario getUsuario() {

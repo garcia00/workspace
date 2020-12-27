@@ -1,6 +1,6 @@
 package br.com.j.hemopa.digital.util;
 
-import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.Dependent;
 import javax.enterprise.inject.Disposes;
 import javax.enterprise.inject.Produces;
 import javax.persistence.EntityManager;
@@ -15,8 +15,8 @@ private EntityManagerFactory factory;
 		this.factory = Persistence.createEntityManagerFactory("HemopaDigitalP");
 	}
 	
-	@Produces
-	@RequestScoped
+	@Produces 
+	@Dependent 
 	public EntityManager createEntityManager() {
 		return this.factory.createEntityManager();
 	}

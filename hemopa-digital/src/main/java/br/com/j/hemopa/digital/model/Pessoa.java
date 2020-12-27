@@ -1,9 +1,6 @@
 package br.com.j.hemopa.digital.model;
 
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -15,63 +12,61 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name="pessoa")
-public class Pessoa implements Serializable {
+public class Pessoa {
 
-	private static final long serialVersionUID = 1L;
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_PESSOA", unique = true, nullable = false)
 	private Long id;
-	
-	@Column(name="nome", nullable = false, length = 200)
+
+	@Column(name = "nome", nullable = false, length = 200)
 	private String nome;
-	
-	@ManyToOne
-	@JoinColumn(name="setor_atividade_id", nullable = false)
-	private SetorAtividade setorAtividade;
-	
-	@Enumerated(EnumType.STRING)
-	@Column( nullable = false, length = 30)
-	private TipoPessoa tipo;
-	
-	@Column(name="cpf", nullable = false, length = 11)
-	private String cpf;
-	
-	@Column(name="rg", nullable = false, length = 11)
-	private String rg;
-	
-	@Temporal(TemporalType.DATE)
-	@Column(name="data_nascimento")
-	private Date dataNascimento;
-	
-	@Enumerated(EnumType.STRING)
-	@Column( nullable = false, length = 30)
-	private TipoSangue sangue;
-	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<Endereco> enderecos = new ArrayList<>();
-	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
-	private List<Contato> contato = new ArrayList<>();
-	
-	
 
 	@Enumerated(EnumType.STRING)
-	@Column(nullable = false, length = 10)
-	public TipoPessoa getTipo() {
-		return tipo;
+	@Column(nullable = false, length = 15)
+	private Sexo sexo;
+
+	@Column(name = "cpf", nullable = false, length = 20)
+	private String cpf;
+
+	@Column(name = "rg", nullable = false, length = 20)
+	private String rg;
+
+	@Temporal(TemporalType.DATE)
+	@Column(name = "data_nascimento")
+	private Date dataNascimento;
+
+//	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
+//	@JoinColumn(name = "ID_PESSOA")
+//	private Sangue sangue;
+
+	@OneToOne(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
+	@JoinColumn(name = "ID_PESSOA")
+	private Endereco endereco;
+
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
+	@JoinColumn(name = "ID_PESSOA")
+	private Contato contato;
+	
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
+	@JoinColumn(name = "ID_PESSOA")
+	private Agenda agenda;
+	
+	public Agenda getAgenda() {
+		
+		if (agenda == null){
+			agenda = new Agenda();
+			}
+		return agenda;
 	}
 
-	public void setTipo(TipoPessoa tipo) {
-		this.tipo = tipo;
+	public void setAgenda(Agenda agenda) {
+		this.agenda = agenda;
 	}
 
 	public String getRg() {
@@ -81,7 +76,7 @@ public class Pessoa implements Serializable {
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Pessoa [id=" + id + "]";
@@ -103,14 +98,6 @@ public class Pessoa implements Serializable {
 		this.nome = nome;
 	}
 
-	public SetorAtividade getSetorAtividade() {
-		return setorAtividade;
-	}
-
-	public void setSetorAtividade(SetorAtividade setorAtividade) {
-		this.setorAtividade = setorAtividade;
-	}
-
 	public String getCpf() {
 		return cpf;
 	}
@@ -119,39 +106,60 @@ public class Pessoa implements Serializable {
 		this.cpf = cpf;
 	}
 
+//	@Column(nullable = false, length = 10)
+//	public Sangue getSangue() {
+//		return sangue;
+//	}
+//
+//	public void setSangue(Sangue sangue) {
+//		this.sangue = sangue;
+//	}
+
+	public Contato getContato() {
+		
+		if (contato == null){
+			contato = new Contato();
+			}
+	return contato;
+	
+	}
+
+	public void setContato(Contato contato) {
+		this.contato = contato;
+	}
+
+	public Endereco getEndereco() {
+		
+	if (endereco == null){
+			endereco = new Endereco();
+			}
+	return endereco;
+	
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	
+	public Sexo getSexo() { 
+			
+		return sexo; 
+		
+	}
+	 
+	public void setSexo(Sexo sexo) { 
+		
+		this.sexo = sexo; 
+		
+	}
+	
 	public Date getDataNascimento() {
 		return dataNascimento;
 	}
 
 	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
-	}
-	
-	@Enumerated(EnumType.STRING)
-	@Column(nullable = false, length = 10)
-	public TipoSangue getSangue() {
-		return sangue;
-	}
-
-	public void setSangue(TipoSangue sangue) {
-		this.sangue = sangue;
-	}
-	
-	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL)
-	public List<Endereco> getEnderecos() {
-		return enderecos;
-	}
-
-	public void setEnderecos(List<Endereco> enderecos) {
-		this.enderecos = enderecos;
-	}
-
-	public List<Contato> getContato() {
-		return contato;
-	}
-
-	public void setContato(List<Contato> contato) {
-		this.contato = contato;
 	}
 
 	@Override
@@ -179,5 +187,4 @@ public class Pessoa implements Serializable {
 		return true;
 	}
 
-	
 }

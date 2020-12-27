@@ -3,92 +3,129 @@ package br.com.j.hemopa.digital.bean;
 import java.io.Serializable;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
-import javax.faces.convert.Converter;
-import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.j.hemopa.digital.model.Agenda;
+import br.com.j.hemopa.digital.model.Contato;
+import br.com.j.hemopa.digital.model.Endereco;
+import br.com.j.hemopa.digital.model.Horario;
 import br.com.j.hemopa.digital.model.Pessoa;
-import br.com.j.hemopa.digital.model.TipoPessoa;
+import br.com.j.hemopa.digital.model.Sangue;
+import br.com.j.hemopa.digital.model.Sexo;
+import br.com.j.hemopa.digital.model.Horario;
+
+import br.com.j.hemopa.digital.model.TipoEvento;
+import br.com.j.hemopa.digital.model.TipoSangue;
+import br.com.j.hemopa.digital.model.UnidadesHemopa;
 import br.com.j.hemopa.digital.service.DAO;
 import br.com.j.hemopa.digital.util.FacesMessages;
-import repository.Pessoas;
 
 @Named
 @SessionScoped
 public class PessoasMB implements Serializable {
 
-	private static final long serialVersionUID = -1264260459385294500L;
+	private static final long serialVersionUID = -3000055469580812336L;
 
-	public static final String NAVEGACAO = "/pessoa-form?faces-redirect=true";
+	public static final String NAVEGACAO = "/doador-form?faces-redirect=true";
+	
+	public static final String AGENDAMENTO = "/agendamento?faces-redirect=true";
 
-	@Inject
-	private Pessoas pessoas;
 
-	@Inject
-	private FacesMessages messages;
+	private Pessoa pessoa;
+	
+	private Agenda agenda;
+	
+	private Contato contato;
+	
+	private Endereco endereco;
+	
+	private Horario horario;
+
+	private List<Sangue> sangues;
+
+	@PostConstruct
+	public void init() {
+		pessoa = new Pessoa();
+		setAgenda(new Agenda());
+		setContato(new Contato());
+		setEndereco(new Endereco());
+
+	}
 
 	public String getNavegacao() {
-
+		
+		limpar();
+		
 		return PessoasMB.NAVEGACAO;
 
 	}
 
-	private Converter<?> setorAtividadeConverter;
-
-	private List<Pessoa> listaPessoas;
-
-	private String termoPesquisa;
-
-	private Pessoa pessoa;
-
-	public String prepararNovaPessoa() {
-		pessoa = new Pessoa();
+	public String prepararNovoPessoa() {
+		limpar();
 		return getNavegacao();
 	}
 
-	public String salvar() {
+	public List<Pessoa> getPessoas() {
+		this.pessoa.getAgenda();
+		this.pessoa.getContato();
+		this.pessoa.getEndereco();
 		
+		return new DAO<Pessoa>(Pessoa.class).listaTodos();
+	}
+
+	public String salvar() {
+
+		new DAO<Pessoa>(Pessoa.class).adiciona(this.pessoa);
+
+		limpar();
+		
+		FacesMessages.addInfoMessage("Doador Cadastrado.");
+		
+		
+
+		return AGENDAMENTO;
+
+	}
+	
+	public String atualizar() {
+
 		new DAO<Pessoa>(Pessoa.class).atualiza(this.pessoa);
 		
-		FacesMessages.addInfoMessage("Usuario cadastrado.");
+		FacesMessages.addInfoMessage("Doador Agendado!");
 		
-		this.pessoa = new Pessoa();
+		
 
-		return "index?faces-redirect=true";
+		return AGENDAMENTO;
 
 	}
+	
 
-	public void pesquisar() {
-		listaPessoas = pessoas.pesquisar(termoPesquisa);
+	public String carregar (){
 
-		if (listaPessoas.isEmpty()) {
-			messages.info("Sua consulta não retornou registros.");
-		}
+		this.salvar();
+	
+		return AGENDAMENTO;
+	}
+	
+	public void inicializar() {
+
+		this.pessoa = pessoa;
+	
+	}
+	
+	private void limpar() {
+		
+		pessoa = new Pessoa();
+		
 	}
 
-	public void todasPessoas() {
-		listaPessoas = pessoas.todas();
-	}
+	public void remover(Pessoa pessoa) {
 
-	public List<Pessoa> getListaPessoas() {
-		return listaPessoas;
-	}
-
-	public String getTermoPesquisa() {
-		return termoPesquisa;
-	}
-
-	public void setTermoPesquisa(String termoPesquisa) {
-		this.termoPesquisa = termoPesquisa;
-	}
-
-	public TipoPessoa[] getTipoPessoa() {
-		return TipoPessoa.values();
-	}
-
-	public Converter<?> getSetorAtividadeConverter() {
-		return setorAtividadeConverter;
+		new DAO<Pessoa>(Pessoa.class).remove(pessoa);
+		
+		FacesMessages.addInfoMessage("Doador".concat(pessoa.getNome()).concat(" removido!"));
 	}
 
 	public Pessoa getPessoa() {
@@ -97,6 +134,71 @@ public class PessoasMB implements Serializable {
 
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
+	}
+
+	public List<Sangue> getSangues() {
+		return sangues;
+	}
+
+	public void setSangues(List<Sangue> sangues) {
+		this.sangues = sangues;
+	}
+
+	public TipoSangue[] getTipoSangues() {
+		return TipoSangue.values();
+	}
+
+	public Sexo[] getSexos() {
+		return Sexo.values();
+	}
+	
+	public Horario[] getHorarios() {
+		return Horario.values();
+	}
+
+	public UnidadesHemopa[] getUnidadeHemopa() {
+		return UnidadesHemopa.values();
+	}
+
+	public TipoEvento[] getTipoEvento() {
+		return TipoEvento.values();
+	}
+	
+	public boolean isEditando() {
+		
+		return this.pessoa.getId() != null;
+	}
+
+	public Agenda getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(Agenda agenda) {
+		this.agenda = agenda;
+	}
+
+	public Contato getContato() {
+		return contato;
+	}
+
+	public void setContato(Contato contato) {
+		this.contato = contato;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
+	}
+
+	public Horario getHorario() {
+		return horario;
+	}
+
+	public void setHorario(Horario horario) {
+		this.horario = horario;
 	}
 
 }

@@ -64,7 +64,7 @@ public class DAO<T> {
 		return lista;
 	}
 
-	public T buscaPorId(Integer id) {
+	public T buscaPorId(Long id) {
 		EntityManager em = new JPAUtil().getEntityManager();
 		T instancia = em.find(classe, id);
 		em.close();
@@ -73,7 +73,7 @@ public class DAO<T> {
 
 	public int contaTodos() {
 		EntityManager em = new JPAUtil().getEntityManager();
-		long result = (Long) em.createQuery("select count(n) from usuario n")
+		long result = (Long) em.createQuery(" select count(n) from pessoa n ")
 				.getSingleResult();
 		em.close();
 

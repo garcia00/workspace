@@ -10,7 +10,7 @@
 				<span>Home</span>
 			</p:link></li>
 		<li class="header">Geral</li>
-		<li><p:commandLink action="#{pessoasMB.prepararNovaPessoa}"
+		<li><p:commandLink action="pessoa-list?faces-redirect=true"
 				process="@this" styleClass="fa fa-tint">
 				<span>Doadores</span>
 			</p:commandLink></li>
@@ -18,7 +18,7 @@
 				<i class="fa fa-users"></i>
 				<span>Usuarios</span>
 			</p:link></li>
-		<li><p:commandLink action="#{pessoasMB.prepararNovaPessoa}"
+		<li><p:commandLink action="#{pessoasMB.prepararNovoPessoa()}"
 				process="@this" styleClass="fa fa-plus-circle">
 				<span>Novo Doador</span>
 			</p:commandLink></li>
@@ -30,7 +30,7 @@
 				process="@this" styleClass="fa fa-address-card-o">
 				<span>Relatórios</span>
 			</p:commandLink></li>
-		<li><p:commandLink action="agenda?faces-redirect=true"
+		<li><p:commandLink action="agendamento?faces-redirect=true"
 				process="@this" styleClass="fa fa-calendar">
 				<span>Agendamentos</span>
 			</p:commandLink></li>

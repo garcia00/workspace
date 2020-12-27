@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:adm="http://github.com/adminfaces"
+	template="#{layoutMB.template}">
+
+	<ui:define name="metadata">
+		<ui:param name="renderFormAsterisks" value="true" />
+	</ui:define>
+	<ui:define name="title">
+        Cadastro de Doadores
+    </ui:define>
+	<ui:define name="body">
+		<h:form id="form" prependId="false">
+			<p:focus context="@form" />
+			<p:panel styleClass="box-primary card">
+				<h3>Informações Gerais</h3>
+				<p:separator />
+				<div class="ui-g ui-fluid">
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="Id" for="id" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputText id="id" value="#{pessoasMB.pessoa.id}"
+								readonly="true" styleClass="form-control ui-state-disabled" />
+							<span class="help-block"> <p:message for="id" />
+							</span>
+						</div>
+					</div>
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="Data Nascimento" for="data" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:datePicker id="data"
+								value="#{pessoasMB.pessoa.dataNascimento}" readonlyInput="true"
+								size="15" />
+							<span class="help-block"> <p:message for="data" />
+							</span>
+						</div>
+					</div>
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="Nome" for="inptName" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputText id="inptName" value="#{pessoasMB.pessoa.nome}"
+								required="true" />
+							<span class="help-block"> <p:message for="inptName" />
+							</span>
+						</div>
+					</div>
+					<!--			
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="Sobrenome" for="sobrenome" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputText id="sobrenome" value="" required="true" />
+							<span class="help-block"> <p:message for="sobrenome" />
+							</span>
+						</div>
+					</div>
+					 -->
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="CPF" for="cpf" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputMask id="cpf" mask="999.999.999-99" maxlength="11"
+								value="#{pessoasMB.pessoa.cpf}" size="30" required="true" />
+							<span class="help-block"> <p:message for="cpf" />
+							</span>
+						</div>
+					</div>
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="RG" for="rg" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputText id="rg" value="#{pessoasMB.pessoa.rg}" size="30"
+								required="true" />
+							<span class="help-block"> <p:message for="rg" />
+							</span>
+						</div>
+					</div>
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						</div>
+					</div>
+				</div>
+				<h3>Endereço</h3>
+				<p:separator />
+				<div class="ui-g ui-fluid">
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="CEP" for="cep" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputMask id="cep" mask="99999-999" maxlength="8"
+								value="#{pessoasMB.pessoa.endereco.cep}" size="30"
+								required="true" />
+							<span class="help-block"> <p:message for="cep" />
+							</span>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Cidade" for="cidade" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputText id="cidade"
+									value="#{pessoasMB.pessoa.endereco.cidade}" required="true" />
+								<span class="help-block"> <p:message for="cidade" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Logradouro" for="logradouro" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputText id="logradouro"
+									value="#{pessoasMB.pessoa.endereco.logradouro}" required="true" />
+								<span class="help-block"> <p:message for="logradouro" />
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="ui-g ui-fluid">
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Estado" for="estado" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputText id="estado"
+									value="#{pessoasMB.pessoa.endereco.estado}" required="true" />
+								<span class="help-block"> <p:message for="estado" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Bairro" for="bairro" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputText id="bairro"
+									value="#{pessoasMB.pessoa.endereco.bairro}" required="true" />
+								<span class="help-block"> <p:message for="bairro" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Rua" for="rua" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputText id="rua" value="#{pessoasMB.pessoa.endereco.rua}"
+									required="true" />
+								<span class="help-block"> <p:message for="rua" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Numero" for="numero" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputText id="numero"
+									value="#{pessoasMB.pessoa.endereco.numero}" size="10"
+									required="true" />
+								<span class="help-block"> <p:message for="numero" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="Complemento" for="complemento" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputText id="complemento"
+								value="#{pessoasMB.pessoa.endereco.complemento}" />
+							<span class="help-block"> <p:message for="complemento" />
+							</span>
+						</div>
+					</div>
+				</div>
+				<h3>Contato</h3>
+				<p:separator />
+				<div class="ui-g ui-fluid">
+					<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel for="email" value="E-mail" />
+						</div>
+						<div class="ui-sm-12 ui-g-11">
+							<p:inputText id="email" value="#{pessoasMB.pessoa.contato.email}"
+								style="width: 100%">
+								<f:passThroughAttribute name="type" value="email" />
+							</p:inputText>
+							<span class="help-block"> <p:message for="email" />
+							</span>
+						</div>
+					</div>
+					<div class="ui-g ui-fluid">
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="DDD" for="ddd" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputMask id="ddd"
+									value="#{pessoasMB.pessoa.contato.dddTelefone}" size="5"
+									mask="(99)" required="true" />
+								<span class="help-block"> <p:message for="ddd" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Telefone" for="telefone" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputMask id="telefone"
+									value="#{pessoasMB.pessoa.contato.dddTelefone}" size="30"
+									mask=" 9999-99999" required="true" />
+								<span class="help-block"> <p:message for="telefone" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="DDD" for="ddd1" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputMask id="ddd1"
+									value="#{pessoasMB.pessoa.contato.dddCelular}" size="5"
+									mask="(99)" required="true" />
+								<span class="help-block"> <p:message for="ddd1" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Celular" for="celular" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputMask id="celular"
+									value="#{pessoasMB.pessoa.contato.numeroCelular}" size="30"
+									mask="99999-9999" required="true" />
+								<span class="help-block"> <p:message for="celular" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="main-buttons" class="hidden-sm hidden-xs">
+					<p:commandButton value="Salvar" action="#{pessoasMB.salvar}"
+						icon="fa fa-check" styleClass="btn-primary" update="@form" />
+					<p:spacer width="5" />
+					<p:commandButton value="Back" immediate="true"
+						action="index?faces-redirect=true" process="@this"
+						icon="fa fa-reply" />
+				</div>
+			</p:panel>
+		</h:form>
+	</ui:define>
+</ui:composition>

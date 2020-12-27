@@ -1,0 +1,17 @@
+package br.com.j.hemopa.digital.model;
+
+public enum UnidadesHemopa {
+
+	BATISTACAMPOS("Batista Campos"), CASTANHEIRA("Castanheira"), PAITO("Patio Belém"), MOVEL("Movel");
+
+	private String descricao;
+
+	private UnidadesHemopa(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+}

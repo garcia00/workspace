@@ -13,8 +13,6 @@ import javax.inject.Named;
 import java.io.IOException;
 import java.io.Serializable;
 
-import static br.com.j.hemopa.digital.util.Utils.addDetailMessage;
-
 /**
  * Created by rmpestano on 12/20/14.
  *
@@ -51,7 +49,12 @@ public class LogonMB extends AdminSession implements Serializable {
         Faces.redirect("index.xhtml");
     }
 
-    @Override
+    private void addDetailMessage(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
     public boolean isLoggedIn() {
 
         return currentUser != null;

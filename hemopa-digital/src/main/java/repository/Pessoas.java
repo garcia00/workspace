@@ -2,7 +2,6 @@ package repository;
 
 import java.io.Serializable;
 import java.util.List;
-
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
@@ -30,12 +29,11 @@ public class Pessoas implements Serializable {
 
 	public List<Pessoa> pesquisar(String nome) {
 		String jpql = "from Pessoa where nome like :nome";
-		
-		TypedQuery<Pessoa> query = manager
-				.createQuery(jpql, Pessoa.class);
-		
+
+		TypedQuery<Pessoa> query = manager.createQuery(jpql, Pessoa.class);
+
 		query.setParameter("nome", nome + "%");
-		
+
 		return query.getResultList();
 	}
 
@@ -49,7 +47,19 @@ public class Pessoas implements Serializable {
 	}
 
 	public List<Pessoa> todas() {
-        return manager.createQuery("from Pessoa", Pessoa.class).getResultList();
-   }
-}
+		return manager.createQuery("from Pessoa", Pessoa.class).getResultList();
+	}
+	
+	public List<Pessoa> buscarPessoaPorCpf(String cpf) {
 
+		String jpql = "from Pessoa where cpf like =: cpf";
+
+		TypedQuery<Pessoa> query = manager.createQuery(jpql, Pessoa.class);
+
+		query.setParameter("cpf", cpf + "%");
+
+		return query.getResultList();
+	}
+	
+	
+}

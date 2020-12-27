@@ -1,59 +1,47 @@
 package br.com.j.hemopa.digital.model;
 
-import java.io.Serializable;
-import java.math.BigDecimal;
+
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.DecimalMax;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.NotNull;
+
 
 @Entity
 @Table(name = "contato")
-public class Contato implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class Contato{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "ID_CONTATO", unique = true, nullable = false)
 	private Long id;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "pessoa", nullable = false)
+	@OneToOne
+	@JoinColumn(name = "ID_PESSOA")
 	private Pessoa pessoa;
 
-	@DecimalMin(value = "0")
-	@DecimalMax(value = "99")
 	@Column(name = "NU_DDD_TELEFONE", nullable = false, precision = 2)
-	private BigDecimal dddTelefone;
+	private String dddTelefone;
 
-	@NotNull
-	@DecimalMin(value = "0")
-	@DecimalMax(value = "999999999")
+	
 	@Column(name = "NU_TELEFONE", nullable = false, precision = 9)
-	private BigDecimal numeroTelefone;
+	private  String numeroTelefone;
 
-	@NotNull
-	@DecimalMin(value = "0")
-	@DecimalMax(value = "99")
+	
 	@Column(name = "NU_DDD_CELULAR", nullable = false, precision = 2)
-	private BigDecimal dddCelular;
+	private  String dddCelular;
 
-	@NotNull
-	@DecimalMin(value = "0")
-	@DecimalMax(value = "999999999")
+	
 	@Column(name = "NU_CELULAR", nullable = false, precision = 9)
-	private BigDecimal numeroCelular;
+	private  String numeroCelular;
 
-	@NotNull
+	
 	@Column(name = "TX_EMAIL", nullable = false, length = 63)
 	private String email;
 
@@ -73,37 +61,6 @@ public class Contato implements Serializable {
 		this.pessoa = pessoa;
 	}
 
-	public BigDecimal getDddTelefone() {
-		return dddTelefone;
-	}
-
-	public void setDddTelefone(BigDecimal dddTelefone) {
-		this.dddTelefone = dddTelefone;
-	}
-
-	public BigDecimal getNumeroTelefone() {
-		return numeroTelefone;
-	}
-
-	public void setNumeroTelefone(BigDecimal numeroTelefone) {
-		this.numeroTelefone = numeroTelefone;
-	}
-
-	public BigDecimal getDddCelular() {
-		return dddCelular;
-	}
-
-	public void setDddCelular(BigDecimal dddCelular) {
-		this.dddCelular = dddCelular;
-	}
-
-	public BigDecimal getNumeroCelular() {
-		return numeroCelular;
-	}
-
-	public void setNumeroCelular(BigDecimal numeroCelular) {
-		this.numeroCelular = numeroCelular;
-	}
 
 	public String getEmail() {
 		return email;
@@ -111,6 +68,38 @@ public class Contato implements Serializable {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getDddTelefone() {
+		return dddTelefone;
+	}
+
+	public void setDddTelefone(String dddTelefone) {
+		this.dddTelefone = dddTelefone;
+	}
+
+	public String getNumeroTelefone() {
+		return numeroTelefone;
+	}
+
+	public void setNumeroTelefone(String numeroTelefone) {
+		this.numeroTelefone = numeroTelefone;
+	}
+
+	public String getDddCelular() {
+		return dddCelular;
+	}
+
+	public void setDddCelular(String dddCelular) {
+		this.dddCelular = dddCelular;
+	}
+
+	public String getNumeroCelular() {
+		return numeroCelular;
+	}
+
+	public void setNumeroCelular(String numeroCelular) {
+		this.numeroCelular = numeroCelular;
 	}
 
 	@Override

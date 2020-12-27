@@ -1,36 +1,64 @@
 package br.com.j.hemopa.digital.model;
 
-import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="endereco")
-public class Endereco implements Serializable {
-
-	private static final long serialVersionUID = 1L;
+public class Endereco {
 	
-	private Long id;
-	private String logradouro;
-	private String numero;
-	private String complemento;
-	private String cidade;
-	private String uf;
-	private String cep;
-	
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name = "pessoa", nullable = false)
-	private Pessoa pessoa;
-
 	@Id
 	@GeneratedValue
+	@Column(name = "ID_ENDERECO")
+	private Long id;
+	
+	@NotNull
+	@Column(name = "logradouro", nullable = false, length = 150)
+	private String logradouro;
+	
+	@NotNull
+	@Column(name = "numero",nullable = false, length = 20)
+	private String numero;
+	
+	@NotNull
+	@Column(name = "complemento",length = 150)
+	private String complemento;
+	
+	@NotNull
+	@Column(name = "cidade",nullable = false, length = 60)
+	private String cidade;
+	
+	@NotNull
+	@Column(name = "rua", nullable = false, length = 30)
+	private String rua;
+	
+	@NotNull
+	@Column(name = "uf",nullable = false, length = 60)
+	private String uf;
+	
+	@NotNull
+	@Column(name = "cep",nullable = false, length = 9)
+	private String cep;
+	
+	@NotNull
+	@Column(name = "bairro",nullable = false, length = 30)
+	private String bairro;
+	
+	@NotNull
+	@Column(name = "estado", nullable = false, length = 50)
+	private String estado;
+		
+	@OneToOne
+	@JoinColumn(name = "ID_PESSOA")
+	private Pessoa pessoa;
+	
+
 	public Long getId() {
 		return id;
 	}
@@ -39,7 +67,6 @@ public class Endereco implements Serializable {
 		this.id = id;
 	}
 
-	@Column(nullable = false, length = 150)
 	public String getLogradouro() {
 		return logradouro;
 	}
@@ -48,7 +75,6 @@ public class Endereco implements Serializable {
 		this.logradouro = logradouro;
 	}
 
-	@Column(nullable = false, length = 20)
 	public String getNumero() {
 		return numero;
 	}
@@ -57,7 +83,6 @@ public class Endereco implements Serializable {
 		this.numero = numero;
 	}
 
-	@Column(length = 150)
 	public String getComplemento() {
 		return complemento;
 	}
@@ -66,7 +91,6 @@ public class Endereco implements Serializable {
 		this.complemento = complemento;
 	}
 
-	@Column(nullable = false, length = 60)
 	public String getCidade() {
 		return cidade;
 	}
@@ -75,7 +99,7 @@ public class Endereco implements Serializable {
 		this.cidade = cidade;
 	}
 
-	@Column(nullable = false, length = 60)
+	
 	public String getUf() {
 		return uf;
 	}
@@ -84,7 +108,7 @@ public class Endereco implements Serializable {
 		this.uf = uf;
 	}
 
-	@Column(nullable = false, length = 9)
+	
 	public String getCep() {
 		return cep;
 	}
@@ -93,13 +117,37 @@ public class Endereco implements Serializable {
 		this.cep = cep;
 	}
 
-	@ManyToOne
 	public Pessoa getPessoa() {
 		return pessoa;
 	}
 
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
+	}
+
+	
+	public String getBairro() {
+		return bairro;
+	}
+
+	public void setBairro(String bairro) {
+		this.bairro = bairro;
+	}
+	
+	public String getRua() {
+		return rua;
+	}
+
+	public void setRua(String rua) {
+		this.rua = rua;
+	}
+
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
 	}
 
 	@Override

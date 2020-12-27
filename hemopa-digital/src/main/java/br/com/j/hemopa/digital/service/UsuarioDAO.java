@@ -9,6 +9,24 @@ import br.com.j.hemopa.digital.model.Usuario;
 import br.com.j.hemopa.digital.util.JPAUtil;
 
 public class UsuarioDAO {
+	
+	public void adiciona(Usuario usuario) {
+
+		// consegue a entity manager
+		EntityManager em = new JPAUtil().getEntityManager();
+
+		// abre transacao
+		em.getTransaction().begin();
+
+		// persiste o objeto
+		em.persist(usuario);
+
+		// commita a transacao
+		em.getTransaction().commit();
+
+		// fecha a entity manager
+		em.close();
+	}
 
 	public boolean existe(Usuario usuario) {
 

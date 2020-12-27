@@ -10,11 +10,14 @@
 
 	<ui:define name="title">
 		<div class="row">
+		
 			<div class="col-sm-6">
-				<p:commandLink>
-					<div class="card">
+				<p:panel styleClass="box-primary card">
+					<p:commandLink action="agenda?faces-redirect=true"
+				process="@this">
 						<div class="card-body">
-							<h5 class="card-title">Cadastro de Novo Doador</h5>
+						<i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i>
+							<h5 class="card-title">Agenda do Dia</h5>
 							<p class="card-text">Lorem ipsum ante litora at a eu proin
 								etiam velit, dui aptent lectus integer nostra litora urna eu
 								convallis, libero leo venenatis fermentum donec nullam diam
@@ -23,14 +26,17 @@
 								torquent euismod. lectus imperdiet phasellus adipiscing orci
 								senectus bibendum congue primis aenean.</p>
 						</div>
-					</div>
-				</p:commandLink>
+					</p:commandLink>
+				</p:panel>
 			</div>
+			
 			<div class="col-sm-6">
-				<p:commandLink>
-					<div class="card">
+				<p:panel styleClass="box-primary card">
+					<p:commandLink action="pessoa-list?faces-redirect=true"
+				process="@this">
 						<div class="card-body">
-							<h5 class="card-title">Cadastro de Usuario</h5>
+						<i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i>
+							<h5 class="card-title">Agendar Doação</h5>
 							<p class="card-text">Lorem ipsum ante litora at a eu proin
 								etiam velit, dui aptent lectus integer nostra litora urna eu
 								convallis, libero leo venenatis fermentum donec nullam diam
@@ -38,18 +44,20 @@
 								ullamcorper nec, torquent iaculis nec pellentesque etiam
 								torquent euismod. lectus imperdiet phasellus adipiscing orci
 								senectus bibendum congue primis aenean.</p>
-
 						</div>
-					</div>
-				</p:commandLink>
+					</p:commandLink>
+				</p:panel>
 			</div>
 		</div>
+		<p:spacer width="5" />
 		<div class="row">
 			<div class="col-sm-6">
-				<p:commandLink>
-					<div class="card">
+				<p:panel styleClass="box-primary card">
+					<p:commandLink action="estoque?faces-redirect=true"
+				process="@this">
 						<div class="card-body">
-							<h5 class="card-title">Relatórios</h5>
+						<i class="fa fa-heartbeat fa-3x" aria-hidden="true"></i>
+							<h5 class="card-title">Estoque de sangue</h5>
 							<p class="card-text">Lorem ipsum ante litora at a eu proin
 								etiam velit, dui aptent lectus integer nostra litora urna eu
 								convallis, libero leo venenatis fermentum donec nullam diam
@@ -57,16 +65,17 @@
 								ullamcorper nec, torquent iaculis nec pellentesque etiam
 								torquent euismod. lectus imperdiet phasellus adipiscing orci
 								senectus bibendum congue primis aenean.</p>
-
 						</div>
-					</div>
-				</p:commandLink>
+					</p:commandLink>
+				</p:panel>
 			</div>
+			
 			<div class="col-sm-6">
-				<p:commandLink>
-					<div class="card">
+				<p:panel styleClass="box-primary card">
+					<p:commandLink action="checkdoador?faces-redirect=true">
 						<div class="card-body">
-							<h5 class="card-title">Check-in Banco de sengue</h5>
+						<i class="fa fa-check-square-o fa-3x" aria-hidden="true"></i>
+							<h5 class="card-title">Check Doador</h5>
 							<p class="card-text">Lorem ipsum ante litora at a eu proin
 								etiam velit, dui aptent lectus integer nostra litora urna eu
 								convallis, libero leo venenatis fermentum donec nullam diam
@@ -74,10 +83,9 @@
 								ullamcorper nec, torquent iaculis nec pellentesque etiam
 								torquent euismod. lectus imperdiet phasellus adipiscing orci
 								senectus bibendum congue primis aenean.</p>
-
 						</div>
-					</div>
-				</p:commandLink>
+					</p:commandLink>
+				</p:panel>
 			</div>
 		</div>
 

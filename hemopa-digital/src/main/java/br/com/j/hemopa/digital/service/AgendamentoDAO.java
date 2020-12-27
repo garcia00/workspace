@@ -1,0 +1,124 @@
+package br.com.j.hemopa.digital.service;
+
+
+import java.util.List;
+import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaQuery;
+
+import br.com.j.hemopa.digital.model.Agenda;
+import br.com.j.hemopa.digital.util.JPAUtil;
+
+public class AgendamentoDAO {
+	
+	public void adiciona(Agenda agenda) {
+
+		// consegue a entity manager
+		EntityManager em = new JPAUtil().getEntityManager();
+
+		// abre transacao
+		em.getTransaction().begin();
+
+		// persiste o objeto
+		em.persist(agenda);
+
+		// commita a transacao
+		em.getTransaction().commit();
+
+		// fecha a entity manager
+		em.close();
+	}
+	
+	public void remove(Agenda agenda) {
+		EntityManager em = new JPAUtil().getEntityManager();
+		em.getTransaction().begin();
+
+		em.remove(em.merge(agenda));
+
+		em.getTransaction().commit();
+		em.close();
+	}
+	
+	public void atualiza(Agenda agenda) {
+		EntityManager em = new JPAUtil().getEntityManager();
+		em.getTransaction().begin();
+
+		em.merge(agenda);
+
+		em.getTransaction().commit();
+		em.close();
+	}
+	
+	public List<Agenda> listaTodos() {
+		EntityManager em = new JPAUtil().getEntityManager();
+		CriteriaQuery<Agenda> query = em.getCriteriaBuilder().createQuery(Agenda.class);
+		query.select(query.from(Agenda.class));
+
+		List<Agenda> lista = em.createQuery(query).getResultList();
+
+		em.close();
+		return lista;
+	}
+
+	public boolean existe(Agenda agenda) {
+
+		EntityManager em = new JPAUtil().getEntityManager();
+		TypedQuery<Agenda> query = em
+				.createQuery(" select u from horario u " + " where u.horario = :pHorario ", Agenda.class);
+		query.setParameter("pHorario", agenda.getHorario());
+		
+		try {
+			
+			Agenda resultado = query.getSingleResult();
+			
+		}catch (NoResultException ex) {
+			
+			return false;
+			
+		}
+		
+
+		em.close();
+
+		return true;
+	}
+	
+	public Agenda buscaPorId(Integer id) {
+		EntityManager em = new JPAUtil().getEntityManager();
+		Agenda instancia = em.find(Agenda.class, id);
+		em.close();
+		return instancia;
+	}
+
+	public int contaTodos() {
+		EntityManager em = new JPAUtil().getEntityManager();
+		long result = (Long) em.createQuery(" select count(n) from Agenda n ")
+				.getSingleResult();
+		em.close();
+
+		return (int) result;
+	}
+
+	public List<Agenda> listaTodosPaginada(int firstResult, int maxResults) {
+		EntityManager em = new JPAUtil().getEntityManager();
+		CriteriaQuery<Agenda> query = em.getCriteriaBuilder().createQuery(Agenda.class);
+		query.select(query.from(Agenda.class));
+
+		List<Agenda> lista = em.createQuery(query).setFirstResult(firstResult)
+				.setMaxResults(maxResults).getResultList();
+
+		em.close();
+		return lista;
+	}
+
+	public Agenda buscaPorId(Long id) {
+		
+		EntityManager em = new JPAUtil().getEntityManager();
+		Agenda instancia = em.find(Agenda.class, id);
+		em.close();
+		return instancia;
+		
+	}
+
+}

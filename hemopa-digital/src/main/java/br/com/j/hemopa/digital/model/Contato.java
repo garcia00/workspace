@@ -1,8 +1,5 @@
 package br.com.j.hemopa.digital.model;
 
-
-
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,10 +9,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-
 @Entity
 @Table(name = "contato")
-public class Contato{
+public class Contato {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,21 +25,23 @@ public class Contato{
 	@Column(name = "NU_DDD_TELEFONE", nullable = false, precision = 2)
 	private String dddTelefone;
 
-	
 	@Column(name = "NU_TELEFONE", nullable = false, precision = 9)
-	private  String numeroTelefone;
+	private String numeroTelefone;
 
-	
 	@Column(name = "NU_DDD_CELULAR", nullable = false, precision = 2)
-	private  String dddCelular;
+	private String dddCelular;
 
-	
 	@Column(name = "NU_CELULAR", nullable = false, precision = 9)
-	private  String numeroCelular;
+	private String numeroCelular;
 
-	
 	@Column(name = "TX_EMAIL", nullable = false, length = 63)
 	private String email;
+
+	public Contato() {
+		super();
+	}
+
+	
 
 	public Long getId() {
 		return id;
@@ -60,7 +58,6 @@ public class Contato{
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
 	}
-
 
 	public String getEmail() {
 		return email;

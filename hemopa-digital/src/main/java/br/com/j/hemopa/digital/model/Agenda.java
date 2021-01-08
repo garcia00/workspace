@@ -1,19 +1,28 @@
 package br.com.j.hemopa.digital.model;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+
+import br.com.j.hemopa.digital.dominios.Horario;
+import br.com.j.hemopa.digital.dominios.TipoEvento;
+import br.com.j.hemopa.digital.dominios.UnidadesHemopa;
 
 @Entity
 public class Agenda {
@@ -47,8 +56,10 @@ public class Agenda {
 	@Column(nullable = false, length = 15)
 	private TipoEvento tipoEvento = TipoEvento.MARCADO;
 
+	public Agenda() {
+		super();
+	}
 	
-
 	public TipoEvento getTipoEvento() {
 		return tipoEvento;
 	}

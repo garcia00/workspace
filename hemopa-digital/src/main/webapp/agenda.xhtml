@@ -11,7 +11,7 @@
 		<ui:param name="renderFormAsterisks" value="true" />
 	</ui:define>
 	<ui:define name="title">
-        Agenda do Dia
+        Agendar Doação
     </ui:define>
 	<ui:define name="body">
 		<h:form id="form">
@@ -24,8 +24,11 @@
 						<div class="ui-sm-12 ui-g-12">
 							<p:dataTable value="#{agendamentosMB.agendas}" var="agendas"
 								id="tabelaPessoas">
-								<p:column headerText="Id">
-									<h:outputText value="#{agendas.id}" />
+								<p:column headerText="Ações">
+									<p:button outcome="/agendamento" icon="fa fa-calendar-check-o"
+										title="Agendar" styleClass="btn btn-success">
+										<f:param name="agendas" value="#{agendas.id}" />
+									</p:button>
 								</p:column>
 								<p:column headerText="Nome">
 									<h:outputText value="#{agendas.pessoa.nome}" />
@@ -37,10 +40,10 @@
 									<h:outputText value="#{agendas.dataDoacao}" />
 								</p:column>
 								<p:column headerText="Horario">
-									<h:outputText value="#{agendas.horario}" />
+									<h:outputText value="#{agendas.horario.descricao}" />
 								</p:column>
 
-								<p:column headerText="Ação">
+								<p:column headerText="Status">
 									<h:outputText value="#{agendas.tipoEvento}" />
 								</p:column>
 							</p:dataTable>

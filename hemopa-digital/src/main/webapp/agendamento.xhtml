@@ -11,11 +11,12 @@
 		<ui:param name="renderFormAsterisks" value="true" />
 	</ui:define>
 	<ui:define name="title">
-        Agendamento de Doação
+       Agendamento
     </ui:define>
 	<f:metadata>
 		<o:viewParam name="pessoas" value="#{agendamentosMB.pessoa}" />
-		<f:event listener="#{agendamentosMB.inicializar()}" type="preRenderView" />
+		<f:event listener="#{agendamentosMB.inicializar()}"
+			type="preRenderView" />
 	</f:metadata>
 	<ui:define name="body">
 
@@ -47,70 +48,70 @@
 								</span>
 							</div>
 						</div>
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-6 ui-g-11">
-								<p:outputLabel value="Horario: " for="horario" />
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-6 ui-g-11">
+									<p:outputLabel value="Horario: " for="horario" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:selectOneMenu id="horario"
+										value="#{agendamentosMB.pessoa.agenda.horario}">
+										<f:selectItem itemLabel="Selecione..." />
+										<f:selectItems value="#{agendamentosMB.horarios}"
+											var="horarios" itemLabel="#{horarios.descricao}"
+											itemValue="#{horarios}" />
+									</p:selectOneMenu>
+								</div>
 							</div>
-							<div class="ui-sm-12 ui-g-11">
-								<p:selectOneMenu id="horario"
-									value="#{agendamentosMB.pessoa.agenda.horario}">
-									<f:selectItem itemLabel="Selecione..." />
-									<f:selectItems value="#{agendamentosMB.horarios}"
-										var="horarios" itemLabel="#{horarios.descricao}"
-										itemValue="#{horarios}" />
-								</p:selectOneMenu>
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-6 ui-g-11">
+									<p:outputLabel value="Unidade do Hemopa: " for="unidade" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:selectOneMenu id="unidade"
+										value="#{agendamentosMB.pessoa.agenda.unidadeHemopa}">
+										<f:selectItem itemLabel="Selecione..." />
+										<f:selectItems value="#{agendamentosMB.unidadeHemopa}"
+											var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
+											itemValue="#{unidadeHemopa}" />
+									</p:selectOneMenu>
+								</div>
 							</div>
-						</div>
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-6 ui-g-11">
-								<p:outputLabel value="Unidade do Hemopa: " for="unidade" />
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-12 ui-g-11">
+									<p:outputLabel value="Data Desejada" for="data" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:calendar id="data"
+										value="#{agendamentosMB.pessoa.agenda.dataDoacao}"
+										readonlyInput="true" size="15" />
+									<span class="help-block"> <p:message for="data" />
+									</span>
+								</div>
 							</div>
-							<div class="ui-sm-12 ui-g-11">
-								<p:selectOneMenu id="unidade"
-									value="#{agendamentosMB.pessoa.agenda.unidadeHemopa}">
-									<f:selectItem itemLabel="Selecione..." />
-									<f:selectItems value="#{agendamentosMB.unidadeHemopa}"
-										var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
-										itemValue="#{unidadeHemopa}" />
-								</p:selectOneMenu>
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-6 ui-g-11">
+									<p:outputLabel value="Status: " for="status" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:selectOneMenu id="status"
+										value="#{agendamentosMB.pessoa.agenda.tipoEvento}">
+										<f:selectItem itemLabel="Selecione..." />
+										<f:selectItems value="#{agendamentosMB.tipoEvento}"
+											var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
+											itemValue="#{unidadeHemopa}" />
+									</p:selectOneMenu>
+								</div>
 							</div>
-						</div>
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-12 ui-g-11">
-								<p:outputLabel value="Data Desejada" for="data" />
-							</div>
-							<div class="ui-sm-12 ui-g-11">
-								<p:calendar id="data"
-									value="#{agendamentosMB.pessoa.agenda.dataDoacao}"
-									readonlyInput="true" size="15" />
-								<span class="help-block"> <p:message for="data" />
-								</span>
-							</div>
-						</div>
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-6 ui-g-11">
-								<p:outputLabel value="Status: " for="status" />
-							</div>
-							<div class="ui-sm-12 ui-g-11">
-								<p:selectOneMenu id="status"
-									value="#{agendamentosMB.pessoa.agenda.tipoEvento}"
-									disabled="#{agendamentosMB.editando}">
-									<f:selectItem itemLabel="Selecione..." />
-									<f:selectItems value="#{agendamentosMB.tipoEvento}"
-										var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
-										itemValue="#{unidadeHemopa}" />
-								</p:selectOneMenu>
-							</div>
-						</div>
 					</div>
 				</p:panel>
+
 				<br />
 				<div id="main-buttons" class="hidden-sm hidden-xs">
 
 					<p:commandButton value="Salvar" action="#{agendamentosMB.salvar}"
 						icon="fa fa-calendar" styleClass="btn-primary" update="@form">
 					</p:commandButton>
-					
+
 					<p:commandButton value="Voltar" immediate="true"
 						action="index?faces-redirect=true" process="@this"
 						icon="fa fa-reply" />

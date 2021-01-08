@@ -3,6 +3,8 @@ package br.com.j.hemopa.digital.model;
 import java.util.Date;
 import java.util.Objects;
 
+import br.com.j.hemopa.digital.dominios.TipoEvento;
+
 public class Evento {
 	
 	  private Long id;

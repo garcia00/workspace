@@ -14,7 +14,6 @@
 		<class>br.com.j.hemopa.digital.model.Grupo</class>
 		<class>br.com.j.hemopa.digital.model.Contato</class>
 		<class>br.com.j.hemopa.digital.model.Pessoa</class>
-		<class>br.com.j.hemopa.digital.model.Sangue</class>
 		<class>br.com.j.hemopa.digital.model.Agenda</class>
 
 		<properties>

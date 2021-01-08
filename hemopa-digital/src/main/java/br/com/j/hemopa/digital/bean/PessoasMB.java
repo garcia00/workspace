@@ -5,20 +5,20 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.j.hemopa.digital.dominios.Horario;
+import br.com.j.hemopa.digital.dominios.Sexo;
+import br.com.j.hemopa.digital.dominios.TipoEvento;
+import br.com.j.hemopa.digital.dominios.TipoSangue;
+import br.com.j.hemopa.digital.dominios.UnidadesHemopa;
 import br.com.j.hemopa.digital.model.Agenda;
 import br.com.j.hemopa.digital.model.Contato;
 import br.com.j.hemopa.digital.model.Endereco;
-import br.com.j.hemopa.digital.model.Horario;
 import br.com.j.hemopa.digital.model.Pessoa;
-import br.com.j.hemopa.digital.model.Sangue;
-import br.com.j.hemopa.digital.model.Sexo;
-import br.com.j.hemopa.digital.model.Horario;
-
-import br.com.j.hemopa.digital.model.TipoEvento;
-import br.com.j.hemopa.digital.model.TipoSangue;
-import br.com.j.hemopa.digital.model.UnidadesHemopa;
+import br.com.j.hemopa.digital.repository.Pessoas;
+import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
 import br.com.j.hemopa.digital.service.DAO;
 import br.com.j.hemopa.digital.util.FacesMessages;
 
@@ -42,8 +42,13 @@ public class PessoasMB implements Serializable {
 	private Endereco endereco;
 	
 	private Horario horario;
-
-	private List<Sangue> sangues;
+	
+	private PessoaFilter filtro;
+	
+	@Inject
+	private Pessoas pessoas;
+	
+	private List<Pessoa> pessoasFiltrados;
 
 	@PostConstruct
 	public void init() {
@@ -136,13 +141,6 @@ public class PessoasMB implements Serializable {
 		this.pessoa = pessoa;
 	}
 
-	public List<Sangue> getSangues() {
-		return sangues;
-	}
-
-	public void setSangues(List<Sangue> sangues) {
-		this.sangues = sangues;
-	}
 
 	public TipoSangue[] getTipoSangues() {
 		return TipoSangue.values();
@@ -199,6 +197,26 @@ public class PessoasMB implements Serializable {
 
 	public void setHorario(Horario horario) {
 		this.horario = horario;
+	}
+	
+public void pesquisar() {
+		
+		if (this.filtro.getCpf() == null) {
+			
+			FacesMessages.addInfoMessage("CPF em Branco!");
+			
+		}
+		
+		setPessoasFiltrados(pessoas.pesquisar(this.filtro.getCpf()));
+		
+	}
+
+	public List<Pessoa> getPessoasFiltrados() {
+		return pessoasFiltrados;
+	}
+
+	public void setPessoasFiltrados(List<Pessoa> pessoasFiltrados) {
+		this.pessoasFiltrados = pessoasFiltrados;
 	}
 
 }

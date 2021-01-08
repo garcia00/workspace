@@ -32,23 +32,6 @@
 								fileName="doadores" />
 						</p:commandButton>
 					</div>
-					<div class="ui-sm-12 ui-g-11">
-						<p:outputLabel value="Pesquisa por CPF" for="cpf" />
-					</div>
-					<div class="ui-sm-6 ui-g-11">
-						<p:inputMask id="cpf" mask="999.999.999-99" maxlength="11"
-							value="" size="20" />
-						<span class="help-block"> <p:message for="cpf" />
-						</span>
-					</div>
-					<div class="ui-sm-6 ui-g-6 ui-g-nopad">
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<p:commandButton icon="fa fa-search" styleClass="btn btn-primary"
-								value="Pesquisar" action="#{checkDoadorMB.pesquisar}"
-								update="@form">
-							</p:commandButton>
-						</div>
-					</div>
 				</div>
 
 				<div class="ui-g ui-fluid">

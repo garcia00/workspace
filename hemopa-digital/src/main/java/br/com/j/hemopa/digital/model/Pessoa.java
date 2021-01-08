@@ -1,6 +1,8 @@
 package br.com.j.hemopa.digital.model;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,9 +14,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import br.com.j.hemopa.digital.dominios.Sexo;
+import br.com.j.hemopa.digital.dominios.TipoSangue;
 
 @Entity
 public class Pessoa {
@@ -41,10 +47,10 @@ public class Pessoa {
 	@Column(name = "data_nascimento")
 	private Date dataNascimento;
 
-//	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
-//	@JoinColumn(name = "ID_PESSOA")
-//	private Sangue sangue;
-
+	@Enumerated(EnumType.STRING)
+	@Column(nullable = true, length = 30)
+	private TipoSangue sangue;
+	
 	@OneToOne(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
 	@JoinColumn(name = "ID_PESSOA")
 	private Endereco endereco;
@@ -56,6 +62,43 @@ public class Pessoa {
 	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
 	@JoinColumn(name = "ID_PESSOA")
 	private Agenda agenda;
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
+	private Set<Contato> contatos = new HashSet<>();
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
+	private Set<Endereco> enderecos = new HashSet<>();
+	
+	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
+	private Set<Agenda> agendas = new HashSet<>();
+	
+	public Set<Endereco> getEnderecos() {
+		return enderecos;
+	}
+
+	public Set<Contato> getContatos() {
+		return contatos;
+	}
+
+	public void setContatos(Set<Contato> contatos) {
+		this.contatos = contatos;
+	}
+
+	public void setEnderecos(Set<Endereco> enderecos) {
+		this.enderecos = enderecos;
+	}
+	
+	public Set<Agenda> getAgendas() {
+		return agendas;
+	}
+
+	public void setAgendas(Set<Agenda> agendas) {
+		this.agendas = agendas;
+	}
+
+	public Pessoa() {
+		super();
+	}
 	
 	public Agenda getAgenda() {
 		
@@ -160,6 +203,15 @@ public class Pessoa {
 
 	public void setDataNascimento(Date dataNascimento) {
 		this.dataNascimento = dataNascimento;
+	}
+
+
+	public TipoSangue getSangue() {
+		return sangue;
+	}
+
+	public void setSangue(TipoSangue sangue) {
+		this.sangue = sangue;
 	}
 
 	@Override

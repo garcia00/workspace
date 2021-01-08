@@ -11,13 +11,16 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
 
+import br.com.j.hemopa.digital.dominios.Horario;
+import br.com.j.hemopa.digital.dominios.Sexo;
+import br.com.j.hemopa.digital.dominios.TipoEvento;
+import br.com.j.hemopa.digital.dominios.TipoSangue;
+import br.com.j.hemopa.digital.dominios.UnidadesHemopa;
 import br.com.j.hemopa.digital.model.Agenda;
-import br.com.j.hemopa.digital.model.Horario;
 import br.com.j.hemopa.digital.model.Pessoa;
-import br.com.j.hemopa.digital.model.Sexo;
-import br.com.j.hemopa.digital.model.TipoEvento;
-import br.com.j.hemopa.digital.model.UnidadesHemopa;
 import br.com.j.hemopa.digital.repository.Agendamentos;
+import br.com.j.hemopa.digital.repository.Pessoas;
+import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
 import br.com.j.hemopa.digital.service.AgendamentoDAO;
 import br.com.j.hemopa.digital.service.DAO;
 import br.com.j.hemopa.digital.service.PessoaDAO;
@@ -37,6 +40,13 @@ public class AgendamentosMB implements Serializable {
 	private Pessoa pessoa;
 
 	private Agenda agenda;
+	
+	private PessoaFilter filtro;
+	
+	@Inject
+	private Pessoas pessoas;
+	
+	private List<Pessoa> pessoasFiltrados;
 
 
 	@Inject
@@ -107,11 +117,11 @@ public class AgendamentosMB implements Serializable {
 
 	}
 
-	public void remover(Agenda agenda) {
+	public void reagendar(Agenda agenda) {
 
-		new AgendamentoDAO().remove(agenda);
+		new AgendamentoDAO().atualiza(agenda);;
 
-		FacesMessages.addInfoMessage("Agendamento".concat(pessoa.getNome()).concat(" cancelado!"));
+		FacesMessages.addInfoMessage("Agendamento".concat(pessoa.getNome()).concat(" Reagendada!"));
 	}
 
 	public Pessoa getPessoa() {
@@ -137,7 +147,11 @@ public class AgendamentosMB implements Serializable {
 	public TipoEvento[] getTipoEvento() {
 		return TipoEvento.values();
 	}
-
+	
+	public TipoSangue[] getTipoSangues() {
+		return TipoSangue.values();
+	}
+	
 	public boolean isEditando() {
 
 		return this.pessoa.getId() != null;
@@ -167,6 +181,26 @@ public class AgendamentosMB implements Serializable {
 			agenda = this.agendamentos.guarda(agenda);
 		}
 		return agenda;
+	}
+	
+	public void pesquisar() {
+		
+		if (this.filtro.getCpf() == null) {
+			
+			FacesMessages.addInfoMessage("CPF em Branco!");
+			
+		}
+		
+		setPessoasFiltrados(pessoas.pesquisar(this.filtro.getCpf()));
+		
+	}
+
+	public List<Pessoa> getPessoasFiltrados() {
+		return pessoasFiltrados;
+	}
+
+	public void setPessoasFiltrados(List<Pessoa> pessoasFiltrados) {
+		this.pessoasFiltrados = pessoasFiltrados;
 	}
 
 }

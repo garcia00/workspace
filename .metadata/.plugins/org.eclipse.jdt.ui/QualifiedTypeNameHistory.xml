@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.primefaces.model.DefaultScheduleModel"/>
-    <fullyQualifiedTypeName name="org.primefaces.event.SelectEvent"/>
-    <fullyQualifiedTypeName name="org.joda.time.DateTime"/>
-    <fullyQualifiedTypeName name="org.primefaces.event.ScheduleEntryResizeEvent"/>
-    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.service.EventoDAO"/>
-    <fullyQualifiedTypeName name="com.sun.istack.logging.Logger"/>
-    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
-    <fullyQualifiedTypeName name="javax.xml.ws.Action"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="javax.jms.Session"/>
-    <fullyQualifiedTypeName name="javax.transaction.Transaction"/>
-    <fullyQualifiedTypeName name="org.hibernate.Criteria"/>
     <fullyQualifiedTypeName name="javax.persistence.criteria.Order"/>
     <fullyQualifiedTypeName name="javax.inject.Named"/>
     <fullyQualifiedTypeName name="javax.enterprise.context.SessionScoped"/>
@@ -39,11 +27,9 @@
     <fullyQualifiedTypeName name="org.primefaces.model.chart.BubbleChartSeries"/>
     <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="org.primefaces.model.chart.DateAxis"/>
     <fullyQualifiedTypeName name="br.com.j.hemopa.digital.model.Horario"/>
-    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
     <fullyQualifiedTypeName name="br.com.j.hemopa.digital.model.UnidadesHemopa"/>
     <fullyQualifiedTypeName name="br.com.j.hemopa.digital.model.Evento"/>
     <fullyQualifiedTypeName name="javax.persistence.Transient"/>
@@ -60,4 +46,18 @@
     <fullyQualifiedTypeName name="javax.faces.context.FacesContext"/>
     <fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
     <fullyQualifiedTypeName name="br.com.j.hemopa.digital.model.Agenda"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.service.DAO"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.model.Contato"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.model.Endereco"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.repository.Pessoas"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.repository.filter.PessoaFilter"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.bean.PessoasMB"/>
+    <fullyQualifiedTypeName name="br.com.j.hemopa.digital.bean.CheckDoadorMB"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 </qualifiedTypeNameHistroy>

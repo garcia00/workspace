@@ -41,7 +41,7 @@
 						</div>
 						<div class="ui-sm-12 ui-g-11">
 							<p:datePicker id="data"
-								value="#{pessoasMB.pessoa.dataNascimento}" readonlyInput="true"
+								value="#{pessoasMB.pessoa.dataNascimento}"  pattern="dd.MM.yyyy" readonlyInput="true"
 								size="15" disabled="#{pessoasMB.editando}" />
 							<span class="help-block"> <p:message for="data" />
 							</span>

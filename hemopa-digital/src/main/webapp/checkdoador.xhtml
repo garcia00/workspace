@@ -58,11 +58,13 @@
 						<h:outputText value="#{pessoas.cpf}" />
 					</p:column>
 					<p:column headerText="Check-in" style="text-align:center;">
-						<p:triStateCheckbox value="#{checkDoadorMB.pessoa.agenda.chekin}" />
+						<p:selectBooleanCheckbox value="#{checkDoadorMB.chekin}">
+						<p:ajax update="@this, tabelaPessoas"/>
+						</p:selectBooleanCheckbox>
 					</p:column>
 					<p:column headerText="Ação" style="text-align:center;">
-						<p:button outcome="/agendamento" icon="fa fa-pencil"
-							title="Editar" styleClass="btn btn-success">
+						<p:button outcome="/lancamento" icon="fa fa-id-badge"
+							title="Chekin" styleClass="btn btn-success" rendered="#{checkDoadorMB.chekin}">
 							<f:param name="pessoas" value="#{pessoas.id}" />
 						</p:button>
 					</p:column>

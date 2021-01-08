@@ -11,7 +11,6 @@ import br.com.j.hemopa.digital.model.Pessoa;
 import br.com.j.hemopa.digital.repository.Pessoas;
 import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
 import br.com.j.hemopa.digital.util.FacesMessages;
-import br.com.j.hemopa.digital.util.FacesUtil;
 
 @Named
 @SessionScoped
@@ -30,14 +29,23 @@ public class CheckDoadorMB implements Serializable {
 	
 	private List<Pessoa> pessoasFiltrados;
 	
+	private boolean chekin = false;
+	
 	public CheckDoadorMB() {
 
 		filtro = new PessoaFilter();
+		
+	}
+	
+	public String prepararNovoChekin() {
+		limpar();
+		return NAVEGACAO;
 	}
 	
 	public void inicializar() {
 		
 		pessoa = new Pessoa();
+		this.limpar();
 		
 		}
 	
@@ -50,6 +58,7 @@ public class CheckDoadorMB implements Serializable {
 		}
 		
 		pessoasFiltrados = pessoas.pesquisar(this.filtro.getCpf());
+		
 		
 	}
 	
@@ -90,6 +99,14 @@ public class CheckDoadorMB implements Serializable {
 
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
+	}
+
+	public boolean isChekin() {
+		return chekin;
+	}
+
+	public void setChekin(boolean chekin) {
+		this.chekin = chekin;
 	}
 	
 }

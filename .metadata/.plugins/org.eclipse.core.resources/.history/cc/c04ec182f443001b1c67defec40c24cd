@@ -1,5 +1,0 @@
-package br.com.j.hemopa.digital.model;
-
-public enum DiasSemana {
-
-}

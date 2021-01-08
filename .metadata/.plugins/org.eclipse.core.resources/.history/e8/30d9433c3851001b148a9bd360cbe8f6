@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:adm="http://github.com/adminfaces"
+	template="#{layoutMB.template}">
+
+	<ui:define name="metadata">
+		<ui:param name="renderFormAsterisks" value="true" />
+	</ui:define>
+	<ui:define name="title">
+        Check-in Doador
+    </ui:define>
+	<ui:define name="body">
+		<h:form id="form">
+			<p:focus context="@form" />
+			<p:panel styleClass="box-primary card">
+				<p:separator />
+				<div class="ui-g ui-fluid">
+					<div class="ui-sm-6 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11">
+							<p:outputLabel value="Pesquisa por CPF" for="cpf" />
+						</div>
+						<div class="ui-sm-6 ui-g-11">
+							<p:inputMask id="cpf" mask="999.999.999-99" maxlength="11"
+								value="#{checkDoadorMB.filtro.cpf}" size="20" />
+							<span class="help-block"> <p:message for="cpf" />
+							</span>
+						</div>
+						<div class="ui-sm-6 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<p:commandButton icon="fa fa-search"
+									styleClass="btn btn-primary" value="Pesquisar"
+									action="#{checkDoadorMB.pesquisar}" update="@form">
+								</p:commandButton>
+							</div>
+						</div>
+					</div>
+					<div class="ui-sm-6 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-11"></div>
+						<div class="ui-sm-6 ui-g-11"></div>
+						<div class="ui-sm-6 ui-g-11"></div>
+					</div>
+				</div>
+
+				<br />
+				<p:dataTable value="#{checkDoadorMB.pessoasFiltrados}" var="pessoas"
+					id="tabelaPessoas">
+					<p:column headerText="Id" style="text-align:center;">
+						<h:outputText value="#{pessoas.id}" />
+					</p:column>
+					<p:column headerText="Nome" style="text-align:center;">
+						<h:outputText value="#{pessoas.nome}" />
+					</p:column>
+					<p:column headerText="CPF" style="text-align:center;">
+						<h:outputText value="#{pessoas.cpf}" />
+					</p:column>
+					<p:column headerText="Check-in" style="text-align:center;">
+						<p:triStateCheckbox value="#{checkDoadorMB.pessoa.agenda.chekin}" />
+					</p:column>
+					<p:column headerText="Ação" style="text-align:center;">
+						<p:button outcome="/checkdoador" icon="fa-id-badge"
+							title="Chekin" styleClass="btn btn-success">
+							<f:param name="pessoas" value="#{pessoas.id}" />
+						</p:button>
+					</p:column>
+				</p:dataTable>
+				<br />
+				<div id="main-buttons" class="hidden-sm hidden-xs">
+					<p:commandButton value="Voltar" immediate="true"
+						action="index?faces-redirect=true" process="@this"
+						icon="fa fa-reply" />
+				</div>
+			</p:panel>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>

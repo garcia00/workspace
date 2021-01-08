@@ -58,7 +58,10 @@ public class Endereco {
 	@JoinColumn(name = "ID_PESSOA")
 	private Pessoa pessoa;
 	
-
+	public Endereco() {
+		super();
+	}
+	
 	public Long getId() {
 		return id;
 	}

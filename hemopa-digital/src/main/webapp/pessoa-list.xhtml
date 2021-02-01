@@ -24,8 +24,6 @@
 			<div class="box box-primary">
 				<div class="box-header with-border">
 					<div id="main-buttons" class="hidden-sm hidden-xs">
-						<p:commandButton action="#{pessoasMB.prepararNovoPessoa()}"
-							icon="fa fa-plus" value="Novo Doador" styleClass="btn-primary" />
 						<p:commandButton title="Exportar para o Excel" value="Download"
 							icon="fa fa-file-excel-o" ajax="false" styleClass="btn-success">
 							<p:dataExporter type="xls" target="tabelaPessoas"
@@ -39,17 +37,16 @@
 						<div class="ui-sm-12 ui-g-12">
 							<p:dataTable value="#{pessoasMB.pessoas}" var="pessoas"
 								id="tabelaPessoas">
-								<p:column headerText="Id">
-									<h:outputText value="#{pessoas.id}" />
-								</p:column>
-								<p:column headerText="Nome">
+								<p:column headerText="Nome" style="text-align:center;">
 									<h:outputText value="#{pessoas.nome}" />
 								</p:column>
-								<p:column headerText="CPF">
+								<p:column headerText="CPF" style="text-align:center;">
 									<h:outputText value="#{pessoas.cpf}" />
 								</p:column>
-								<p:column headerText="Telefone">
+								<p:column headerText="Telefone" style="text-align:center;">
 									<h:outputText value="#{pessoas.contato.numeroTelefone}" />
+									<br/>
+									<h:outputText value="#{pessoas.contato.numeroCelular}" />
 								</p:column>
 								<p:column headerText="Email">
 									<h:outputText value="#{pessoas.contato.email}" />

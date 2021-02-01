@@ -147,7 +147,7 @@
 							</div>
 							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
 								<div class="ui-sm-12 ui-g-11">
-									<p:outputLabel value="UF" for="uf" />
+									<p:outputLabel value="País" for="uf" />
 								</div>
 								<div class="ui-sm-12 ui-g-11">
 									<p:inputText id="uf" value="#{pessoasMB.pessoa.endereco.uf}"
@@ -211,9 +211,8 @@
 							</div>
 							<div class="ui-sm-12 ui-g-11">
 								<p:inputText id="email"
-									value="#{pessoasMB.pessoa.contato.email}" style="width: 100%">
-									<f:passThroughAttribute name="type" value="email"
-										required="true" />
+									value="#{pessoasMB.pessoa.contato.email}" style="width: 100%" required="true">
+									<f:passThroughAttribute name="type" value="email" />
 								</p:inputText>
 								<span class="help-block"> <p:message for="email" />
 								</span>

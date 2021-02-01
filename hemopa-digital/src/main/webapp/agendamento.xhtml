@@ -25,9 +25,11 @@
 			<p:panel styleClass="box-primary card">
 
 				<p:separator />
-				<p:panel>
+				<p:panel class="ui-g ui-fluid">
 					<div class="ui-g ui-fluid">
+
 						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+
 							<div class="ui-sm-12 ui-g-11">
 								<p:outputLabel value="Nome" for="inptName" />
 							</div>
@@ -48,63 +50,95 @@
 								</span>
 							</div>
 						</div>
-							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-								<div class="ui-sm-6 ui-g-11">
-									<p:outputLabel value="Horario: " for="horario" />
-								</div>
-								<div class="ui-sm-12 ui-g-11">
-									<p:selectOneMenu id="horario"
-										value="#{agendamentosMB.pessoa.agenda.horario}">
-										<f:selectItem itemLabel="Selecione..." />
-										<f:selectItems value="#{agendamentosMB.horarios}"
-											var="horarios" itemLabel="#{horarios.descricao}"
-											itemValue="#{horarios}" />
-									</p:selectOneMenu>
-								</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-6 ui-g-11">
+								<p:outputLabel value="Horario: " for="horario" />
 							</div>
-							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-								<div class="ui-sm-6 ui-g-11">
-									<p:outputLabel value="Unidade do Hemopa: " for="unidade" />
-								</div>
-								<div class="ui-sm-12 ui-g-11">
-									<p:selectOneMenu id="unidade"
-										value="#{agendamentosMB.pessoa.agenda.unidadeHemopa}">
-										<f:selectItem itemLabel="Selecione..." />
-										<f:selectItems value="#{agendamentosMB.unidadeHemopa}"
-											var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
-											itemValue="#{unidadeHemopa}" />
-									</p:selectOneMenu>
-								</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:selectOneMenu id="horario"
+									value="#{agendamentosMB.agenda.horario}">
+									<f:selectItem itemLabel="Selecione..." />
+									<f:selectItems value="#{agendamentosMB.horarios}" 
+										var="horarios" itemLabel="#{horarios.descricao}"
+										itemValue="#{horarios}" />
+								</p:selectOneMenu>
 							</div>
-							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-								<div class="ui-sm-12 ui-g-11">
-									<p:outputLabel value="Data Desejada" for="data" />
-								</div>
-								<div class="ui-sm-12 ui-g-11">
-									<p:calendar id="data"
-										value="#{agendamentosMB.pessoa.agenda.dataDoacao}"
-										readonlyInput="true" size="15" />
-									<span class="help-block"> <p:message for="data" />
-									</span>
-								</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-6 ui-g-11">
+								<p:outputLabel value="Unidade do Hemopa: " for="unidade" />
 							</div>
-							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-								<div class="ui-sm-6 ui-g-11">
-									<p:outputLabel value="Status: " for="status" />
-								</div>
-								<div class="ui-sm-12 ui-g-11">
-									<p:selectOneMenu id="status"
-										value="#{agendamentosMB.pessoa.agenda.tipoEvento}">
-										<f:selectItem itemLabel="Selecione..." />
-										<f:selectItems value="#{agendamentosMB.tipoEvento}"
-											var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
-											itemValue="#{unidadeHemopa}" />
-									</p:selectOneMenu>
-								</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:selectOneMenu id="unidade"
+									value="#{agendamentosMB.agenda.unidadeHemopa}" >
+									<f:selectItem itemLabel="Selecione..." />
+									<f:selectItems value="#{agendamentosMB.unidadeHemopa}"
+										var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
+										itemValue="#{unidadeHemopa}" />
+								</p:selectOneMenu>
 							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value="Dia desejado: " for="dia" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:inputMask id="dia" mask="99/99/9999" value="#{agendamentosMB.agenda.dia}"
+									 disabled="#{agendamentosMB.chekin}" size="15"/>
+								<span class="help-block"> <p:message for="dia" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-6 ui-g-11"></div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:selectOneMenu id="status"
+									value="#{agendamentosMB.agenda.tipoEvento}">
+									<f:selectItem itemLabel="Selecione..." />
+									<f:selectItems value="#{agendamentosMB.tipoEvento}"
+										var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
+										itemValue="#{unidadeHemopa}" />
+								</p:selectOneMenu>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-6 ui-g-11">
+								<p:outputLabel value="Agendar periodo: " />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:selectBooleanCheckbox value="#{agendamentosMB.chekin}">
+							<p:ajax update="@form" />
+								</p:selectBooleanCheckbox>
+							</div>
+						</div>
+						<p:panel id="reservar" rendered="#{agendamentosMB.chekin}">
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value=" Data inicio: " for="inicio" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:datePicker id="inicio"
+									value="#{agendamentosMB.agenda.dataInicio}" navigator="true"
+									locale="pt" size="15" pattern="yyyy-MMM-dd" />
+								<span class="help-block"> <p:message for="inicio" />
+								</span>
+							</div>
+						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-12 ui-g-11">
+								<p:outputLabel value=" Data final: " for="final" />
+							</div>
+							<div class="ui-sm-12 ui-g-11">
+								<p:datePicker id="final"
+									value="#{agendamentosMB.agenda.dataFim}"
+									pattern="dd.MM.yyyy" readonlyInput="true" locale="pt" size="15" />
+								<span class="help-block"> <p:message for="final" />
+								</span>
+							</div>
+						</div>
+						</p:panel>
 					</div>
 				</p:panel>
-
 				<br />
 				<div id="main-buttons" class="hidden-sm hidden-xs">
 

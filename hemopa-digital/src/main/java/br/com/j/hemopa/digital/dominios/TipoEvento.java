@@ -6,7 +6,9 @@ public enum TipoEvento {
     CONFIRMADO("CONFIRMADO", "Confirmado"),
     MARCADO("MARCADO", "Marcados"),
     REMARCAR("Remarcar", "Remarcar"),
+    RESERVADO("Reservado", "Reservado"),
     CANCELADO("Cancelado", "cancelado");
+	
 
     private final String descricao;
     private final String css;

@@ -1,4 +1,4 @@
-!SESSION 2021-01-07 18:31:35.178 -----------------------------------------------
+!SESSION 2021-01-21 19:38:08.062 -----------------------------------------------
 eclipse.buildId=4.17.0.I20200902-1800
 java.version=11.0.9
 java.vendor=Oracle Corporation
@@ -7,9 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 This is a continuation of log file C:\Users\Desenvolve Cidade\Documents\workspace\.metadata\.bak_5.log
-Created Time: 2021-01-07 21:30:42.716
+Created Time: 2021-01-21 22:49:29.086
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.717
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.086
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -69,7 +69,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.725
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.091
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -129,7 +129,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.731
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.095
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -189,7 +189,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.736
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.098
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -249,7 +249,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.744
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.102
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -309,7 +309,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.749
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.105
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -369,7 +369,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.753
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.109
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -429,7 +429,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.759
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.113
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -489,7 +489,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.762
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.116
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -549,7 +549,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.766
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.120
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -609,7 +609,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.773
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.125
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -669,7 +669,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.776
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.128
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -729,7 +729,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.781
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.131
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -789,7 +789,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.787
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.137
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -849,7 +849,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.793
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.141
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -909,7 +909,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.798
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.144
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -969,7 +969,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.805
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.150
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1029,7 +1029,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.811
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.155
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1089,7 +1089,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.816
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.160
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1149,7 +1149,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.823
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.169
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1209,7 +1209,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.829
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.172
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1269,7 +1269,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.833
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:29.175
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1329,7 +1329,367 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.839
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:53.560
+!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
+!STACK 0
+java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
+	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getRequestMap(AbstractDTExternalContext.java:66)
+	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:69)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
+	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.SymbolResolveUtil.getSymbolForVariableSuffixExpr(SymbolResolveUtil.java:92)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser$PrefixVisitor.getSymbolInfo(ContentAssistParser.java:187)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser.getSymbolInfo(ContentAssistParser.java:85)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSPSourceUtil.determineSymbolInfo(JSPSourceUtil.java:105)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:67)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:52)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverRegion(FaceletHover.java:88)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverRegion(BestMatchHover.java:185)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:53.574
+!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
+!STACK 0
+java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
+	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getSessionMap(AbstractDTExternalContext.java:74)
+	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:74)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
+	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.SymbolResolveUtil.getSymbolForVariableSuffixExpr(SymbolResolveUtil.java:92)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser$PrefixVisitor.getSymbolInfo(ContentAssistParser.java:187)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser.getSymbolInfo(ContentAssistParser.java:85)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSPSourceUtil.determineSymbolInfo(JSPSourceUtil.java:105)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:67)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:52)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverRegion(FaceletHover.java:88)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverRegion(BestMatchHover.java:185)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:49:53.587
+!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
+!STACK 0
+java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
+	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getApplicationMap(AbstractDTExternalContext.java:82)
+	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:79)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
+	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.SymbolResolveUtil.getSymbolForVariableSuffixExpr(SymbolResolveUtil.java:92)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser$PrefixVisitor.getSymbolInfo(ContentAssistParser.java:187)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser.getSymbolInfo(ContentAssistParser.java:85)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSPSourceUtil.determineSymbolInfo(JSPSourceUtil.java:105)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:67)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:52)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverRegion(FaceletHover.java:88)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverRegion(BestMatchHover.java:185)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.153
+!MESSAGE No line style provider for org.eclipse.wst.sse.ST_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.154
+!MESSAGE No line style provider for org.eclipse.wst.sse.UNKNOWN_PARTITION_TYPE
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.155
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DEFAULT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.156
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_CDATA
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.157
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_DECL
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.157
+!MESSAGE No line style provider for org.eclipse.wst.xml.XML_COMMENT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.158
+!MESSAGE No line style provider for org.eclipse.wst.xml.dtd.internal_subset
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.159
+!MESSAGE No line style provider for org.eclipse.wst.xml.PROCESSING_INSTRUCTION:
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.159
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT
+
+!ENTRY org.eclipse.wst.html.ui 1 1 2021-01-21 22:50:46.160
+!MESSAGE No line style provider for org.eclipse.wst.html.SCRIPT.EVENTHANDLER
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:20.323
+!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
+!STACK 0
+java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
+	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getRequestMap(AbstractDTExternalContext.java:66)
+	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:69)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
+	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.SymbolResolveUtil.getSymbolForVariable(SymbolResolveUtil.java:58)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser$PrefixVisitor.getSymbolInfo(ContentAssistParser.java:184)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser.getSymbolInfo(ContentAssistParser.java:85)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSPSourceUtil.determineSymbolInfo(JSPSourceUtil.java:105)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:67)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:52)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverRegion(FaceletHover.java:88)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverRegion(BestMatchHover.java:185)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:20.327
+!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
+!STACK 0
+java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
+	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getSessionMap(AbstractDTExternalContext.java:74)
+	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:74)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
+	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.SymbolResolveUtil.getSymbolForVariable(SymbolResolveUtil.java:58)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser$PrefixVisitor.getSymbolInfo(ContentAssistParser.java:184)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser.getSymbolInfo(ContentAssistParser.java:85)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSPSourceUtil.determineSymbolInfo(JSPSourceUtil.java:105)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:67)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:52)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverRegion(FaceletHover.java:88)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverRegion(BestMatchHover.java:185)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:20.330
+!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
+!STACK 0
+java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
+	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
+	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getApplicationMap(AbstractDTExternalContext.java:82)
+	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:79)
+	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
+	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.SymbolResolveUtil.getSymbolForVariable(SymbolResolveUtil.java:58)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser$PrefixVisitor.getSymbolInfo(ContentAssistParser.java:184)
+	at org.eclipse.jst.jsf.core.internal.contentassist.el.ContentAssistParser.getSymbolInfo(ContentAssistParser.java:85)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSPSourceUtil.determineSymbolInfo(JSPSourceUtil.java:105)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:67)
+	at org.eclipse.jst.jsf.ui.internal.jspeditor.JSFELHover.getHoverRegion(JSFELHover.java:52)
+	at org.eclipse.jst.jsf.facelet.ui.internal.hover.FaceletHover.getHoverRegion(FaceletHover.java:88)
+	at org.eclipse.wst.sse.ui.internal.taginfo.BestMatchHover.getHoverRegion(BestMatchHover.java:185)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.240
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1389,7 +1749,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.844
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.245
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1449,7 +1809,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.864
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.250
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1509,7 +1869,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.870
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.259
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1569,7 +1929,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.874
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.263
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1629,7 +1989,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.880
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.267
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1689,7 +2049,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.887
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.271
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1749,7 +2109,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.891
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.274
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1809,7 +2169,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:30:42.895
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.277
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1869,7 +2229,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:07.996
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.283
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1929,7 +2289,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.055
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.286
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -1989,7 +2349,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.061
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.290
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2049,7 +2409,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.071
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.294
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2109,7 +2469,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.076
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.297
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2169,7 +2529,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.082
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.300
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2229,7 +2589,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.087
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.305
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2289,7 +2649,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.092
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.308
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2349,7 +2709,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.095
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.312
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2409,7 +2769,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.105
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.316
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2469,7 +2829,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.110
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.319
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2529,7 +2889,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.115
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.322
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2589,7 +2949,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.124
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.328
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2649,7 +3009,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.129
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.331
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2709,7 +3069,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.133
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.334
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2769,7 +3129,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.142
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.339
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2829,7 +3189,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.147
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.343
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2889,7 +3249,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.153
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.346
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -2949,7 +3309,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.161
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.350
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3009,7 +3369,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.166
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.354
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3069,7 +3429,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.171
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.357
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3129,7 +3489,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.182
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.361
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3189,7 +3549,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.186
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.365
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3249,7 +3609,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.191
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.368
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3309,7 +3669,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.199
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.373
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3369,7 +3729,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.203
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.376
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3429,7 +3789,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.207
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.379
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3489,7 +3849,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.214
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.384
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3549,7 +3909,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.219
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.387
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3609,7 +3969,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.223
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.390
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3669,7 +4029,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.230
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.394
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3729,7 +4089,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.233
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.398
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3789,7 +4149,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.238
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.401
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3849,7 +4209,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.244
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.405
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3909,7 +4269,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.249
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.408
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -3969,7 +4329,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.253
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.411
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4029,7 +4389,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.260
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.416
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4089,7 +4449,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.264
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.419
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4149,7 +4509,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.268
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.422
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4209,7 +4569,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.274
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.427
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4269,7 +4629,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.278
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.430
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4329,7 +4689,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.281
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.433
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4389,7 +4749,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.287
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.438
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4449,7 +4809,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.291
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.441
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4509,7 +4869,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.295
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.444
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4569,7 +4929,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.301
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.449
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4629,7 +4989,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.306
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.452
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4689,7 +5049,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.310
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.455
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4749,7 +5109,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.317
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.460
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4809,7 +5169,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.321
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.463
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4869,7 +5229,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.326
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.466
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4929,7 +5289,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.334
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.471
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -4989,7 +5349,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.339
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.474
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5049,7 +5409,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.343
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.477
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5109,7 +5469,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.351
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.482
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5169,7 +5529,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.355
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.486
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5229,7 +5589,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.360
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.489
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5289,7 +5649,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.365
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.494
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5349,7 +5709,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.371
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.498
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5409,7 +5769,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.374
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.503
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5469,7 +5829,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.382
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.511
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5529,7 +5889,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.386
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.515
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5589,7 +5949,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.390
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.518
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5649,7 +6009,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.399
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.524
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5709,7 +6069,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.404
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.528
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5769,7 +6129,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.408
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.531
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5829,7 +6189,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.416
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.537
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5889,7 +6249,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.420
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.540
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -5949,7 +6309,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.425
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:51:46.543
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6009,7 +6369,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.431
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.027
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6069,7 +6429,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.435
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.031
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6129,7 +6489,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.442
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.034
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6189,7 +6549,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.448
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.040
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6249,7 +6609,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.453
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.043
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6309,7 +6669,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.457
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.046
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6369,7 +6729,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.464
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.050
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6429,7 +6789,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.467
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.054
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6489,7 +6849,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:08.471
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.059
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6549,7 +6909,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.635
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.065
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6609,7 +6969,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.640
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.069
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6669,7 +7029,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.645
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.072
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6729,7 +7089,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.651
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.078
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6789,7 +7149,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.655
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.082
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6849,7 +7209,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.658
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.085
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6909,7 +7269,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.664
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.090
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -6969,7 +7329,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.667
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.094
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7029,7 +7389,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.671
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.097
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7089,7 +7449,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.681
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.102
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7149,7 +7509,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.685
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.105
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7209,7 +7569,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.690
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.108
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7269,7 +7629,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.697
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.114
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7329,7 +7689,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.702
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.117
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7389,7 +7749,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.708
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.120
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7449,7 +7809,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.714
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.125
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7509,7 +7869,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.718
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.128
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7569,7 +7929,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.723
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.132
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7629,7 +7989,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.727
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.136
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7689,7 +8049,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.731
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.139
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7749,7 +8109,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.735
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.143
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7809,7 +8169,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.786
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.147
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7869,7 +8229,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.791
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.150
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7929,7 +8289,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.795
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.153
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -7989,7 +8349,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.801
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.158
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8049,7 +8409,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.804
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.162
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8109,7 +8469,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.807
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.165
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8169,7 +8529,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.812
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.171
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8229,7 +8589,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.816
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.174
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8289,7 +8649,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.820
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.177
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8349,7 +8709,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.825
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.182
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8409,7 +8769,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.829
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.185
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8469,7 +8829,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.833
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.188
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8529,7 +8889,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.837
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.193
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8589,7 +8949,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.841
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.196
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8649,7 +9009,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.845
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.200
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8709,7 +9069,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.851
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.205
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8769,7 +9129,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.854
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.208
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8829,7 +9189,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.858
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.211
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8889,7 +9249,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.864
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.216
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -8949,7 +9309,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.868
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.220
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9009,7 +9369,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.872
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.224
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9069,7 +9429,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.878
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.229
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9129,7 +9489,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.881
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.233
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9189,7 +9549,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.884
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.236
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9249,7 +9609,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.891
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.241
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9309,7 +9669,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.894
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.245
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9369,7 +9729,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.899
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.248
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9429,7 +9789,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.907
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.254
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9489,7 +9849,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.912
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.258
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9549,7 +9909,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.915
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.261
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9609,7 +9969,7 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.920
+!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-21 22:52:30.266
 !MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
 !STACK 0
 java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
@@ -9622,306 +9982,6 @@ java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle 
 	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
 	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getRequestMap(AbstractDTExternalContext.java:66)
 	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:69)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
-	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:356)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValuePrefix.jjtAccept(ASTValuePrefix.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:326)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValue.jjtAccept(ASTValue.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:279)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTUnaryExpression.jjtAccept(ASTUnaryExpression.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:177)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTExpression.jjtAccept(ASTExpression.java:30)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.validate(ASTSemanticValidator.java:111)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateSemantics(ELExpressionValidator.java:185)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateXMLNode(ELExpressionValidator.java:82)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateELExpression(AttributeValidatingStrategy.java:369)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.checkIfELAndValidate(AttributeValidatingStrategy.java:277)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$0(AttributeValidatingStrategy.java:194)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:170)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:146)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:101)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:179)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:136)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.doValidate(DefaultFaceletValidationStrategy.java:54)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.AbstractFaceletValidationStrategy.validateFile(AbstractFaceletValidationStrategy.java:108)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.HTMLValidator.validate(HTMLValidator.java:69)
-	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
-	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
-	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:783)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
-	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.924
-!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
-!STACK 0
-java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
-	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getSessionMap(AbstractDTExternalContext.java:74)
-	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:74)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
-	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:356)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValuePrefix.jjtAccept(ASTValuePrefix.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:326)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValue.jjtAccept(ASTValue.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:279)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTUnaryExpression.jjtAccept(ASTUnaryExpression.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:177)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTExpression.jjtAccept(ASTExpression.java:30)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.validate(ASTSemanticValidator.java:111)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateSemantics(ELExpressionValidator.java:185)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateXMLNode(ELExpressionValidator.java:82)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateELExpression(AttributeValidatingStrategy.java:369)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.checkIfELAndValidate(AttributeValidatingStrategy.java:277)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$0(AttributeValidatingStrategy.java:194)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:170)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:146)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:101)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:179)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:136)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.doValidate(DefaultFaceletValidationStrategy.java:54)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.AbstractFaceletValidationStrategy.validateFile(AbstractFaceletValidationStrategy.java:108)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.HTMLValidator.validate(HTMLValidator.java:69)
-	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
-	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
-	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:783)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
-	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.927
-!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
-!STACK 0
-java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
-	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getApplicationMap(AbstractDTExternalContext.java:82)
-	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:79)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
-	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:356)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValuePrefix.jjtAccept(ASTValuePrefix.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:326)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValue.jjtAccept(ASTValue.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:279)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTUnaryExpression.jjtAccept(ASTUnaryExpression.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:177)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTExpression.jjtAccept(ASTExpression.java:30)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.validate(ASTSemanticValidator.java:111)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateSemantics(ELExpressionValidator.java:185)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateXMLNode(ELExpressionValidator.java:82)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateELExpression(AttributeValidatingStrategy.java:369)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.checkIfELAndValidate(AttributeValidatingStrategy.java:277)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$0(AttributeValidatingStrategy.java:194)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:170)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:146)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:101)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:179)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:136)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.doValidate(DefaultFaceletValidationStrategy.java:54)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.AbstractFaceletValidationStrategy.validateFile(AbstractFaceletValidationStrategy.java:108)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.HTMLValidator.validate(HTMLValidator.java:69)
-	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
-	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
-	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:783)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
-	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.932
-!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
-!STACK 0
-java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
-	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getRequestMap(AbstractDTExternalContext.java:66)
-	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:69)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
-	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:356)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValuePrefix.jjtAccept(ASTValuePrefix.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:326)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValue.jjtAccept(ASTValue.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:279)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTUnaryExpression.jjtAccept(ASTUnaryExpression.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:177)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTExpression.jjtAccept(ASTExpression.java:30)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.validate(ASTSemanticValidator.java:111)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateSemantics(ELExpressionValidator.java:185)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateXMLNode(ELExpressionValidator.java:82)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateELExpression(AttributeValidatingStrategy.java:369)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.checkIfELAndValidate(AttributeValidatingStrategy.java:277)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$0(AttributeValidatingStrategy.java:194)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:170)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:146)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:101)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:179)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:136)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.doValidate(DefaultFaceletValidationStrategy.java:54)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.AbstractFaceletValidationStrategy.validateFile(AbstractFaceletValidationStrategy.java:108)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.HTMLValidator.validate(HTMLValidator.java:69)
-	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
-	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
-	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:783)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
-	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.937
-!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
-!STACK 0
-java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
-	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getSessionMap(AbstractDTExternalContext.java:74)
-	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:74)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
-	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:356)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValuePrefix.jjtAccept(ASTValuePrefix.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:326)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTValue.jjtAccept(ASTValue.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:279)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTUnaryExpression.jjtAccept(ASTUnaryExpression.java:30)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.SimpleNode.childrenAccept(SimpleNode.java:72)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:177)
-	at org.eclipse.jst.jsp.core.internal.java.jspel.ASTExpression.jjtAccept(ASTExpression.java:30)
-	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.validate(ASTSemanticValidator.java:111)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateSemantics(ELExpressionValidator.java:185)
-	at org.eclipse.jst.jsf.validation.internal.el.ELExpressionValidator.validateXMLNode(ELExpressionValidator.java:82)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateELExpression(AttributeValidatingStrategy.java:369)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.checkIfELAndValidate(AttributeValidatingStrategy.java:277)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.access$0(AttributeValidatingStrategy.java:194)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy$1.run(AttributeValidatingStrategy.java:186)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validateAttributeValue(AttributeValidatingStrategy.java:170)
-	at org.eclipse.jst.jsf.validation.internal.strategy.AttributeValidatingStrategy.validate(AttributeValidatingStrategy.java:146)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateTag(XMLViewDefnValidator.java:101)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateRegions(XMLViewDefnValidator.java:179)
-	at org.eclipse.jst.jsf.validation.internal.XMLViewDefnValidator.validateView(XMLViewDefnValidator.java:136)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.DefaultFaceletValidationStrategy.doValidate(DefaultFaceletValidationStrategy.java:54)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.AbstractFaceletValidationStrategy.validateFile(AbstractFaceletValidationStrategy.java:108)
-	at org.eclipse.jst.jsf.facelet.ui.internal.validation.HTMLValidator.validate(HTMLValidator.java:69)
-	at org.eclipse.wst.validation.Validator$V2.validate(Validator.java:1178)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:704)
-	at org.eclipse.wst.validation.internal.ValManager$1.visit(ValManager.java:665)
-	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:783)
-	at org.eclipse.wst.validation.internal.ValManager.validate(ValManager.java:669)
-	at org.eclipse.wst.validation.internal.ValBuilderJob$Visitor.visit(ValBuilderJob.java:327)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
-	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.deltaBuild(ValBuilderJob.java:211)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:179)
-	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
-	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.jst.jsf.core 4 0 2021-01-07 21:31:42.941
-!MESSAGE Error creating base name for: com.github.adminfaces.template.i18n.AdminUTF8Bundle
-!STACK 0
-java.io.IOException: Bundle com.github.adminfaces.template.i18n.AdminUTF8Bundle not found in classpath for project: hemopa-digital
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.createCachedBundleFile(ResourceBundleMapSource.java:237)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSource.<init>(ResourceBundleMapSource.java:255)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleMapSourceFactory.getResourceBundleMapSource(ResourceBundleMapSourceFactory.java:46)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.createSymbolForResourceBundle(ResourceBundleSymbolSourceProvider.java:116)
-	at org.eclipse.jst.jsf.designtime.internal.symbols.ResourceBundleSymbolSourceProvider.getSymbols(ResourceBundleSymbolSourceProvider.java:88)
-	at org.eclipse.jst.jsf.designtime.context.DTJSPExternalContext.doGetMapForScope(DTJSPExternalContext.java:89)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getMapForScope(AbstractDTExternalContext.java:48)
-	at org.eclipse.jst.jsf.designtime.context.AbstractDTExternalContext.getApplicationMap(AbstractDTExternalContext.java:82)
-	at org.eclipse.jst.jsf.designtime.el.DefaultDTVariableResolver.resolveVariable(DefaultDTVariableResolver.java:79)
 	at org.eclipse.jst.jsf.designtime.internal.symbols.ConfigBasedDTVariableResolver.resolveVariable(ConfigBasedDTVariableResolver.java:110)
 	at org.eclipse.jst.jsf.designtime.resolver.SymbolContextResolver.getVariable(SymbolContextResolver.java:63)
 	at org.eclipse.jst.jsf.validation.internal.el.ASTSemanticValidator.visit(ASTSemanticValidator.java:356)

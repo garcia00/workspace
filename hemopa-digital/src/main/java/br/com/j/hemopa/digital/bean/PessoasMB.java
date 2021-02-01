@@ -52,10 +52,6 @@ public class PessoasMB implements Serializable {
 
 	@PostConstruct
 	public void init() {
-		pessoa = new Pessoa();
-		setAgenda(new Agenda());
-		setContato(new Contato());
-		setEndereco(new Endereco());
 
 	}
 
@@ -73,9 +69,6 @@ public class PessoasMB implements Serializable {
 	}
 
 	public List<Pessoa> getPessoas() {
-		this.pessoa.getAgenda();
-		this.pessoa.getContato();
-		this.pessoa.getEndereco();
 		
 		return new DAO<Pessoa>(Pessoa.class).listaTodos();
 	}
@@ -94,6 +87,8 @@ public class PessoasMB implements Serializable {
 
 	}
 	
+	
+	
 	public String atualizar() {
 
 		new DAO<Pessoa>(Pessoa.class).atualiza(this.pessoa);
@@ -102,7 +97,7 @@ public class PessoasMB implements Serializable {
 		
 		
 
-		return AGENDAMENTO;
+		return NAVEGACAO;
 
 	}
 	
@@ -217,6 +212,14 @@ public void pesquisar() {
 
 	public void setPessoasFiltrados(List<Pessoa> pessoasFiltrados) {
 		this.pessoasFiltrados = pessoasFiltrados;
+	}
+
+	public PessoaFilter getFiltro() {
+		return filtro;
+	}
+
+	public void setFiltro(PessoaFilter filtro) {
+		this.filtro = filtro;
 	}
 
 }

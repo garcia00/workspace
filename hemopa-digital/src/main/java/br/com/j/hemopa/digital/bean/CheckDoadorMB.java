@@ -7,6 +7,7 @@ import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.j.hemopa.digital.model.Agenda;
 import br.com.j.hemopa.digital.model.Pessoa;
 import br.com.j.hemopa.digital.repository.Pessoas;
 import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
@@ -24,6 +25,8 @@ public class CheckDoadorMB implements Serializable {
 	private Pessoas pessoas;
 	
 	private Pessoa pessoa;
+	
+	private Agenda agenda;
 	
 	private PessoaFilter filtro;
 	
@@ -66,10 +69,10 @@ public class CheckDoadorMB implements Serializable {
 		
 		pessoa = new Pessoa();
 		filtro = new PessoaFilter();
-		
+				
 	}
 	
-	public List<Pessoa> getProdutosFiltrados() {
+	public List<Pessoa> getPessoaFiltrados() {
 		return pessoasFiltrados;
 	}
 
@@ -107,6 +110,14 @@ public class CheckDoadorMB implements Serializable {
 
 	public void setChekin(boolean chekin) {
 		this.chekin = chekin;
+	}
+
+	public Agenda getAgenda() {
+		return agenda;
+	}
+
+	public void setAgenda(Agenda agenda) {
+		this.agenda = agenda;
 	}
 	
 }

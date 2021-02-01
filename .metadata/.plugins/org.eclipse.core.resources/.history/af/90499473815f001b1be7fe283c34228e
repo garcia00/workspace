@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:adm="http://github.com/adminfaces"
+	template="#{layoutMB.template}">
+
+	<ui:define name="metadata">
+		<ui:param name="renderFormAsterisks" value="true" />
+	</ui:define>
+	<ui:define name="title">
+        Agendar Doação
+    </ui:define>
+	<ui:define name="body">
+		<h:form id="form">
+			<p:focus context="@form" />
+			<p:panel styleClass="box-primary card">
+
+				<p:separator />
+				<div class="ui-g ui-fluid">
+					<div class="ui-sm-6 ui-g-6 ui-g-nopad">
+						<div class="ui-sm-4 ui-g-4 ui-g-nopad">
+							<div class="ui-sm-6 ui-g-11">
+								<p:outputLabel value="Período de Envio" />
+								<h:panelGrid columns="5">
+									<p:outputLabel value="De: " style="margin-right: 10px;" />
+
+									<p:calendar id="dataInicio" label="Campo Data Início Envio"
+										showOn="false" pattern="dd/MM/yyyy" locale="pt" size="15"
+										value="#{agendamentosMB.agendaFiltro.dataInicio}" mask="true" style="width:50%; " />
+
+									<p:outputLabel value=" a "
+										style="margin-right: 10px; margin-left: 10px;" />
+
+									<p:calendar id="dataFim" label="Campo Data Fim Envio"
+										showOn="false" pattern="dd/MM/yyyy" locale="pt" size="15"
+										value="#{agendamentosMB.agendaFiltro.dataFim}" mask="true" style="width:50%;" />
+								</h:panelGrid>
+
+								<div class="ui-sm-6 ui-g-11">
+									<p:commandButton icon="fa fa-search"
+										styleClass="btn btn-primary" value="Pesquisar"
+										action="#{agendamentosMB.acaoPesquisar()}" update="@form, tabelaPessoas">
+									</p:commandButton>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					
+					<div class="ui-sm-12 ui-g-12 ui-g-nopad">
+						<div class="ui-sm-12 ui-g-12">
+							<p:dataTable value="#{agendamentosMB.agendas}" var="agendas"
+								id="tabelaPessoas">
+								<p:column headerText="Ações">
+									<p:button outcome="/agendamento" icon="fa fa-calendar-check-o" 
+										title="Reagendar" styleClass="btn btn-success"  rendered="#{agendas.tipoEvento != 'CANCELADO'}">
+										<f:param name="agendas" value="#{agendas.id}" />
+									</p:button>
+									<p:button  icon="fa fa-ban"
+										title="Reagendar" styleClass="btn btn-danger" action="#{agendamentosMB.cancelar}" rendered="#{agendas.tipoEvento != 'CANCELADO'}" process="@this"
+										update="@form" >
+									</p:button>
+								</p:column>
+								<p:column headerText="Nome" style="text-align:center;">
+									<h:outputText value="#{agendas.pessoa.nome}" />
+								</p:column>
+								<p:column headerText="Local" style="text-align:center;">
+									<h:outputText value="#{agendas.unidadeHemopa.descricao}" />
+								</p:column>
+								<p:column headerText="Horario" style="text-align:center;">
+									<h:outputText value="#{agendas.horario.descricao}" />
+								</p:column>
+								<p:column headerText="Data" style="text-align:center;">
+									<h:outputText value="#{agendas.dia}" />
+								</p:column>
+								<p:column headerText="Status" style="text-align:center;">
+									<h:outputText value="#{agendas.tipoEvento}" />
+								</p:column>
+							</p:dataTable>
+						</div>
+					</div>
+				</div>
+
+			</p:panel>
+		</h:form>
+
+	</ui:define>
+
+</ui:composition>

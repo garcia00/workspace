@@ -28,9 +28,7 @@
 								value="#{checkDoadorMB.filtro.cpf}" size="20" />
 							<span class="help-block"> <p:message for="cpf" />
 							</span>
-						</div>
-						<div class="ui-sm-6 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+							<div class="ui-sm-4 ui-g-4 ui-g-nopad">
 								<p:commandButton icon="fa fa-search"
 									styleClass="btn btn-primary" value="Pesquisar"
 									action="#{checkDoadorMB.pesquisar}" update="@form">
@@ -48,9 +46,6 @@
 				<br />
 				<p:dataTable value="#{checkDoadorMB.pessoasFiltrados}" var="pessoas"
 					id="tabelaPessoas">
-					<p:column headerText="Id" style="text-align:center;">
-						<h:outputText value="#{pessoas.id}" />
-					</p:column>
 					<p:column headerText="Nome" style="text-align:center;">
 						<h:outputText value="#{pessoas.nome}" />
 					</p:column>
@@ -59,12 +54,13 @@
 					</p:column>
 					<p:column headerText="Check-in" style="text-align:center;">
 						<p:selectBooleanCheckbox value="#{checkDoadorMB.chekin}">
-						<p:ajax update="@this, tabelaPessoas"/>
+							<p:ajax update="@this, tabelaPessoas" />
 						</p:selectBooleanCheckbox>
 					</p:column>
 					<p:column headerText="Ação" style="text-align:center;">
 						<p:button outcome="/lancamento" icon="fa fa-id-badge"
-							title="Chekin" styleClass="btn btn-success" rendered="#{checkDoadorMB.chekin}">
+							title="Chekin" styleClass="btn btn-success"
+							rendered="#{checkDoadorMB.chekin}">
 							<f:param name="pessoas" value="#{pessoas.id}" />
 						</p:button>
 					</p:column>

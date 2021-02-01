@@ -1,11 +1,11 @@
 package br.com.j.hemopa.digital.model;
 
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -13,9 +13,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -51,65 +49,17 @@ public class Pessoa {
 	@Column(nullable = true, length = 30)
 	private TipoSangue sangue;
 	
-	@OneToOne(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
-	@JoinColumn(name = "ID_PESSOA")
+	@Embedded
 	private Endereco endereco;
 
-	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
-	@JoinColumn(name = "ID_PESSOA")
+	@Embedded
 	private Contato contato;
 	
-	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "pessoa")
-	@JoinColumn(name = "ID_PESSOA")
-	private Agenda agenda;
-	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Contato> contatos = new HashSet<>();
-	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Endereco> enderecos = new HashSet<>();
-	
-	@OneToMany(fetch = FetchType.LAZY, mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true)
-	private Set<Agenda> agendas = new HashSet<>();
-	
-	public Set<Endereco> getEnderecos() {
-		return enderecos;
-	}
-
-	public Set<Contato> getContatos() {
-		return contatos;
-	}
-
-	public void setContatos(Set<Contato> contatos) {
-		this.contatos = contatos;
-	}
-
-	public void setEnderecos(Set<Endereco> enderecos) {
-		this.enderecos = enderecos;
-	}
-	
-	public Set<Agenda> getAgendas() {
-		return agendas;
-	}
-
-	public void setAgendas(Set<Agenda> agendas) {
-		this.agendas = agendas;
-	}
+	@OneToMany(mappedBy = "pessoa", fetch = FetchType.EAGER)
+	private List<Agenda> agendas;
 
 	public Pessoa() {
 		super();
-	}
-	
-	public Agenda getAgenda() {
-		
-		if (agenda == null){
-			agenda = new Agenda();
-			}
-		return agenda;
-	}
-
-	public void setAgenda(Agenda agenda) {
-		this.agenda = agenda;
 	}
 
 	public String getRg() {
@@ -148,15 +98,6 @@ public class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
-
-//	@Column(nullable = false, length = 10)
-//	public Sangue getSangue() {
-//		return sangue;
-//	}
-//
-//	public void setSangue(Sangue sangue) {
-//		this.sangue = sangue;
-//	}
 
 	public Contato getContato() {
 		
@@ -212,6 +153,22 @@ public class Pessoa {
 
 	public void setSangue(TipoSangue sangue) {
 		this.sangue = sangue;
+	}
+
+
+	public List<Agenda> getAgendas() {
+		
+		if (agendas == null){
+			
+			agendas = new ArrayList<Agenda>();
+			
+			}
+		
+		return agendas;
+	}
+
+	public void setAgendas(List<Agenda> agendas) {
+		this.agendas = agendas;
 	}
 
 	@Override

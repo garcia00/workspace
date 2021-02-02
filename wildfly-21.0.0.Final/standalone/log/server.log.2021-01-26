@@ -1,0 +1,357 @@
+2021-01-26 00:05:00,975 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:00,985 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:00,985 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:00,985 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:00,985 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:00,985 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:00,985 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:00,986 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:00,987 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:00,987 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:00,987 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:00,990 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:00,990 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:00,990 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:00,990 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:00,991 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:00,991 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,007 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,008 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,008 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,008 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,008 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,008 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,008 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,009 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,010 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,010 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,010 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,023 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,024 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,030 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,030 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,030 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,030 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,031 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,032 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,032 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,032 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,032 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,032 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,032 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,044 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,045 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,052 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,057 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,061 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,062 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,063 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,067 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,068 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,068 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,072 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,077 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,077 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,077 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,078 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,084 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,085 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,085 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,085 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,085 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,085 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,085 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,090 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,090 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,091 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,105 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,106 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,113 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,114 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,120 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,120 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,120 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,120 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,120 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,120 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,121 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,135 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,135 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,135 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,136 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,137 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,137 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,137 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,137 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,137 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,140 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,149 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,150 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,151 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,151 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,151 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,151 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,157 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,158 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,158 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,158 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,158 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,158 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,167 INFO  [stdout] (default task-1)         Agenda agenda0_
+2021-01-26 00:05:01,217 INFO  [stdout] (default task-1) Hibernate: 
+2021-01-26 00:05:01,217 INFO  [stdout] (default task-1)     select
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.ID_Agenda as ID_Agend1_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.DATA_FIM as DATA_FIM2_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.DATA_INICIO as DATA_INI3_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.dia as dia4_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.horario as horario5_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.HORARIO_FIM as HORARIO_6_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.HORARIO_INICIO as HORARIO_7_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.isChekin as isChekin8_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.PERIODO as PERIODO9_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.ID_PESSOA as ID_PESS13_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.RESERVARDO as RESERVA10_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.tipoEvento as tipoEve11_0_,
+2021-01-26 00:05:01,218 INFO  [stdout] (default task-1)         agenda0_.unidadeHemopa as unidade12_0_ 
+2021-01-26 00:05:01,219 INFO  [stdout] (default task-1)     from
+2021-01-26 00:05:01,219 INFO  [stdout] (default task-1)         Agenda agenda0_

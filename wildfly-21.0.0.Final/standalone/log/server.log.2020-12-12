@@ -1,0 +1,774 @@
+2020-12-12 00:04:22,360 WARNING [javax.enterprise.resource.webcontainer.jsf.lifecycle] (default task-1) /doador-form.xhtml @114,27 value="#{pessoasMB.pessoa.endereco.cep}": Target Unreachable, 'null' returned null: javax.el.PropertyNotFoundException: /doador-form.xhtml @114,27 value="#{pessoasMB.pessoa.endereco.cep}": Target Unreachable, 'null' returned null
+	at com.sun.faces.facelets.el.TagValueExpression.getType(TagValueExpression.java:64)
+	at org.primefaces.util.ComponentUtils.getConverter(ComponentUtils.java:164)
+	at org.primefaces.renderkit.InputRenderer.getConvertedValue(InputRenderer.java:45)
+	at javax.faces.component.UIInput.getConvertedValue(UIInput.java:1110)
+	at javax.faces.component.UIInput.validate(UIInput.java:1011)
+	at javax.faces.component.UIInput.executeValidate(UIInput.java:1322)
+	at javax.faces.component.UIInput.processValidators(UIInput.java:733)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at org.primefaces.component.panel.Panel.processValidators(Panel.java:147)
+	at javax.faces.component.UIForm.processValidators(UIForm.java:229)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at javax.faces.component.UIViewRoot.processValidators(UIViewRoot.java:1310)
+	at com.sun.faces.lifecycle.ProcessValidationsPhase.execute(ProcessValidationsPhase.java:53)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:76)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:177)
+	at javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:707)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:451)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.omnifaces.filter.GzipResponseFilter.doFilter(GzipResponseFilter.java:181)
+	at org.omnifaces.filter.HttpFilter.doFilter(HttpFilter.java:108)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:52)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.github.adminfaces.template.session.AdminFilter.doFilter(AdminFilter.java:153)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:841)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.el.PropertyNotFoundException: Target Unreachable, 'null' returned null
+	at com.sun.el.parser.AstValue.getTarget(AstValue.java:165)
+	at com.sun.el.parser.AstValue.getType(AstValue.java:62)
+	at com.sun.el.ValueExpressionImpl.getType(ValueExpressionImpl.java:160)
+	at org.jboss.weld.module.web.el.WeldValueExpression.getType(WeldValueExpression.java:93)
+	at org.jboss.weld.module.web.el.WeldValueExpression.getType(WeldValueExpression.java:93)
+	at com.sun.faces.facelets.el.TagValueExpression.getType(TagValueExpression.java:62)
+	... 75 more
+
+2020-12-12 00:04:22,371 WARNING [com.github.adminfaces.template.exception.CustomExceptionHandler] (default task-1) : javax.el.PropertyNotFoundException: Target Unreachable, 'null' returned null
+	at com.sun.el.parser.AstValue.getTarget(AstValue.java:165)
+	at com.sun.el.parser.AstValue.getType(AstValue.java:62)
+	at com.sun.el.ValueExpressionImpl.getType(ValueExpressionImpl.java:160)
+	at org.jboss.weld.module.web.el.WeldValueExpression.getType(WeldValueExpression.java:93)
+	at org.jboss.weld.module.web.el.WeldValueExpression.getType(WeldValueExpression.java:93)
+	at com.sun.faces.facelets.el.TagValueExpression.getType(TagValueExpression.java:62)
+	at org.primefaces.util.ComponentUtils.getConverter(ComponentUtils.java:164)
+	at org.primefaces.renderkit.InputRenderer.getConvertedValue(InputRenderer.java:45)
+	at javax.faces.component.UIInput.getConvertedValue(UIInput.java:1110)
+	at javax.faces.component.UIInput.validate(UIInput.java:1011)
+	at javax.faces.component.UIInput.executeValidate(UIInput.java:1322)
+	at javax.faces.component.UIInput.processValidators(UIInput.java:733)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at org.primefaces.component.panel.Panel.processValidators(Panel.java:147)
+	at javax.faces.component.UIForm.processValidators(UIForm.java:229)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at javax.faces.component.UIComponentBase.processValidators(UIComponentBase.java:921)
+	at javax.faces.component.UIViewRoot.processValidators(UIViewRoot.java:1310)
+	at com.sun.faces.lifecycle.ProcessValidationsPhase.execute(ProcessValidationsPhase.java:53)
+	at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:76)
+	at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:177)
+	at javax.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:707)
+	at javax.faces.webapp.FacesServlet.service(FacesServlet.java:451)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.omnifaces.filter.GzipResponseFilter.doFilter(GzipResponseFilter.java:181)
+	at org.omnifaces.filter.HttpFilter.doFilter(HttpFilter.java:108)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.opentracing.contrib.jaxrs2.server.SpanFinishingFilter.doFilter(SpanFinishingFilter.java:52)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.github.adminfaces.template.session.AdminFilter.doFilter(AdminFilter.java:153)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:61)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at org.wildfly.extension.undertow.security.SecurityContextAssociationHandler.handleRequest(SecurityContextAssociationHandler.java:78)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:132)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.NotificationReceiverHandler.handleRequest(NotificationReceiverHandler.java:50)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.security.jacc.JACCContextIdHandler.handleRequest(JACCContextIdHandler.java:61)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at org.wildfly.extension.undertow.deployment.GlobalRequestControllerHandler.handleRequest(GlobalRequestControllerHandler.java:68)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:269)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:133)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:130)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at org.wildfly.extension.undertow.security.SecurityContextThreadSetupAction.lambda$create$0(SecurityContextThreadSetupAction.java:105)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at org.wildfly.extension.undertow.deployment.UndertowDeploymentInfoService$UndertowThreadSetupAction.lambda$create$0(UndertowDeploymentInfoService.java:1530)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:249)
+	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:78)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:99)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:387)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:841)
+	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
+	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:1990)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1486)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1377)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1280)
+	at java.lang.Thread.run(Thread.java:745)
+
+2020-12-12 00:07:28,841 INFO  [org.jboss.as.server] (management-handler-thread - 3) WFLYSRV0272: Suspending server
+2020-12-12 00:07:28,845 INFO  [org.jboss.as.ejb3] (management-handler-thread - 3) WFLYEJB0493: EJB subsystem suspension complete
+2020-12-12 00:07:28,865 INFO  [org.jboss.as.server] (Management Triggered Shutdown) WFLYSRV0241: Shutting down in response to management operation 'shutdown'
+2020-12-12 00:07:28,914 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0002: Unbound mail session [java:jboss/mail/Default]
+2020-12-12 00:07:28,921 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 33) WFLYUT0022: Unregistered web context: '/hemopa-digital' from server 'default-server'
+2020-12-12 00:07:29,212 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0019: Host default-host stopping
+2020-12-12 00:07:29,251 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2020-12-12 00:07:29,251 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 174) WFLYJPA0011: Stopping Persistence Unit (phase 2 of 2) Service 'hemopa-digital.war#HemopaDigitalP'
+2020-12-12 00:07:29,253 INFO  [org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl] (ServerService Thread Pool -- 174) HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-12-12 00:07:29,256 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,257 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,257 INFO  [stdout] (ServerService Thread Pool -- 174)     alter table if exists contato 
+2020-12-12 00:07:29,257 INFO  [stdout] (ServerService Thread Pool -- 174)        drop constraint if exists FK3o7ci1h4wau462k7xllipbwyr
+2020-12-12 00:07:29,261 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 169) WFLYCLINF0003: Stopped http-remoting-connector cache from ejb container
+2020-12-12 00:07:29,262 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,262 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,262 INFO  [stdout] (ServerService Thread Pool -- 174)     alter table if exists endereco 
+2020-12-12 00:07:29,262 INFO  [stdout] (ServerService Thread Pool -- 174)        drop constraint if exists FKap6d6pbqveyux71ktv9wmdp0
+2020-12-12 00:07:29,265 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,265 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,266 INFO  [stdout] (ServerService Thread Pool -- 174)     alter table if exists Sangue 
+2020-12-12 00:07:29,266 INFO  [stdout] (ServerService Thread Pool -- 174)        drop constraint if exists FKsygtsi44sl3118ujch145tf7d
+2020-12-12 00:07:29,267 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,268 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,268 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists contato cascade
+2020-12-12 00:07:29,272 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,272 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,273 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists endereco cascade
+2020-12-12 00:07:29,278 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,278 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,279 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists grupo cascade
+2020-12-12 00:07:29,282 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,282 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,282 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists Pessoa cascade
+2020-12-12 00:07:29,286 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,287 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,287 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists Sangue cascade
+2020-12-12 00:07:29,289 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-4) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2020-12-12 00:07:29,294 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,294 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,294 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists setor_atividade cascade
+2020-12-12 00:07:29,299 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,299 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,299 INFO  [stdout] (ServerService Thread Pool -- 174)     drop table if exists Usuario cascade
+2020-12-12 00:07:29,306 INFO  [stdout] (ServerService Thread Pool -- 174) Hibernate: 
+2020-12-12 00:07:29,307 INFO  [stdout] (ServerService Thread Pool -- 174)     
+2020-12-12 00:07:29,307 INFO  [stdout] (ServerService Thread Pool -- 174)     drop sequence if exists hibernate_sequence
+2020-12-12 00:07:29,313 INFO  [org.hibernate.orm.beans] (ServerService Thread Pool -- 174) HHH10005004: Stopping BeanContainer : org.hibernate.resource.beans.container.internal.CdiBeanContainerExtendedAccessImpl@7ec8704d
+2020-12-12 00:07:29,329 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 174) Stopping cache manager null on null
+2020-12-12 00:07:29,341 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 174) WFLYJPA0011: Stopping Persistence Unit (phase 1 of 2) Service 'hemopa-digital.war#HemopaDigitalP'
+2020-12-12 00:07:29,341 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/hemopaDigitalDS]
+2020-12-12 00:07:29,355 INFO  [org.infinispan.manager.DefaultCacheManager] (ServerService Thread Pool -- 169) Stopping cache manager null on null
+2020-12-12 00:07:29,382 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0019: Stopped Driver service with driver-name = postgresql
+2020-12-12 00:07:29,445 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow HTTP listener default suspending
+2020-12-12 00:07:29,445 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0008: Undertow HTTPS listener https suspending
+2020-12-12 00:07:29,447 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0007: Undertow HTTPS listener https stopped, was bound to 127.0.0.1:8443
+2020-12-12 00:07:29,449 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow HTTP listener default stopped, was bound to 127.0.0.1:8080
+2020-12-12 00:07:29,451 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 2.2.2.Final stopping
+2020-12-12 00:07:29,587 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment hemopa-digital.war (runtime-name: hemopa-digital.war) in 711ms
+2020-12-12 00:07:29,611 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 21.0.0.Final (WildFly Core 13.0.1.Final) stopped in 735ms
+2020-12-12 00:07:33,483 INFO  [org.jboss.modules] (main) JBoss Modules version 1.10.2.Final
+2020-12-12 00:07:34,117 INFO  [org.jboss.msc] (main) JBoss MSC version 1.4.12.Final
+2020-12-12 00:07:34,132 INFO  [org.jboss.threads] (main) JBoss Threads version 2.4.0.Final
+2020-12-12 00:07:34,300 INFO  [org.jboss.as] (MSC service thread 1-2) WFLYSRV0049: WildFly Full 21.0.0.Final (WildFly Core 13.0.1.Final) starting
+2020-12-12 00:07:34,302 DEBUG [org.jboss.as.config] (MSC service thread 1-2) Configured system properties:
+	awt.toolkit = sun.awt.windows.WToolkit
+	file.encoding = Cp1252
+	file.encoding.pkg = sun.io
+	file.separator = \
+	java.awt.graphicsenv = sun.awt.Win32GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.awt.windows.WPrinterJob
+	java.class.path = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed
+	java.ext.dirs = C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext
+	java.home = C:\Program Files\Java\jdk1.8.0_111\jre
+	java.io.tmpdir = C:\Users\DESENV~2\AppData\Local\Temp\
+	java.library.path = C:\Program Files\Java\jdk1.8.0_111\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_111\jre\bin;native;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-11.0.9\bin;C:\apache-maven-3.6.1\bin;"C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11.0.9\bin";C:\Program Files (x86)\Bitvise SSH Client;C:\geckodriver.exe;C:\Program Files\TortoiseSVN\bin;%APACHE_HOME%\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Desenvolve Cidade\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\JetBrains\WebStorm 2019.2.1\bin;C:\Users\Desenvolve Cidade\AppData\Local\Microsoft\WindowsApps;C:\Users\Desenvolve Cidade\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.3\bin;;C:\src\flutter\bin;;C:\Users\Desenvolve Cidade\AppData\Local\Microsoft\WindowsApps;C:\Users\Desenvolve Cidade\AppData\Roaming\npm;.
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_111-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_111
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.111-b14
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	jboss.bind.address = localhost
+	jboss.bind.address.management = localhost
+	jboss.home.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final
+	jboss.host.name = desenv-jonathan
+	jboss.modules.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = desenv-jonathan
+	jboss.qualified.host.name = desenv-jonathan
+	jboss.server.base.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone
+	jboss.server.config.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\configuration
+	jboss.server.data.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\data
+	jboss.server.deploy.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\data\content
+	jboss.server.log.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\log
+	jboss.server.name = desenv-jonathan
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\tmp
+	line.separator = 
+
+	logging.configuration = file:C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\configuration\logging.properties
+	module.path = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\modules
+	org.jboss.boot.log.file = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\log\boot.log
+	org.jboss.logmanager.nocolor = true
+	org.jboss.resolver.warning = true
+	os.arch = amd64
+	os.name = Windows 10
+	os.version = 10.0
+	path.separator = ;
+	program.name = JBossTools: WildFly 21
+	sun.arch.data.model = 64
+	sun.boot.class.path = C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes
+	sun.boot.library.path = C:\Program Files\Java\jdk1.8.0_111\jre\bin
+	sun.cpu.endian = little
+	sun.cpu.isalist = amd64
+	sun.desktop = windows
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = org.jboss.modules.Main -mp C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\modules org.jboss.as.standalone -b localhost --server-config=standalone.xml -Djboss.server.base.dir=C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = Cp1252
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = 
+	sun.rmi.dgc.client.gcInterval = 3600000
+	sun.rmi.dgc.server.gcInterval = 3600000
+	user.country = BR
+	user.dir = C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\bin
+	user.home = C:\Users\Desenvolve Cidade
+	user.language = pt
+	user.name = Desenvolve Cidade
+	user.script = 
+	user.timezone = America/Cayenne
+	user.variant = 
+2020-12-12 00:07:34,303 DEBUG [org.jboss.as.config] (MSC service thread 1-2) VM Arguments: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:57864 -Dprogram.name=JBossTools: WildFly 21 -Xms64m -Xmx512m -Dorg.jboss.resolver.warning=true -Djava.net.preferIPv4Stack=true -Dsun.rmi.dgc.client.gcInterval=3600000 -Dsun.rmi.dgc.server.gcInterval=3600000 -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\log\boot.log -Dlogging.configuration=file:C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\configuration\logging.properties -Djboss.home.dir=C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final -Dorg.jboss.logmanager.nocolor=true -Djboss.bind.address.management=localhost -Dfile.encoding=Cp1252 
+2020-12-12 00:07:35,990 INFO  [org.wildfly.security] (ServerService Thread Pool -- 28) ELY00001: WildFly Elytron version 1.13.1.Final
+2020-12-12 00:07:37,121 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-12-12 00:07:37,213 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 4) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in a future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2020-12-12 00:07:37,357 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0004: Found hemopa-digital.war in deployment directory. To trigger deployment create a file called hemopa-digital.war.dodeploy
+2020-12-12 00:07:37,414 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2020-12-12 00:07:37,451 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.8.2.Final
+2020-12-12 00:07:37,465 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.8.2.Final
+2020-12-12 00:07:37,539 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 74) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2020-12-12 00:07:37,568 INFO  [org.wildfly.extension.microprofile.config.smallrye._private] (ServerService Thread Pool -- 61) WFLYCONF0001: Activating WildFly MicroProfile Config Subsystem
+2020-12-12 00:07:37,655 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 66) WFLYNAM0001: Activating Naming Subsystem
+2020-12-12 00:07:37,677 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 54) WFLYRS0016: RESTEasy version 3.13.2.Final
+2020-12-12 00:07:37,687 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 72) WFLYSEC0002: Activating Security Subsystem
+2020-12-12 00:07:37,693 INFO  [org.wildfly.extension.microprofile.jwt.smallrye._private] (ServerService Thread Pool -- 63) WFLYJWT0001: Activating WildFly MicroProfile JWT Subsystem
+2020-12-12 00:07:37,718 INFO  [org.wildfly.extension.microprofile.health.smallrye] (ServerService Thread Pool -- 62) WFLYHEALTH0001: Activating Eclipse MicroProfile Health Subsystem
+2020-12-12 00:07:37,752 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 2.2.2.Final starting
+2020-12-12 00:07:37,764 INFO  [org.wildfly.extension.microprofile.metrics.smallrye] (ServerService Thread Pool -- 64) WFLYMETRICS0001: Activating Eclipse MicroProfile Metrics Subsystem
+2020-12-12 00:07:37,779 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 76) WFLYWS0002: Activating WebServices Extension
+2020-12-12 00:07:37,794 INFO  [org.jboss.as.security] (MSC service thread 1-7) WFLYSEC0001: Current PicketBox version=5.0.3.Final-redhat-00006
+2020-12-12 00:07:37,807 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 52) WFLYCLINF0001: Activating Infinispan subsystem.
+2020-12-12 00:07:37,816 INFO  [org.wildfly.extension.microprofile.opentracing] (ServerService Thread Pool -- 65) WFLYTRACEXT0001: Activating MicroProfile OpenTracing Subsystem
+2020-12-12 00:07:37,851 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.23.Final)
+2020-12-12 00:07:37,941 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2020-12-12 00:07:37,946 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2020-12-12 00:07:38,122 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0014: Creating file handler for path 'C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2020-12-12 00:07:38,324 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 59) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2020-12-12 00:07:38,445 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2020-12-12 00:07:38,475 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2020-12-12 00:07:38,523 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 44) WFLYJCA0005: Deploying non-JDBC-compliant driver class org.postgresql.Driver (version 9.2)
+2020-12-12 00:07:38,527 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = postgresql
+2020-12-12 00:07:39,215 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 53) WFLYIO001: Worker 'default' has auto-configured to 8 IO threads with 64 max task threads based on your 4 available processors
+2020-12-12 00:07:39,448 INFO  [org.jboss.as.ejb3] (MSC service thread 1-3) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2020-12-12 00:07:39,449 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2020-12-12 00:07:39,557 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2020-12-12 00:07:39,565 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-3) WFLYDM0111: Keystore C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\configuration\application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2020-12-12 00:07:39,571 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0018: Host default-host starting
+2020-12-12 00:07:39,578 INFO  [org.jboss.as.patching] (MSC service thread 1-8) WFLYPAT0050: WildFly Full cumulative patch ID is: base, one-off patches include: none
+2020-12-12 00:07:39,598 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory C:\Users\Desenvolve Cidade\Documents\GitHub\wildfly-21.0.0.Final\standalone\deployments
+2020-12-12 00:07:39,608 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "hemopa-digital.war" (runtime-name: "hemopa-digital.war")
+2020-12-12 00:07:39,638 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.19.Final
+2020-12-12 00:07:39,737 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 127.0.0.1:8080
+2020-12-12 00:07:39,747 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0006: Undertow HTTPS listener https listening on 127.0.0.1:8443
+2020-12-12 00:07:39,832 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2020-12-12 00:07:40,245 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2020-12-12 00:07:40,288 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/hemopaDigitalDS]
+2020-12-12 00:07:40,295 INFO  [org.jboss.ws.common.management] (MSC service thread 1-1) JBWS022052: Starting JBossWS 5.4.2.Final (Apache CXF 3.3.7) 
+2020-12-12 00:07:41,646 INFO  [org.jboss.as.jpa] (MSC service thread 1-4) WFLYJPA0002: Read persistence.xml for HemopaDigitalP
+2020-12-12 00:07:42,207 INFO  [org.jboss.weld.deployer] (MSC service thread 1-4) WFLYWELD0003: Processing weld deployment hemopa-digital.war
+2020-12-12 00:07:42,459 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-4) HV000001: Hibernate Validator 6.0.21.Final
+2020-12-12 00:07:42,775 INFO  [org.infinispan.CONTAINER] (ServerService Thread Pool -- 78) ISPN000128: Infinispan version: Infinispan 'Corona Extra' 11.0.4.Final
+2020-12-12 00:07:42,914 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 1 of 2) Service 'hemopa-digital.war#HemopaDigitalP'
+2020-12-12 00:07:42,949 INFO  [org.hibernate.jpa.internal.util.LogHelper] (ServerService Thread Pool -- 78) HHH000204: Processing PersistenceUnitInfo [
+	name: HemopaDigitalP
+	...]
+2020-12-12 00:07:43,089 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-12-12 00:07:43,095 INFO  [org.infinispan.CONFIG] (MSC service thread 1-3) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2020-12-12 00:07:43,149 INFO  [org.hibernate.Version] (ServerService Thread Pool -- 78) HHH000412: Hibernate Core {5.3.18.Final}
+2020-12-12 00:07:43,153 INFO  [org.hibernate.cfg.Environment] (ServerService Thread Pool -- 78) HHH000206: hibernate.properties not found
+2020-12-12 00:07:43,180 INFO  [io.jaegertracing.internal.JaegerTracer] (MSC service thread 1-4) No shutdown hook registered: Please call close() manually on application shutdown.
+2020-12-12 00:07:43,257 WARN  [org.jboss.as.ee] (MSC service thread 1-5) WFLYEE0007: Not installing optional component org.jboss.weld.environment.servlet.Listener due to an exception (enable DEBUG log level to see the cause)
+2020-12-12 00:07:43,350 INFO  [org.infinispan.PERSISTENCE] (ServerService Thread Pool -- 79) ISPN000556: Starting user marshaller 'org.wildfly.clustering.infinispan.spi.marshalling.InfinispanProtoStreamMarshaller'
+2020-12-12 00:07:43,500 INFO  [org.hibernate.annotations.common.Version] (ServerService Thread Pool -- 78) HCANN000001: Hibernate Commons Annotations {5.0.5.Final}
+2020-12-12 00:07:44,103 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0002: Started http-remoting-connector cache from ejb container
+2020-12-12 00:07:44,245 INFO  [org.jboss.weld.Version] (MSC service thread 1-5) WELD-000900: 3.1.5 (Final)
+2020-12-12 00:07:44,675 INFO  [org.jboss.as.jpa] (ServerService Thread Pool -- 78) WFLYJPA0010: Starting Persistence Unit (phase 2 of 2) Service 'hemopa-digital.war#HemopaDigitalP'
+2020-12-12 00:07:44,739 INFO  [org.hibernate.dialect.Dialect] (ServerService Thread Pool -- 78) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-12 00:07:45,092 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (ServerService Thread Pool -- 78) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2020-12-12 00:07:45,101 INFO  [org.hibernate.type.BasicTypeRegistry] (ServerService Thread Pool -- 78) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6618577e
+2020-12-12 00:07:45,110 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (ServerService Thread Pool -- 78) Envers integration enabled? : true
+2020-12-12 00:07:46,189 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,190 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,190 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists contato 
+2020-12-12 00:07:46,190 INFO  [stdout] (ServerService Thread Pool -- 78)        drop constraint if exists FK3o7ci1h4wau462k7xllipbwyr
+2020-12-12 00:07:46,200 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,200 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) relation "contato" does not exist, skipping
+2020-12-12 00:07:46,200 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,200 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,200 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists endereco 
+2020-12-12 00:07:46,201 INFO  [stdout] (ServerService Thread Pool -- 78)        drop constraint if exists FKap6d6pbqveyux71ktv9wmdp0
+2020-12-12 00:07:46,201 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,202 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) relation "endereco" does not exist, skipping
+2020-12-12 00:07:46,202 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,202 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,202 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists Sangue 
+2020-12-12 00:07:46,202 INFO  [stdout] (ServerService Thread Pool -- 78)        drop constraint if exists FKsygtsi44sl3118ujch145tf7d
+2020-12-12 00:07:46,203 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,204 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) relation "sangue" does not exist, skipping
+2020-12-12 00:07:46,204 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,205 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,205 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists contato cascade
+2020-12-12 00:07:46,206 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,206 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "contato" does not exist, skipping
+2020-12-12 00:07:46,206 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,206 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,206 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists endereco cascade
+2020-12-12 00:07:46,208 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,208 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "endereco" does not exist, skipping
+2020-12-12 00:07:46,209 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,209 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,209 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists grupo cascade
+2020-12-12 00:07:46,210 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,210 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "grupo" does not exist, skipping
+2020-12-12 00:07:46,211 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,211 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,211 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists Pessoa cascade
+2020-12-12 00:07:46,212 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,212 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "pessoa" does not exist, skipping
+2020-12-12 00:07:46,212 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,212 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,212 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists Sangue cascade
+2020-12-12 00:07:46,213 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,213 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "sangue" does not exist, skipping
+2020-12-12 00:07:46,214 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,214 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,214 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists setor_atividade cascade
+2020-12-12 00:07:46,215 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,216 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "setor_atividade" does not exist, skipping
+2020-12-12 00:07:46,216 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,216 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,216 INFO  [stdout] (ServerService Thread Pool -- 78)     drop table if exists Usuario cascade
+2020-12-12 00:07:46,218 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,218 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) table "usuario" does not exist, skipping
+2020-12-12 00:07:46,218 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,218 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,219 INFO  [stdout] (ServerService Thread Pool -- 78)     drop sequence if exists hibernate_sequence
+2020-12-12 00:07:46,220 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) SQL Warning Code: 0, SQLState: 00000
+2020-12-12 00:07:46,220 WARN  [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] (ServerService Thread Pool -- 78) sequence "hibernate_sequence" does not exist, skipping
+2020-12-12 00:07:46,225 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: create sequence hibernate_sequence start 1 increment 1
+2020-12-12 00:07:46,239 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)     create table contato (
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)        ID_CONTATO  bigserial not null,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         NU_DDD_CELULAR numeric(2, 0) not null,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         NU_DDD_TELEFONE numeric(2, 0) not null,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         TX_EMAIL varchar(63) not null,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         NU_CELULAR numeric(9, 0) not null,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         NU_TELEFONE numeric(9, 0) not null,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         ID_PESSOA int8,
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (ID_CONTATO)
+2020-12-12 00:07:46,240 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)     create table endereco (
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)        ID_ENDERECO int8 not null,
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)         bairro varchar(30) not null,
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)         cep varchar(9) not null,
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)         cidade varchar(60) not null,
+2020-12-12 00:07:46,253 INFO  [stdout] (ServerService Thread Pool -- 78)         complemento varchar(150) not null,
+2020-12-12 00:07:46,254 INFO  [stdout] (ServerService Thread Pool -- 78)         estado varchar(50) not null,
+2020-12-12 00:07:46,254 INFO  [stdout] (ServerService Thread Pool -- 78)         logradouro varchar(150) not null,
+2020-12-12 00:07:46,254 INFO  [stdout] (ServerService Thread Pool -- 78)         numero varchar(20) not null,
+2020-12-12 00:07:46,255 INFO  [stdout] (ServerService Thread Pool -- 78)         rua varchar(30) not null,
+2020-12-12 00:07:46,255 INFO  [stdout] (ServerService Thread Pool -- 78)         uf varchar(60) not null,
+2020-12-12 00:07:46,255 INFO  [stdout] (ServerService Thread Pool -- 78)         ID_PESSOA int8,
+2020-12-12 00:07:46,255 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (ID_ENDERECO)
+2020-12-12 00:07:46,255 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,268 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,268 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,268 INFO  [stdout] (ServerService Thread Pool -- 78)     create table grupo (
+2020-12-12 00:07:46,269 INFO  [stdout] (ServerService Thread Pool -- 78)        id int8 not null,
+2020-12-12 00:07:46,269 INFO  [stdout] (ServerService Thread Pool -- 78)         descricao varchar(80) not null,
+2020-12-12 00:07:46,269 INFO  [stdout] (ServerService Thread Pool -- 78)         nome varchar(40) not null,
+2020-12-12 00:07:46,269 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id)
+2020-12-12 00:07:46,269 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,276 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Pessoa (
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)        ID_PESSOA  bigserial not null,
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)         cpf varchar(20) not null,
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)         data_nascimento date,
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)         nome varchar(200) not null,
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)         rg varchar(20) not null,
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)         sexo varchar(15) not null,
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (ID_PESSOA)
+2020-12-12 00:07:46,277 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,286 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Sangue (
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)        id  bigserial not null,
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)         nome varchar(255) not null,
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)         tipoSangue varchar(10) not null,
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)         ID_PESSOA int8,
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id)
+2020-12-12 00:07:46,287 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78)     create table setor_atividade (
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78)        id  bigserial not null,
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78)         descricao varchar(80) not null,
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id)
+2020-12-12 00:07:46,297 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,307 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,307 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)     create table Usuario (
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)        id  bigserial not null,
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)         dataCadastro date,
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)         email varchar(255),
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)         nomeUsuario varchar(255) not null,
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)         senha varchar(255) not null,
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)         primary key (id)
+2020-12-12 00:07:46,308 INFO  [stdout] (ServerService Thread Pool -- 78)     )
+2020-12-12 00:07:46,327 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,327 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,327 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists Sangue 
+2020-12-12 00:07:46,327 INFO  [stdout] (ServerService Thread Pool -- 78)        add constraint UK_hfile3i4hv2vtg1nirktamvjf unique (nome)
+2020-12-12 00:07:46,333 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,333 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,333 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists Usuario 
+2020-12-12 00:07:46,334 INFO  [stdout] (ServerService Thread Pool -- 78)        add constraint UK_598mvcct5levbbtcaeu7bfy6j unique (nomeUsuario)
+2020-12-12 00:07:46,339 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,340 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,340 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists contato 
+2020-12-12 00:07:46,340 INFO  [stdout] (ServerService Thread Pool -- 78)        add constraint FK3o7ci1h4wau462k7xllipbwyr 
+2020-12-12 00:07:46,340 INFO  [stdout] (ServerService Thread Pool -- 78)        foreign key (ID_PESSOA) 
+2020-12-12 00:07:46,340 INFO  [stdout] (ServerService Thread Pool -- 78)        references Pessoa
+2020-12-12 00:07:46,345 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,345 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,345 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists endereco 
+2020-12-12 00:07:46,345 INFO  [stdout] (ServerService Thread Pool -- 78)        add constraint FKap6d6pbqveyux71ktv9wmdp0 
+2020-12-12 00:07:46,345 INFO  [stdout] (ServerService Thread Pool -- 78)        foreign key (ID_PESSOA) 
+2020-12-12 00:07:46,345 INFO  [stdout] (ServerService Thread Pool -- 78)        references Pessoa
+2020-12-12 00:07:46,349 INFO  [stdout] (ServerService Thread Pool -- 78) Hibernate: 
+2020-12-12 00:07:46,349 INFO  [stdout] (ServerService Thread Pool -- 78)     
+2020-12-12 00:07:46,349 INFO  [stdout] (ServerService Thread Pool -- 78)     alter table if exists Sangue 
+2020-12-12 00:07:46,349 INFO  [stdout] (ServerService Thread Pool -- 78)        add constraint FKsygtsi44sl3118ujch145tf7d 
+2020-12-12 00:07:46,349 INFO  [stdout] (ServerService Thread Pool -- 78)        foreign key (ID_PESSOA) 
+2020-12-12 00:07:46,349 INFO  [stdout] (ServerService Thread Pool -- 78)        references Pessoa
+2020-12-12 00:07:46,362 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (ServerService Thread Pool -- 78) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@401f8226'
+2020-12-12 00:07:46,702 WARN  [org.jboss.weld.Bootstrap] (MSC service thread 1-8) WELD-000146: BeforeBeanDiscovery.addAnnotatedType(AnnotatedType<?>) used for class com.sun.faces.flow.FlowDiscoveryCDIHelper is deprecated from CDI 1.1!
+2020-12-12 00:07:46,779 INFO  [io.smallrye.metrics] (MSC service thread 1-8) MicroProfile: Metrics activated (SmallRye Metrics version: 2.4.2)
+2020-12-12 00:07:48,583 INFO  [org.omnifaces.ApplicationInitializer] (ServerService Thread Pool -- 78) Using OmniFaces version 2.6.1
+2020-12-12 00:07:48,778 INFO  [javax.enterprise.resource.webcontainer.jsf.config] (ServerService Thread Pool -- 78) Inicializando Mojarra 2.3.14.SP01 para o contexto '/hemopa-digital'
+2020-12-12 00:07:50,769 INFO  [org.primefaces.webapp.PostConstructApplicationEventListener] (ServerService Thread Pool -- 78) Running on PrimeFaces 7.0
+2020-12-12 00:07:50,801 INFO  [com.github.adminfaces.template.event.AdminSystemEventListener] (ServerService Thread Pool -- 78) Using Admin Template 1.1.0 and Admin Theme 1.1.0
+2020-12-12 00:07:50,801 INFO  [org.primefaces.extensions.application.PostConstructApplicationEventListener] (ServerService Thread Pool -- 78) Running on PrimeFaces Extensions 6.1
+2020-12-12 00:07:50,829 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 78) WFLYUT0021: Registered web context: '/hemopa-digital' for server 'default-server'
+2020-12-12 00:07:50,976 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 45) WFLYSRV0010: Deployed "hemopa-digital.war" (runtime-name : "hemopa-digital.war")
+2020-12-12 00:07:51,052 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2020-12-12 00:07:51,056 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 21.0.0.Final (WildFly Core 13.0.1.Final) started in 18365ms - Started 916 of 1120 services (376 services are lazy, passive or on-demand)
+2020-12-12 00:07:51,062 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2020-12-12 00:07:51,062 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2020-12-12 00:10:32,158 INFO  [org.hibernate.jpa.internal.util.LogHelper] (default task-1) HHH000204: Processing PersistenceUnitInfo [
+	name: HemopaDigitalP
+	...]
+2020-12-12 00:10:32,187 INFO  [org.hibernate.dialect.Dialect] (default task-1) HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-12 00:10:32,252 INFO  [org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl] (default task-1) HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2020-12-12 00:10:32,253 INFO  [org.hibernate.type.BasicTypeRegistry] (default task-1) HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6618577e
+2020-12-12 00:10:32,258 INFO  [org.hibernate.envers.boot.internal.EnversServiceImpl] (default task-1) Envers integration enabled? : true
+2020-12-12 00:10:32,453 INFO  [org.hibernate.orm.beans] (default task-1) HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2020-12-12 00:10:32,519 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,520 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,520 INFO  [stdout] (default task-1)     alter table if exists contato 
+2020-12-12 00:10:32,520 INFO  [stdout] (default task-1)        drop constraint if exists FK3o7ci1h4wau462k7xllipbwyr
+2020-12-12 00:10:32,524 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,524 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,525 INFO  [stdout] (default task-1)     alter table if exists endereco 
+2020-12-12 00:10:32,525 INFO  [stdout] (default task-1)        drop constraint if exists FKap6d6pbqveyux71ktv9wmdp0
+2020-12-12 00:10:32,527 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,527 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,527 INFO  [stdout] (default task-1)     alter table if exists Sangue 
+2020-12-12 00:10:32,527 INFO  [stdout] (default task-1)        drop constraint if exists FKsygtsi44sl3118ujch145tf7d
+2020-12-12 00:10:32,531 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,531 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,532 INFO  [stdout] (default task-1)     drop table if exists contato cascade
+2020-12-12 00:10:32,536 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,536 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,536 INFO  [stdout] (default task-1)     drop table if exists endereco cascade
+2020-12-12 00:10:32,539 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,539 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,539 INFO  [stdout] (default task-1)     drop table if exists grupo cascade
+2020-12-12 00:10:32,542 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,542 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,542 INFO  [stdout] (default task-1)     drop table if exists Pessoa cascade
+2020-12-12 00:10:32,547 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,547 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,547 INFO  [stdout] (default task-1)     drop table if exists Sangue cascade
+2020-12-12 00:10:32,551 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,551 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,551 INFO  [stdout] (default task-1)     drop table if exists setor_atividade cascade
+2020-12-12 00:10:32,554 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,554 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,554 INFO  [stdout] (default task-1)     drop table if exists Usuario cascade
+2020-12-12 00:10:32,558 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,558 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,558 INFO  [stdout] (default task-1)     drop sequence if exists hibernate_sequence
+2020-12-12 00:10:32,561 INFO  [stdout] (default task-1) Hibernate: create sequence hibernate_sequence start 1 increment 1
+2020-12-12 00:10:32,565 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,565 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,565 INFO  [stdout] (default task-1)     create table contato (
+2020-12-12 00:10:32,565 INFO  [stdout] (default task-1)        ID_CONTATO  bigserial not null,
+2020-12-12 00:10:32,565 INFO  [stdout] (default task-1)         NU_DDD_CELULAR numeric(2, 0) not null,
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)         NU_DDD_TELEFONE numeric(2, 0) not null,
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)         TX_EMAIL varchar(63) not null,
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)         NU_CELULAR numeric(9, 0) not null,
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)         NU_TELEFONE numeric(9, 0) not null,
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)         ID_PESSOA int8,
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)         primary key (ID_CONTATO)
+2020-12-12 00:10:32,566 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,573 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,573 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,573 INFO  [stdout] (default task-1)     create table endereco (
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)        ID_ENDERECO int8 not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         bairro varchar(30) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         cep varchar(9) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         cidade varchar(60) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         complemento varchar(150) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         estado varchar(50) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         logradouro varchar(150) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         numero varchar(20) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         rua varchar(30) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         uf varchar(60) not null,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         ID_PESSOA int8,
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)         primary key (ID_ENDERECO)
+2020-12-12 00:10:32,574 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)     create table grupo (
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)        id int8 not null,
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)         descricao varchar(80) not null,
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)         nome varchar(40) not null,
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)         primary key (id)
+2020-12-12 00:10:32,587 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,593 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,593 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)     create table Pessoa (
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)        ID_PESSOA  bigserial not null,
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)         cpf varchar(20) not null,
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)         data_nascimento date,
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)         nome varchar(200) not null,
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)         rg varchar(20) not null,
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)         sexo varchar(15) not null,
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)         primary key (ID_PESSOA)
+2020-12-12 00:10:32,594 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)     create table Sangue (
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)        id  bigserial not null,
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)         nome varchar(255) not null,
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)         tipoSangue varchar(10) not null,
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)         ID_PESSOA int8,
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)         primary key (id)
+2020-12-12 00:10:32,602 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1)     create table setor_atividade (
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1)        id  bigserial not null,
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1)         descricao varchar(80) not null,
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1)         primary key (id)
+2020-12-12 00:10:32,609 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)     create table Usuario (
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)        id  bigserial not null,
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)         dataCadastro date,
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)         email varchar(255),
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)         nomeUsuario varchar(255) not null,
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)         senha varchar(255) not null,
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)         primary key (id)
+2020-12-12 00:10:32,616 INFO  [stdout] (default task-1)     )
+2020-12-12 00:10:32,627 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,627 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,627 INFO  [stdout] (default task-1)     alter table if exists Sangue 
+2020-12-12 00:10:32,627 INFO  [stdout] (default task-1)        add constraint UK_hfile3i4hv2vtg1nirktamvjf unique (nome)
+2020-12-12 00:10:32,632 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,632 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,632 INFO  [stdout] (default task-1)     alter table if exists Usuario 
+2020-12-12 00:10:32,632 INFO  [stdout] (default task-1)        add constraint UK_598mvcct5levbbtcaeu7bfy6j unique (nomeUsuario)
+2020-12-12 00:10:32,636 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,637 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,637 INFO  [stdout] (default task-1)     alter table if exists contato 
+2020-12-12 00:10:32,637 INFO  [stdout] (default task-1)        add constraint FK3o7ci1h4wau462k7xllipbwyr 
+2020-12-12 00:10:32,637 INFO  [stdout] (default task-1)        foreign key (ID_PESSOA) 
+2020-12-12 00:10:32,637 INFO  [stdout] (default task-1)        references Pessoa
+2020-12-12 00:10:32,639 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,639 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,639 INFO  [stdout] (default task-1)     alter table if exists endereco 
+2020-12-12 00:10:32,639 INFO  [stdout] (default task-1)        add constraint FKap6d6pbqveyux71ktv9wmdp0 
+2020-12-12 00:10:32,640 INFO  [stdout] (default task-1)        foreign key (ID_PESSOA) 
+2020-12-12 00:10:32,640 INFO  [stdout] (default task-1)        references Pessoa
+2020-12-12 00:10:32,642 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,642 INFO  [stdout] (default task-1)     
+2020-12-12 00:10:32,642 INFO  [stdout] (default task-1)     alter table if exists Sangue 
+2020-12-12 00:10:32,643 INFO  [stdout] (default task-1)        add constraint FKsygtsi44sl3118ujch145tf7d 
+2020-12-12 00:10:32,643 INFO  [stdout] (default task-1)        foreign key (ID_PESSOA) 
+2020-12-12 00:10:32,643 INFO  [stdout] (default task-1)        references Pessoa
+2020-12-12 00:10:32,651 INFO  [org.hibernate.tool.schema.internal.SchemaCreatorImpl] (default task-1) HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@401f8226'
+2020-12-12 00:10:32,758 INFO  [org.hibernate.hql.internal.QueryTranslatorFactoryInitiator] (default task-1) HHH000397: Using ASTQueryTranslatorFactory
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)     select
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)     from
+2020-12-12 00:10:32,874 INFO  [stdout] (default task-1)         Pessoa pessoa0_
+2020-12-12 00:10:45,392 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:45,392 INFO  [stdout] (default task-1)     select
+2020-12-12 00:10:45,392 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:10:45,392 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:10:45,393 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:10:45,393 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:10:45,393 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:10:45,393 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:10:45,393 INFO  [stdout] (default task-1)     from
+2020-12-12 00:10:45,394 INFO  [stdout] (default task-1)         Pessoa pessoa0_
+2020-12-12 00:10:55,131 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:55,131 INFO  [stdout] (default task-1)     select
+2020-12-12 00:10:55,131 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:10:55,131 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:10:55,132 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:10:55,132 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:10:55,132 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:10:55,132 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:10:55,132 INFO  [stdout] (default task-1)     from
+2020-12-12 00:10:55,132 INFO  [stdout] (default task-1)         Pessoa pessoa0_
+2020-12-12 00:10:59,570 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:10:59,571 INFO  [stdout] (default task-1)     select
+2020-12-12 00:10:59,571 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:10:59,571 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:10:59,571 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:10:59,571 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:10:59,571 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:10:59,572 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:10:59,572 INFO  [stdout] (default task-1)     from
+2020-12-12 00:10:59,572 INFO  [stdout] (default task-1)         Pessoa pessoa0_
+2020-12-12 00:11:00,898 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:11:00,898 INFO  [stdout] (default task-1)     select
+2020-12-12 00:11:00,899 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:11:00,900 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:11:00,900 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:11:00,904 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:11:00,904 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:11:00,904 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:11:00,904 INFO  [stdout] (default task-1)     from
+2020-12-12 00:11:00,904 INFO  [stdout] (default task-1)         Pessoa pessoa0_
+2020-12-12 00:11:02,383 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:11:02,383 INFO  [stdout] (default task-1)     select
+2020-12-12 00:11:02,383 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)     from
+2020-12-12 00:11:02,384 INFO  [stdout] (default task-1)         Pessoa pessoa0_
+2020-12-12 00:11:16,017 INFO  [stdout] (default task-1) Hibernate: 
+2020-12-12 00:11:16,017 INFO  [stdout] (default task-1)     select
+2020-12-12 00:11:16,017 INFO  [stdout] (default task-1)         pessoa0_.ID_PESSOA as ID_PESSO1_3_,
+2020-12-12 00:11:16,017 INFO  [stdout] (default task-1)         pessoa0_.cpf as cpf2_3_,
+2020-12-12 00:11:16,018 INFO  [stdout] (default task-1)         pessoa0_.data_nascimento as data_nas3_3_,
+2020-12-12 00:11:16,018 INFO  [stdout] (default task-1)         pessoa0_.nome as nome4_3_,
+2020-12-12 00:11:16,018 INFO  [stdout] (default task-1)         pessoa0_.rg as rg5_3_,
+2020-12-12 00:11:16,018 INFO  [stdout] (default task-1)         pessoa0_.sexo as sexo6_3_ 
+2020-12-12 00:11:16,019 INFO  [stdout] (default task-1)     from
+2020-12-12 00:11:16,019 INFO  [stdout] (default task-1)         Pessoa pessoa0_

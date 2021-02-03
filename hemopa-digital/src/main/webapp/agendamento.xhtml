@@ -58,7 +58,7 @@
 								<p:selectOneMenu id="horario"
 									value="#{agendamentosMB.agenda.horario}">
 									<f:selectItem itemLabel="Selecione..." />
-									<f:selectItems value="#{agendamentosMB.horarios}" 
+									<f:selectItems value="#{agendamentosMB.horarios}"
 										var="horarios" itemLabel="#{horarios.descricao}"
 										itemValue="#{horarios}" />
 								</p:selectOneMenu>
@@ -70,7 +70,7 @@
 							</div>
 							<div class="ui-sm-12 ui-g-11">
 								<p:selectOneMenu id="unidade"
-									value="#{agendamentosMB.agenda.unidadeHemopa}" >
+									value="#{agendamentosMB.agenda.unidadeHemopa}">
 									<f:selectItem itemLabel="Selecione..." />
 									<f:selectItems value="#{agendamentosMB.unidadeHemopa}"
 										var="unidadeHemopa" itemLabel="#{unidadeHemopa.descricao}"
@@ -83,8 +83,9 @@
 								<p:outputLabel value="Dia desejado: " for="dia" />
 							</div>
 							<div class="ui-sm-12 ui-g-11">
-								<p:calendar id="dia" mask="true" pattern="dd/MM/yyyy" locale="pt" value="#{agendamentosMB.agenda.dia}"
-									 disabled="#{agendamentosMB.chekin}" size="15"/>
+								<p:calendar id="dia" mask="true" pattern="dd/MM/yyyy"
+									locale="pt" value="#{agendamentosMB.agenda.dia}"
+									disabled="#{agendamentosMB.chekin}" size="15" />
 								<span class="help-block"> <p:message for="dia" />
 								</span>
 							</div>
@@ -107,35 +108,33 @@
 							</div>
 							<div class="ui-sm-12 ui-g-11">
 								<p:selectBooleanCheckbox value="#{agendamentosMB.chekin}">
-							<p:ajax update="@form" />
+									<p:ajax update="@form" />
 								</p:selectBooleanCheckbox>
 							</div>
 						</div>
 						<p:panel id="reservar" rendered="#{agendamentosMB.chekin}">
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-12 ui-g-11">
-								<p:outputLabel value=" Data inicio: " for="inicio" />
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-12 ui-g-11">
+									<p:outputLabel value=" Data inicio: " for="inicio" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:calendar id="inicio" mask="true" pattern="dd/MM/yyyy"
+										locale="pt" value="#{agendamentosMB.agenda.dataInicio}" />
+									<span class="help-block"> <p:message for="inicio" />
+									</span>
+								</div>
 							</div>
-							<div class="ui-sm-12 ui-g-11">
-								<p:datePicker id="inicio"
-									value="#{agendamentosMB.agenda.dataInicio}" navigator="true"
-									locale="pt" size="15" pattern="yyyy-MMM-dd" />
-								<span class="help-block"> <p:message for="inicio" />
-								</span>
+							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-12 ui-g-11">
+									<p:outputLabel value=" Data final: " for="final" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:calendar id="final" mask="true" pattern="dd/MM/yyyy"
+										locale="pt" value="#{agendamentosMB.agenda.dataFim}" />
+										<span class="help-block"> <p:message for="final" />
+										</span>
+								</div>
 							</div>
-						</div>
-						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
-							<div class="ui-sm-12 ui-g-11">
-								<p:outputLabel value=" Data final: " for="final" />
-							</div>
-							<div class="ui-sm-12 ui-g-11">
-								<p:datePicker id="final"
-									value="#{agendamentosMB.agenda.dataFim}"
-									pattern="dd.MM.yyyy" readonlyInput="true" locale="pt" size="15" />
-								<span class="help-block"> <p:message for="final" />
-								</span>
-							</div>
-						</div>
 						</p:panel>
 					</div>
 				</p:panel>

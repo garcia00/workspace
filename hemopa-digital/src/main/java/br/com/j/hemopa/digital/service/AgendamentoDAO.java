@@ -7,6 +7,7 @@ import java.util.Map;
 
 import javax.persistence.Cache;
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
 
@@ -116,25 +117,26 @@ public class AgendamentoDAO {
 		JPQL.append(" WHERE 1=1 ");
 		
 		if (filtro.getTipoEvento() != null) {
-			JPQL.append(" AND fc.tipoEvento = :pTipoEvento ");
-			parametros.put("pSituacao", filtro.getTipoEvento());
+			JPQL.append(" AND fc.tipoevento = :pTipoEvento ");
+			parametros.put("pTipoEvento", filtro.getTipoEvento());
 
 		}
 		
 		if (filtro.getDataInicio() != null) {
-			JPQL.append(" AND (CAST(TO_CHAR(fc.dataInicio, 'ddMMyyyy') AS INT) >= :pDataInicio) ");
+			JPQL.append(" AND ( CAST( TO_CHAR( fc.dia, 'ddMMyyyy' ) AS INT ) >= :pDataInicio ) ");
 			
 			parametros.put("pDataInicio", Integer.parseInt(new SimpleDateFormat("ddMMyyyy").format(filtro.getDataInicio())));
 		}
 
 		if (filtro.getDataFim() != null) {
-			JPQL.append(" AND (CAST(TO_CHAR(fc.datInicio, 'ddMMyyyy') AS INT) <= :pDataFiml) ");
+			JPQL.append(" AND ( CAST( TO_CHAR( fc.dia , 'ddMMyyyy' ) AS INT ) <= :pDataFinal) ");
 			parametros.put("pDataFinal", Integer.parseInt(new SimpleDateFormat("ddMMyyyy").format(filtro.getDataFim())));
 		}
 
-		JPQL.append(" ORDER BY fc.dt_inclusao DESC");
 
-		final TypedQuery<Agenda> query = this.getEntityManager().createQuery(JPQL.toString(), Agenda.class);
+		//final TypedQuery<Agenda> query = new JPAUtil().getEntityManager().createQuery(JPQL.toString(), Agenda.class);
+		
+		final Query query = new JPAUtil().getEntityManager().createNativeQuery(JPQL.toString(), Agenda.class);
 
 		for (final String parametro : parametros.keySet()) {
 			query.setParameter(parametro, parametros.get(parametro));

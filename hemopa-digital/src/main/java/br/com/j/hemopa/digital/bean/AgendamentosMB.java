@@ -90,7 +90,7 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public List<Agenda> getAgendas() {
-		return new AgendamentoDAO().listaTodos();
+		return new AgendamentoDAO().buscarPorCriterio(agendaFiltro);
 	}
 
 	public List<Pessoa> getPessoas() {
@@ -238,6 +238,7 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public boolean isChekin() {
+		
 		return chekin;
 	}
 

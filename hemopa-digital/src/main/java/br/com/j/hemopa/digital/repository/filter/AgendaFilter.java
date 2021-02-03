@@ -1,6 +1,7 @@
 package br.com.j.hemopa.digital.repository.filter;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import br.com.j.hemopa.digital.model.Agenda;
 
@@ -11,9 +12,9 @@ public class AgendaFilter implements Serializable{
 	
 	private String tipoEvento;
 	
-	private String dataInicio;
+	private Date dataInicio;
 	
-	private String dataFim;
+	private Date dataFim;
 
 	public String getTipoEvento() {
 		return tipoEvento;
@@ -24,19 +25,19 @@ public class AgendaFilter implements Serializable{
 		this.tipoEvento = tipoEvento.toString();
 	}
 
-	public String getDataInicio() {
+	public Date getDataInicio() {
 		return dataInicio;
 	}
 
-	public void setDataInicio(String dataInicio) {
+	public void setDataInicio(Date dataInicio) {
 		this.dataInicio = dataInicio;
 	}
 
-	public String getDataFim() {
+	public Date getDataFim() {
 		return dataFim;
 	}
 
-	public void setDataFim(String dataFim) {
+	public void setDataFim(Date dataFim) {
 		this.dataFim = dataFim;
 	}
 	

@@ -35,7 +35,8 @@ public class Agenda {
 	private Horario horario;
 		
 	@Column(name = "dia")
-	private String dia;
+	@Temporal(TemporalType.DATE)
+	private Date dia;
 	
 	@Column(name = "isChekin", columnDefinition = "boolean default false")
 	private boolean isChekin;
@@ -57,9 +58,11 @@ public class Agenda {
 	private DominioPeriodoExpediente periodo;
 	
 	@Column(name = "DATA_INICIO", length = 15)
+	@Temporal(TemporalType.DATE)
 	private Date dataInicio;
 	
 	@Column(name = "DATA_FIM", length = 15)
+	@Temporal(TemporalType.DATE)
 	private Date dataFim;
 
 	@Column(name = "HORARIO_INICIO", length = 5)
@@ -195,11 +198,11 @@ public class Agenda {
 		this.reservado = reservado;
 	}
 
-	public String getDia() {
+	public Date getDia() {
 		return dia;
 	}
 
-	public void setDia(String dia) {
+	public void setDia(Date dia) {
 		this.dia = dia;
 	}
 
@@ -251,6 +254,14 @@ public class Agenda {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
+	}
+
+	@Override
+	public String toString() {
+		return "Agenda [id=" + id + ", horario=" + horario + ", dia=" + dia + ", isChekin=" + isChekin
+				+ ", unidadeHemopa=" + unidadeHemopa + ", pessoa=" + pessoa + ", tipoEvento=" + tipoEvento
+				+ ", periodo=" + periodo + ", dataInicio=" + dataInicio + ", dataFim=" + dataFim + ", horarioInicio="
+				+ horarioInicio + ", horarioFim=" + horarioFim + ", reservado=" + reservado + "]";
 	}
 	
 	

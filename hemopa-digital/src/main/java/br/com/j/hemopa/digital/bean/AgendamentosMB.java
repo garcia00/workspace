@@ -46,7 +46,7 @@ public class AgendamentosMB implements Serializable {
 	public static final String AGENDAMENTO = "/agenda?faces-redirect=true";
 
 	private Pessoa pessoa;
-
+	
 	private AgendamentoDAO agendamentoDAO;
 
 	private Agenda agenda;
@@ -213,7 +213,11 @@ public class AgendamentosMB implements Serializable {
 
 	public void acaoPesquisar() {
 		
-		this.setFiltroAgenda(this.filtroAgenda);
+		this.agendamentoDAO = new AgendamentoDAO();
+		List<Agenda> agendas = this.agendamentoDAO.buscarPorCriterio(this.getAgendaFiltro());
+		
+		agendas.forEach(System.out::println);
+				
 
 	}
 
@@ -242,7 +246,7 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public List<Agenda> getFiltroAgenda() {
-
+			
 		return filtroAgenda;
 	}
 

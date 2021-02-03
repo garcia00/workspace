@@ -83,7 +83,7 @@
 								<p:outputLabel value="Dia desejado: " for="dia" />
 							</div>
 							<div class="ui-sm-12 ui-g-11">
-								<p:inputMask id="dia" mask="99/99/9999" value="#{agendamentosMB.agenda.dia}"
+								<p:calendar id="dia" mask="true" pattern="dd/MM/yyyy" locale="pt" value="#{agendamentosMB.agenda.dia}"
 									 disabled="#{agendamentosMB.chekin}" size="15"/>
 								<span class="help-block"> <p:message for="dia" />
 								</span>

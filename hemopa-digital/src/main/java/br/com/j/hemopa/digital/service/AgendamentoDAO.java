@@ -1,23 +1,17 @@
 package br.com.j.hemopa.digital.service;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.faces.application.FacesMessage;
-import javax.faces.context.FacesContext;
 import javax.persistence.Cache;
 import javax.persistence.EntityManager;
-import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
 
-import org.hibernate.Query;
-import org.hibernate.SQLQuery;
-
 import br.com.j.hemopa.digital.model.Agenda;
+import br.com.j.hemopa.digital.repository.filter.AgendaFilter;
 import br.com.j.hemopa.digital.util.JPAUtil;
 
 public class AgendamentoDAO {
@@ -113,9 +107,7 @@ public class AgendamentoDAO {
 		return this.getEntityManager();
 	}
 	
-	public List<Agenda> buscarPorCriterio(Agenda filtro) {
-		
-		this.limparTudoDaCache();
+	public List<Agenda> buscarPorCriterio(AgendaFilter filtro) {
 		
 		final StringBuilder JPQL = new StringBuilder(" select * from agenda fc");
 		
@@ -125,12 +117,13 @@ public class AgendamentoDAO {
 		
 		if (filtro.getTipoEvento() != null) {
 			JPQL.append(" AND fc.tipoEvento = :pTipoEvento ");
-			parametros.put("pSituacao", filtro.getTipoEvento().getDescricao());
+			parametros.put("pSituacao", filtro.getTipoEvento());
 
 		}
 		
 		if (filtro.getDataInicio() != null) {
 			JPQL.append(" AND (CAST(TO_CHAR(fc.dataInicio, 'ddMMyyyy') AS INT) >= :pDataInicio) ");
+			
 			parametros.put("pDataInicio", Integer.parseInt(new SimpleDateFormat("ddMMyyyy").format(filtro.getDataInicio())));
 		}
 

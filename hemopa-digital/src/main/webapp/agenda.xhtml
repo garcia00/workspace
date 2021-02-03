@@ -39,18 +39,14 @@
 										showOn="false" pattern="dd/MM/yyyy" locale="pt" size="15"
 										value="#{agendamentosMB.agendaFiltro.dataFim}" mask="true"
 										style="width:50%;" />
-
-									<div class="ui-sm-6 ui-g-11">
+								</h:panelGrid>
+								<div class="ui-sm-6 ui-g-11">
 										<p:commandButton icon="fa fa-search"
 											styleClass="btn btn-primary" value="Pesquisar"
 											action="#{agendamentosMB.acaoPesquisar()}"
 											update="@form, tabelaPessoas">
 										</p:commandButton>
 									</div>
-								</h:panelGrid>
-
-
-
 							</div>
 						</div>
 					</div>

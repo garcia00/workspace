@@ -11,6 +11,7 @@ import javax.persistence.Cache;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaQuery;
 
 import org.apache.commons.lang3.StringUtils;
 import org.hibernate.Criteria;
@@ -21,7 +22,9 @@ import org.hibernate.criterion.Restrictions;
 
 import br.com.j.hemopa.digital.model.Agenda;
 import br.com.j.hemopa.digital.model.Pessoa;
+import br.com.j.hemopa.digital.repository.filter.AgendaFilter;
 import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
+import br.com.j.hemopa.digital.util.JPAUtil;
 
 public class Agendamentos implements Serializable {
 
@@ -140,5 +143,17 @@ public List<Agenda> buscarPorCriterio(Agenda filtro) {
 		return this.getEntityManager();
 	}
 	
+	public List<Agenda> filtrados(AgendaFilter filtro) {
+		EntityManager em = new JPAUtil().getEntityManager();
+		CriteriaQuery<Agenda> query = em.getCriteriaBuilder().createQuery(Agenda.class);
+		query.select(query.from(Agenda.class));
+
+		List<Agenda> lista = em.createQuery(query).getResultList();
+
+		em.close();
+
+		return lista;
+				
+	}
 
 }

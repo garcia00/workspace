@@ -5,21 +5,19 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
+import javax.enterprise.inject.Produces;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.persistence.NoResultException;
-import javax.transaction.Transactional;
 
-import org.hibernate.mapping.Array;
+
 
 import br.com.j.hemopa.digital.dominios.Dia;
 import br.com.j.hemopa.digital.dominios.DiasSemana;
 import br.com.j.hemopa.digital.dominios.DominioMes;
 import br.com.j.hemopa.digital.dominios.DominioPeriodoExpediente;
 import br.com.j.hemopa.digital.dominios.Horario;
-import br.com.j.hemopa.digital.dominios.Sexo;
 import br.com.j.hemopa.digital.dominios.TipoEvento;
 import br.com.j.hemopa.digital.dominios.TipoSangue;
 import br.com.j.hemopa.digital.dominios.UnidadesHemopa;
@@ -30,10 +28,7 @@ import br.com.j.hemopa.digital.repository.Pessoas;
 import br.com.j.hemopa.digital.repository.filter.AgendaFilter;
 import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
 import br.com.j.hemopa.digital.service.AgendamentoDAO;
-import br.com.j.hemopa.digital.service.DAO;
 import br.com.j.hemopa.digital.service.PessoaDAO;
-import br.com.j.hemopa.digital.util.DataUtil;
-import br.com.j.hemopa.digital.util.FacesMessages;
 
 @Named
 @SessionScoped
@@ -47,10 +42,20 @@ public class AgendamentosMB implements Serializable {
 
 	private Pessoa pessoa;
 	
+	@Inject
+	private Pessoas pessoas;
+	
+	@Inject
+	private Agendamentos agendamentos;
+	
+	@Inject
 	private AgendamentoDAO agendamentoDAO;
-
+	
+	@Produces
+	@AgendaEdicao
 	private Agenda agenda;
-
+	
+	
 	private PessoaFilter filtro;
 
 	private AgendaFilter agendaFiltro;
@@ -58,43 +63,19 @@ public class AgendamentosMB implements Serializable {
 	private List<Agenda> filtroAgenda;
 
 	private List<Pessoa> pessoasFiltrados;
-
-	private DataUtil dataUtil;
-
-	@Inject
-	private Agendamentos agendamentos;
+	
 
 	private boolean chekin = false;
 
-	@PostConstruct
-	public void init() {
-
-	}
-
-	public void agendamento() {
-		agenda = new Agenda();
-		pessoa = new Pessoa();
-	}
-
 	public String getNavegacao() {
-
-		limpar();
 
 		return AgendamentosMB.NAVEGACAO;
 
 	}
 
 	public String prepararNovoAgendamento() {
-		limpar();
+		
 		return getNavegacao();
-	}
-
-	public List<Agenda> getAgendas() {
-		return new AgendamentoDAO().buscarPorCriterio(agendaFiltro);
-	}
-
-	public List<Pessoa> getPessoas() {
-		return new PessoaDAO().listaTodos();
 	}
 
 	public String salvar() {
@@ -106,36 +87,30 @@ public class AgendamentosMB implements Serializable {
 		return AGENDAMENTO;
 
 	}
+	
+	public void acaoPesquisar() {
+
+		this.agendamentoDAO = new AgendamentoDAO();
+		List<Agenda> agendas = this.agendamentoDAO.buscarPorCriterio(this.getAgendaFiltro());
+
+	}
 
 	public void carregarAgendaPelaId() {
 
 		new AgendamentoDAO().buscaPorId(this.agenda.getId());
 	}
-
-	public String carregar(Agenda agenda) {
-
-		this.agenda = agenda;
-
-		return NAVEGACAO;
-	}
-
+	
 	public void inicializar() {
-
+		
 		agenda = new Agenda();
-
 	}
 
-	private void limpar() {
-
-		agenda = new Agenda();
-
+	public List<Agenda> getAgendas() {
+		return new AgendamentoDAO().buscarPorCriterio(agendaFiltro);
 	}
 
-	public void reagendar(Agenda agenda) {
-
-		new AgendamentoDAO().atualiza(agenda);
-
-		FacesMessages.addInfoMessage("Agendamento".concat(pessoa.getNome()).concat(" Reagendada!"));
+	public List<Pessoa> getPessoas() {
+		return new PessoaDAO().listaTodos();
 	}
 
 	public Pessoa getPessoa() {
@@ -152,10 +127,6 @@ public class AgendamentosMB implements Serializable {
 		this.pessoa = pessoa;
 	}
 
-	public Sexo[] getSexos() {
-		return Sexo.values();
-	}
-
 	public Horario[] getHorarios() {
 		return Horario.values();
 	}
@@ -165,7 +136,7 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public TipoEvento[] getTipoEvento() {
-		
+
 		return TipoEvento.values();
 	}
 
@@ -202,25 +173,6 @@ public class AgendamentosMB implements Serializable {
 		this.agenda = agenda;
 	}
 
-	public void cancelar() {
-
-		FacesMessages.addInfoMessage("Cancelado agendamento!");
-		
-		this.agendamentos.remover(agenda);
-
-
-	}
-
-	public void acaoPesquisar() {
-		
-		this.agendamentoDAO = new AgendamentoDAO();
-		List<Agenda> agendas = this.agendamentoDAO.buscarPorCriterio(this.getAgendaFiltro());
-		
-		agendas.forEach(System.out::println);
-				
-
-	}
-
 	public PessoaFilter getFiltro() {
 		return filtro;
 	}
@@ -238,7 +190,7 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public boolean isChekin() {
-		
+
 		return chekin;
 	}
 
@@ -247,7 +199,7 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public List<Agenda> getFiltroAgenda() {
-			
+
 		return filtroAgenda;
 	}
 
@@ -265,14 +217,6 @@ public class AgendamentosMB implements Serializable {
 
 	public void setAgendaFiltro(AgendaFilter agendaFiltro) {
 		this.agendaFiltro = agendaFiltro;
-	}
-
-	public DataUtil getDataUtil() {
-		return dataUtil;
-	}
-
-	public void setDataUtil(DataUtil dataUtil) {
-		this.dataUtil = dataUtil;
 	}
 
 	public Agendamentos getAgendamentos() {

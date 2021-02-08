@@ -8,12 +8,12 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
 		<jta-data-source>java:jboss/datasources/hemopaDigitalDS</jta-data-source>
-		<class>br.com.j.hemopa.digital.model.SetorAtividade</class>
 		<class>br.com.j.hemopa.digital.model.Usuario</class>
 		<class>br.com.j.hemopa.digital.model.Endereco</class>
 		<class>br.com.j.hemopa.digital.model.Contato</class>
 		<class>br.com.j.hemopa.digital.model.Pessoa</class>
 		<class>br.com.j.hemopa.digital.model.Agenda</class>
+		<class>br.com.j.hemopa.digital.model.Vagas</class>
 
 		<properties>
 

@@ -11,6 +11,7 @@ import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
 
+import br.com.j.hemopa.digital.dominios.TipoEvento;
 import br.com.j.hemopa.digital.model.Agenda;
 import br.com.j.hemopa.digital.repository.filter.AgendaFilter;
 import br.com.j.hemopa.digital.util.JPAUtil;
@@ -46,6 +47,16 @@ public class AgendamentoDAO {
 	}
 
 	public void atualiza(Agenda agenda) {
+		EntityManager em = new JPAUtil().getEntityManager();
+		em.getTransaction().begin();
+
+		em.merge(agenda);
+
+		em.getTransaction().commit();
+		em.close();
+	}
+	
+	public void atualizaStatus(TipoEvento tipoEvento, Agenda agenda) {
 		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
 

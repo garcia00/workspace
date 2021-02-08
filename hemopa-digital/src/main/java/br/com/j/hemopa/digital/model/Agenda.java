@@ -1,16 +1,22 @@
 package br.com.j.hemopa.digital.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
@@ -23,44 +29,39 @@ import br.com.j.hemopa.digital.dominios.UnidadesHemopa;
 
 @Entity
 public class Agenda {
-	
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "ID_Agenda", unique = true, nullable = false)
+	@Column(name = "id_genda", unique = true, nullable = false)
 	private Long id;
-	
+
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, length = 15)
 	private Horario horario;
-		
+
 	@Column(name = "dia")
 	@Temporal(TemporalType.DATE)
 	private Date dia;
-	
+
 	@Column(name = "isChekin", columnDefinition = "boolean default false")
 	private boolean isChekin;
 
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, length = 30)
 	private UnidadesHemopa unidadeHemopa;
-	
-	@ManyToOne
-	@JoinColumn(name = "ID_PESSOA")
-	private Pessoa pessoa;
-	
+
 	@Enumerated(EnumType.STRING)
 	@Column(nullable = false, length = 15)
 	private TipoEvento tipoEvento = TipoEvento.MARCADO;
-	
+
 	@Enumerated(EnumType.STRING)
 	@Column(name = "PERIODO")
 	private DominioPeriodoExpediente periodo;
-	
+
 	@Column(name = "DATA_INICIO", length = 15)
 	@Temporal(TemporalType.DATE)
 	private Date dataInicio;
-	
+
 	@Column(name = "DATA_FIM", length = 15)
 	@Temporal(TemporalType.DATE)
 	private Date dataFim;
@@ -70,51 +71,27 @@ public class Agenda {
 
 	@Column(name = "HORARIO_FIM", length = 5)
 	private String horarioFim;
-	
+
 	@Enumerated(EnumType.STRING)
 	@Column(name = "RESERVARDO")
 	private DominioSimNao reservado;
+	
+	@OneToOne(cascade = CascadeType.ALL)
+	private Pessoa pessoa;
+	
+	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+	private List<Vagas> vagas = new ArrayList<>();
 
 	public Agenda() {
 		super();
 	}
-	
-	public Agenda(Pessoa pessoa) {
-		
-		if (pessoa == null){
-			
-			pessoa = new Pessoa();
-			
-			}
-		this.pessoa = new Pessoa();
-	}
-	
+
 	public TipoEvento getTipoEvento() {
 		return tipoEvento;
 	}
 
 	public void setTipoEvento(TipoEvento tipoEvento) {
 		this.tipoEvento = tipoEvento;
-	}
-	
-	public void agenda(Pessoa pessoa) {
-		
-		this.getPessoa();
-	}
-
-	public Pessoa getPessoa() {
-		
-		if (pessoa == null){
-			
-			pessoa = new Pessoa();
-			
-			}
-		
-		return pessoa;
-	}
-
-	public void setPessoa(Pessoa pessoa) {
-		this.pessoa = pessoa;
 	}
 
 	public Horario getHorario() {
@@ -140,30 +117,42 @@ public class Agenda {
 	public void setUnidadeHemopa(UnidadesHemopa unidadeHemopa) {
 		this.unidadeHemopa = unidadeHemopa;
 	}
-	
+
 	@Transient
 	public boolean isMarcado() {
 		return TipoEvento.MARCADO.equals(this.tipoEvento);
 	}
-	
+
 	@Transient
 	public boolean isConfirmado() {
 		return TipoEvento.CONFIRMADO.equals(this.tipoEvento);
 	}
-	
+
 	@Transient
 	public boolean isCancelado() {
 		return TipoEvento.CANCELADO.equals(this.tipoEvento);
 	}
-	
+
 	@Transient
 	public boolean isRemarcado() {
 		return TipoEvento.REMARCAR.equals(this.tipoEvento);
 	}
-	
+
 	@Transient
 	public boolean isReservado() {
 		return TipoEvento.RESERVADO.equals(this.tipoEvento);
+	}
+	
+	@Transient
+	public boolean isExiste() {
+
+		return isExiste();
+
+	}
+	
+	@Transient
+	public boolean isNaoCancelavel() {
+		return !this.isCancelado();
 	}
 
 	public DominioPeriodoExpediente getPeriodo() {
@@ -222,6 +211,24 @@ public class Agenda {
 		this.dataFim = dataFim;
 	}
 
+	public List<Vagas> getVagas() {
+		return vagas;
+	}
+
+	public void setVagas(List<Vagas> vagas) {
+		this.vagas = vagas;
+	}
+
+	
+
+	public Pessoa getPessoa() {
+		return pessoa;
+	}
+
+	public void setPessoa(Pessoa pessoa) {
+		this.pessoa = pessoa;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -229,7 +236,7 @@ public class Agenda {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
@@ -259,11 +266,11 @@ public class Agenda {
 	@Override
 	public String toString() {
 		return "Agenda [id=" + id + ", horario=" + horario + ", dia=" + dia + ", isChekin=" + isChekin
-				+ ", unidadeHemopa=" + unidadeHemopa + ", pessoa=" + pessoa + ", tipoEvento=" + tipoEvento
+				+ ", unidadeHemopa=" + unidadeHemopa + ", tipoEvento=" + tipoEvento
 				+ ", periodo=" + periodo + ", dataInicio=" + dataInicio + ", dataFim=" + dataFim + ", horarioInicio="
 				+ horarioInicio + ", horarioFim=" + horarioFim + ", reservado=" + reservado + "]";
 	}
 	
-	
+
 
 }

@@ -1,19 +1,17 @@
 package br.com.j.hemopa.digital.model;
 
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -32,7 +30,7 @@ public class Pessoa {
 	private String nome;
 
 	@Enumerated(EnumType.STRING)
-	@Column(nullable = false, length = 15)
+	@Column(nullable = true, length = 15)
 	private Sexo sexo;
 
 	@Column(name = "cpf", nullable = false, length = 20)
@@ -55,11 +53,18 @@ public class Pessoa {
 	@Embedded
 	private Contato contato;
 	
-	@OneToMany(mappedBy = "pessoa", fetch = FetchType.EAGER)
-	private List<Agenda> agendas;
+	@OneToOne(cascade = CascadeType.PERSIST)
+	private Vagas vagas;
+	
+	@OneToOne(cascade = CascadeType.PERSIST)
+	private Agenda agenda;
 
-	public Pessoa() {
-		super();
+	public Vagas getVagas() {
+		return vagas;
+	}
+
+	public void setVagas(Vagas vagas) {
+		this.vagas = vagas;
 	}
 
 	public String getRg() {
@@ -127,7 +132,7 @@ public class Pessoa {
 
 	
 	public Sexo getSexo() { 
-			
+		
 		return sexo; 
 		
 	}
@@ -153,22 +158,6 @@ public class Pessoa {
 
 	public void setSangue(TipoSangue sangue) {
 		this.sangue = sangue;
-	}
-
-
-	public List<Agenda> getAgendas() {
-		
-		if (agendas == null){
-			
-			agendas = new ArrayList<Agenda>();
-			
-			}
-		
-		return agendas;
-	}
-
-	public void setAgendas(List<Agenda> agendas) {
-		this.agendas = agendas;
 	}
 
 	@Override

@@ -80,6 +80,12 @@ public class Pessoas implements Serializable {
 		return criteria.addOrder(Order.asc("nome")).list();
 	}
 	
+	public List<Pessoa> agendas() {
+		// TODO filtrar apenas vendedores (por um grupo específico)
+		return this.manager.createQuery("from pessoa", Pessoa.class)
+				.getResultList();
+	}
+	
 	
 
 }

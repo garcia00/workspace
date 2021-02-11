@@ -1,25 +1,36 @@
 package br.com.j.hemopa.digital.service;
 
+import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.enterprise.context.Dependent;
 import javax.persistence.Cache;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.transaction.Transactional;
 
 import br.com.j.hemopa.digital.dominios.TipoEvento;
 import br.com.j.hemopa.digital.model.Agenda;
+import br.com.j.hemopa.digital.model.Pessoa;
 import br.com.j.hemopa.digital.repository.filter.AgendaFilter;
 import br.com.j.hemopa.digital.util.JPAUtil;
 
-public class AgendamentoDAO {
 
+public class AgendamentoDAO implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+
+	public AgendamentoDAO() {
+		super();
+	}
+
+	@Transactional
 	public void adiciona(Agenda agenda) {
-
+		
 		// consegue a entity manager
 		EntityManager em = new JPAUtil().getEntityManager();
 
@@ -45,6 +56,19 @@ public class AgendamentoDAO {
 		em.getTransaction().commit();
 		em.close();
 	}
+	
+	@Transactional
+	public void adicionaPessoaAgenda(Pessoa pessoa, Agenda agenda) {
+		
+		EntityManager em = new JPAUtil().getEntityManager();
+		em.getTransaction().begin();
+		
+		em.merge(agenda);
+
+		em.getTransaction().commit();
+		
+		em.close();
+	}
 
 	public void atualiza(Agenda agenda) {
 		EntityManager em = new JPAUtil().getEntityManager();
@@ -57,6 +81,14 @@ public class AgendamentoDAO {
 	}
 	
 	public void atualizaStatus(TipoEvento tipoEvento, Agenda agenda) {
+		
+		if(tipoEvento != tipoEvento.CANCELADO ) {
+			
+			agenda.setTipoEvento(tipoEvento.REMARCAR);
+		} 
+		
+		
+
 		EntityManager em = new JPAUtil().getEntityManager();
 		em.getTransaction().begin();
 
@@ -167,6 +199,15 @@ public class AgendamentoDAO {
 		final Cache cache = this.getEntityManager().getEntityManagerFactory()
 				.getCache();
 		cache.evictAll();
+	}
+	
+	public Pessoa buscaPessoaPorId(Long id) {
+
+		EntityManager em = new JPAUtil().getEntityManager();
+		Pessoa instancia = em.find(Pessoa.class, id);
+		em.close();
+		return instancia;
+
 	}
 
 }

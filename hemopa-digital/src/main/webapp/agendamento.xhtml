@@ -112,6 +112,16 @@
 								</p:selectBooleanCheckbox>
 							</div>
 						</div>
+						<div class="ui-sm-12 ui-g-6 ui-g-nopad">
+								<div class="ui-sm-12 ui-g-11">
+									<p:outputLabel value=" Numero de vagas:" for="vagas" />
+								</div>
+								<div class="ui-sm-12 ui-g-11">
+									<p:inputText id="vagas" value="#{agendamentosMB.vaga.quantidade}"/>
+										<span class="help-block"> <p:message for="vagas" />
+										</span>
+								</div>
+							</div>
 						<p:panel id="reservar" rendered="#{agendamentosMB.chekin}">
 							<div class="ui-sm-12 ui-g-6 ui-g-nopad">
 								<div class="ui-sm-12 ui-g-11">
@@ -135,6 +145,7 @@
 										</span>
 								</div>
 							</div>
+							
 						</p:panel>
 					</div>
 				</p:panel>
@@ -142,7 +153,11 @@
 				<div id="main-buttons" class="hidden-sm hidden-xs">
 
 					<p:commandButton value="Salvar" action="#{agendamentosMB.salvar}"
-						icon="fa fa-calendar" styleClass="btn-primary" update="@form">
+						rendered="#{agendamentosMB.reagendar}" icon="fa fa-calendar" styleClass="btn-primary" update="@form">
+					</p:commandButton>
+					
+					<p:commandButton value="reagendar" action="#{agendamentosMB.acaoReagendar}"
+						rendered="#{!agendamentosMB.reagendar}" icon="fa fa-calendar" styleClass="btn-primary" update="@form">
 					</p:commandButton>
 
 					<p:commandButton value="Voltar" immediate="true"

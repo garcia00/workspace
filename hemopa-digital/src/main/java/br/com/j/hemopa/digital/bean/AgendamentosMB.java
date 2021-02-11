@@ -3,15 +3,11 @@ package br.com.j.hemopa.digital.bean;
 import java.io.Serializable;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
 import javax.enterprise.context.SessionScoped;
-import javax.enterprise.inject.Produces;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
-
-
 
 import br.com.j.hemopa.digital.dominios.Dia;
 import br.com.j.hemopa.digital.dominios.DiasSemana;
@@ -23,11 +19,13 @@ import br.com.j.hemopa.digital.dominios.TipoSangue;
 import br.com.j.hemopa.digital.dominios.UnidadesHemopa;
 import br.com.j.hemopa.digital.model.Agenda;
 import br.com.j.hemopa.digital.model.Pessoa;
+import br.com.j.hemopa.digital.model.Vagas;
 import br.com.j.hemopa.digital.repository.Agendamentos;
 import br.com.j.hemopa.digital.repository.Pessoas;
 import br.com.j.hemopa.digital.repository.filter.AgendaFilter;
 import br.com.j.hemopa.digital.repository.filter.PessoaFilter;
 import br.com.j.hemopa.digital.service.AgendamentoDAO;
+import br.com.j.hemopa.digital.service.DAO;
 import br.com.j.hemopa.digital.service.PessoaDAO;
 
 @Named
@@ -42,20 +40,12 @@ public class AgendamentosMB implements Serializable {
 
 	private Pessoa pessoa;
 	
-	@Inject
-	private Pessoas pessoas;
+	private AgendamentoDAO agendamentoDAO = new AgendamentoDAO();
 	
-	@Inject
-	private Agendamentos agendamentos;
-	
-	@Inject
-	private AgendamentoDAO agendamentoDAO;
-	
-	@Produces
-	@AgendaEdicao
 	private Agenda agenda;
 	
-	
+	private Vagas vaga;
+
 	private PessoaFilter filtro;
 
 	private AgendaFilter agendaFiltro;
@@ -63,7 +53,6 @@ public class AgendamentosMB implements Serializable {
 	private List<Agenda> filtroAgenda;
 
 	private List<Pessoa> pessoasFiltrados;
-	
 
 	private boolean chekin = false;
 
@@ -74,13 +63,15 @@ public class AgendamentosMB implements Serializable {
 	}
 
 	public String prepararNovoAgendamento() {
-		
+
 		return getNavegacao();
 	}
 
 	public String salvar() {
-
-		new AgendamentoDAO().adiciona(agenda);
+				
+		agenda.setPessoa(this.pessoa);
+		
+		new AgendamentoDAO().adiciona(this.agenda);
 
 		FacesContext.getCurrentInstance().addMessage("O agendamento", new FacesMessage("Realizado com sucesso!"));
 
@@ -88,10 +79,21 @@ public class AgendamentosMB implements Serializable {
 
 	}
 	
-	public void acaoPesquisar() {
+	public String acaoReagendar() {
+		
+		agenda.setPessoa(this.pessoa);
+		
+		new AgendamentoDAO().atualiza(agenda);
 
-		this.agendamentoDAO = new AgendamentoDAO();
-		List<Agenda> agendas = this.agendamentoDAO.buscarPorCriterio(this.getAgendaFiltro());
+		FacesContext.getCurrentInstance().addMessage("O agendamento", new FacesMessage("Realizado com sucesso!"));
+
+		return AGENDAMENTO;
+
+	}
+
+	public void acaoPesquisar() {
+		
+		this.agendamentoDAO.buscarPorCriterio(this.getAgendaFiltro());
 
 	}
 
@@ -99,10 +101,18 @@ public class AgendamentosMB implements Serializable {
 
 		new AgendamentoDAO().buscaPorId(this.agenda.getId());
 	}
-	
+
 	public void inicializar() {
+
+		if (this.agenda == null) {
+			agenda = new Agenda();
+		}
 		
-		agenda = new Agenda();
+		if (this.pessoa == null) {
+			pessoa = new Pessoa();
+		}
+
+		this.agenda.adicionarVaga();
 	}
 
 	public List<Agenda> getAgendas() {
@@ -164,6 +174,11 @@ public class AgendamentosMB implements Serializable {
 
 		return this.pessoa.getId() != null;
 	}
+	
+	public boolean isReagendar() {
+
+		return this.agenda.getId() != null;
+	}
 
 	public Agenda getAgenda() {
 		return agenda;
@@ -217,22 +232,28 @@ public class AgendamentosMB implements Serializable {
 
 	public void setAgendaFiltro(AgendaFilter agendaFiltro) {
 		this.agendaFiltro = agendaFiltro;
+	
 	}
-
-	public Agendamentos getAgendamentos() {
-		return agendamentos;
-	}
-
-	public void setAgendamentos(Agendamentos agendamentos) {
-		this.agendamentos = agendamentos;
-	}
-
+	
 	public AgendamentoDAO getAgendamentoDAO() {
 		return agendamentoDAO;
 	}
 
 	public void setAgendamentoDAO(AgendamentoDAO agendamentoDAO) {
 		this.agendamentoDAO = agendamentoDAO;
+	}
+
+	public Vagas getVaga() {
+		
+		if(vaga == null) {
+			
+			vaga = new Vagas();
+		}
+		return vaga;
+	}
+
+	public void setVaga(Vagas vaga) {
+		this.vaga = vaga;
 	}
 
 }

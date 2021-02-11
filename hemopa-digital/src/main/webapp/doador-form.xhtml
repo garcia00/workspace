@@ -40,8 +40,8 @@
 							<p:outputLabel value="Data Nascimento" for="data" />
 						</div>
 						<div class="ui-sm-12 ui-g-11">
-							<p:datePicker id="data"
-								value="#{pessoasMB.pessoa.dataNascimento}"  pattern="dd.MM.yyyy" readonlyInput="true"
+							<p:calendar id="data" mask="true" pattern="dd/MM/yyyy"
+										locale="pt" value="#{pessoasMB.pessoa.dataNascimento}"
 								size="15" disabled="#{pessoasMB.editando}" />
 							<span class="help-block"> <p:message for="data" />
 							</span>

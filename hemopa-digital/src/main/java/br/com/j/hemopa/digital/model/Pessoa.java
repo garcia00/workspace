@@ -1,6 +1,8 @@
 package br.com.j.hemopa.digital.model;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -8,9 +10,12 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -47,24 +52,25 @@ public class Pessoa {
 	@Column(nullable = true, length = 30)
 	private TipoSangue sangue;
 	
+	@Column(name = "quantidade_sangue", length = 10)
+	private Integer quantidade;
+	
 	@Embedded
 	private Endereco endereco;
 
 	@Embedded
 	private Contato contato;
 	
-	@OneToOne(cascade = CascadeType.PERSIST)
-	private Vagas vagas;
 	
-	@OneToOne(cascade = CascadeType.PERSIST)
-	private Agenda agenda;
+	@OneToMany(mappedBy = "pessoa",  cascade = CascadeType.PERSIST)
+	private Set<Agenda> agendas = new HashSet<>();
 
-	public Vagas getVagas() {
-		return vagas;
+	public Set<Agenda> getAgendas() {
+		return agendas;
 	}
 
-	public void setVagas(Vagas vagas) {
-		this.vagas = vagas;
+	public void setAgendas(Set<Agenda> agendas) {
+		this.agendas = agendas;
 	}
 
 	public String getRg() {
@@ -158,6 +164,18 @@ public class Pessoa {
 
 	public void setSangue(TipoSangue sangue) {
 		this.sangue = sangue;
+	}
+
+	public Integer getQuantidade() {
+		return quantidade;
+	}
+
+	public void setQuantidade(Integer quantidade) {
+		this.quantidade = quantidade;
+	}
+	
+	public void adicionarEstoque(Integer quantidade) {
+		this.setQuantidade(getQuantidade() + quantidade);
 	}
 
 	@Override

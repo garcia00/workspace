@@ -61,6 +61,11 @@
 										rendered="#{agendas.tipoEvento != 'CANCELADO'}">
 										<f:param name="agendas" value="#{agendas.id}" />
 									</p:button>
+								
+									<p:button icon="fa fa-trash" styleClass="btn btn-danger"
+										action="#{cancelarAgendamentoMB.cancelar(Agenda)}" process="@this"
+										update="@form">
+									</p:button>
 								</p:column>
 								<p:column headerText="Nome" style="text-align:center;">
 									<h:outputText value="#{agendas.pessoa.nome}" />

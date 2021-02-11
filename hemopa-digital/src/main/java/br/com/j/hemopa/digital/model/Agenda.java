@@ -20,6 +20,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
 
 import br.com.j.hemopa.digital.dominios.DominioPeriodoExpediente;
 import br.com.j.hemopa.digital.dominios.DominioSimNao;
@@ -76,16 +77,17 @@ public class Agenda {
 	@Column(name = "RESERVARDO")
 	private DominioSimNao reservado;
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "ID_PESSOA", nullable = false)
 	private Pessoa pessoa;
 	
-	@OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "agenda", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
 	private List<Vagas> vagas = new ArrayList<>();
 
 	public Agenda() {
 		super();
 	}
-
+	
 	public TipoEvento getTipoEvento() {
 		return tipoEvento;
 	}
@@ -212,6 +214,9 @@ public class Agenda {
 	}
 
 	public List<Vagas> getVagas() {
+		if (vagas == null) {
+			new Vagas();
+		}
 		return vagas;
 	}
 
@@ -271,6 +276,15 @@ public class Agenda {
 				+ horarioInicio + ", horarioFim=" + horarioFim + ", reservado=" + reservado + "]";
 	}
 	
+	public void adicionarVaga() {
+		if (this.isMarcado()) {
+			Vagas vaga = new Vagas();
+			
+			vaga.setAgenda(this);
+			this.getVagas().add(0, vaga);
+
+		}
+	}
 
 
 }

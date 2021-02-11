@@ -26,11 +26,9 @@ public class CancelarAgendamentoMB implements Serializable {
 	@Inject
 	private Event<AlterarTipoEvento> alterarTipoEvento;
 	
-	@Inject
-	@AgendaEdicao
 	private Agenda agenda;
 	
-	public void cancelar() throws NegocioException {
+	public void cancelar(Agenda agenda) throws NegocioException {
 		this.agenda = this.cancelamentoAgendaService.cancelar(this.agenda);
 		this.alterarTipoEvento.fire(new AlterarTipoEvento(this.agenda));
 		

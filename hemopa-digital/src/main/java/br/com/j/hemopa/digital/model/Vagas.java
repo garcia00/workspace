@@ -9,11 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
-import javax.validation.constraints.NotNull;
+
 
 import br.com.j.hemopa.digital.service.NegocioException;
-
 @Entity
 public class Vagas {
 
@@ -23,15 +21,11 @@ public class Vagas {
 	private Long id;
 
 	@Column(name = "quantidade_vagas", nullable = false, length = 5)
-	private Integer quantidade;
-
-	@Column(name = "vaga", nullable = false, precision = 10, scale = 2)
-	private BigDecimal vaga;
+	private Integer quantidade = 1;
 	
-	@NotNull
 	@ManyToOne
-	@JoinColumn(name = "id_pessoa", nullable = false)
-	private Pessoa pessoa;
+	@JoinColumn(name = "id_agenda", nullable = false)
+	private Agenda agenda;
 
 	
 	public Integer getQuantidade() {
@@ -42,7 +36,7 @@ public class Vagas {
 		this.quantidade = quantidade;
 	}
 
-	public void baixarEstoque(Integer quantidade) throws NegocioException {
+	public void baixarQuantidade(Integer quantidade) throws NegocioException {
 		int novaQuantidade = this.getQuantidade() - quantidade;
 
 		if (novaQuantidade < 0) {
@@ -55,21 +49,13 @@ public class Vagas {
 	public void adicionarEstoque(Integer quantidade) {
 		this.setQuantidade(getQuantidade() + quantidade);
 	}
-
-	public BigDecimal getVaga() {
-		return vaga;
+	
+	public Agenda getAgenda() {
+		return agenda;
 	}
 
-	public void setVaga(BigDecimal vaga) {
-		this.vaga = vaga;
-	}
-
-	public Pessoa getPessoa() {
-		return pessoa;
-	}
-
-	public void setPessoa(Pessoa pessoa) {
-		this.pessoa = pessoa;
+	public void setAgenda(Agenda agenda) {
+		this.agenda = agenda;
 	}
 
 	@Override

@@ -105,6 +105,18 @@ public class PessoaDAO {
 		em.getTransaction().commit();
 		em.close();
 	}
+	
+	public void adicionaAgenda(Pessoa pessoa) {
+		
+		pessoa.setAgendas(pessoa.getAgendas());
+		EntityManager em = new JPAUtil().getEntityManager();
+		em.getTransaction().begin();
+
+		em.merge(pessoa);
+
+		em.getTransaction().commit();
+		em.close();
+	}
 
 	
 

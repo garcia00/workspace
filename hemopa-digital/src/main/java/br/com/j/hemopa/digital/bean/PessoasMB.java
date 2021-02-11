@@ -44,7 +44,6 @@ public class PessoasMB implements Serializable {
 
 	private Horario horario;
 
-	
 	private PessoaFilter filtro;
 
 	@Inject
@@ -79,7 +78,7 @@ public class PessoasMB implements Serializable {
 
 		FacesMessages.addInfoMessage("Doador Cadastrado.");
 
-		return NAVEGACAO;
+		return AGENDAMENTO;
 
 	}
 
